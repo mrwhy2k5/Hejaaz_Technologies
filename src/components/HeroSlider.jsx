@@ -74,7 +74,7 @@ export default function HeroSlider() {
           <div className="absolute inset-0 bg-gradient-to-t from-hejaaz-primary via-transparent to-transparent z-10" />
 
           {/* Content Overlay */}
-          <div className="container-content relative h-full flex items-center pt-28 lg:pt-36 z-20">
+          <div className="container-content relative h-full flex flex-col justify-center pt-20 lg:pt-24 z-20">
             <div className="max-w-5xl text-left">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -92,7 +92,7 @@ export default function HeroSlider() {
                 </motion.div>
 
                 <motion.h1
-                  className="text-6xl lg:text-[6.5rem] font-black text-white leading-[0.9] tracking-tighter mb-8 lg:mb-10 uppercase"
+                  className="text-5xl lg:text-[5.5rem] font-black text-white leading-[0.9] tracking-tighter mb-6 lg:mb-8 uppercase"
                 >
                   {heroSlides[currentIndex].title.split(' ').map((word, i) => (
                     <span key={i} className={i % 2 === 1 ? 'text-hejaaz-secondary' : 'text-white'}>
@@ -102,7 +102,7 @@ export default function HeroSlider() {
                 </motion.h1>
 
                 <motion.p
-                  className="text-xl lg:text-2xl text-white/70 font-bold mb-10 lg:mb-12 max-w-3xl leading-tight uppercase tracking-tight"
+                  className="text-lg lg:text-xl text-white/70 font-bold mb-8 lg:mb-10 max-w-3xl leading-tight uppercase tracking-tight"
                 >
                   {heroSlides[currentIndex].subtitle}
                 </motion.p>
