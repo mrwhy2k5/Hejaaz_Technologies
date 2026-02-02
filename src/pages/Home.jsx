@@ -131,12 +131,13 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-hejaaz-secondary/10 rounded-[3rem] blur-3xl" />
                 <div className="relative rounded-[3rem] p-4 lg:p-6 transition-all duration-500">
-                  <div className="aspect-video flex items-center justify-center p-0 overflow-hidden group">
+                  <div className="aspect-video flex items-center justify-center p-0 overflow-hidden group rounded-[2rem] shadow-2xl border border-hejaaz-border/50">
                     <img
-                      src="/images/manuals/sli-eot-schematic.png"
-                      alt="System Architecture"
-                      className="w-full h-auto max-h-full object-contain group-hover:scale-110 transition-transform duration-1000 mix-blend-multiply dark:mix-blend-normal dark:brightness-125"
+                      src="/images/products/tower-crane.jpg"
+                      alt="Industrial Tower Crane"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-hejaaz-primary/40 to-transparent" />
                   </div>
                 </div>
               </div>
