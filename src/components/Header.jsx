@@ -9,7 +9,6 @@ const navItems = [
   { to: '/about', label: 'About' },
   { to: '/products', label: 'Products' },
   { to: '/services', label: 'Support' },
-  { to: '/#news', label: 'News' },
   { to: '/contact', label: 'Contact' },
 ]
 
