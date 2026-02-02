@@ -90,7 +90,7 @@ export default function ManualProductDetail({ manual, slug }) {
               {/* Product Info */}
               <motion.div
                 {...fadeInSlideUp}
-                className="lg:col-span-6"
+                className="lg:col-span-5"
               >
                 <div className="inline-flex items-center gap-3 px-3 py-1 rounded-md bg-hejaaz-secondary/10 border border-hejaaz-secondary/20 mb-8">
                   <div className="w-1.5 h-1.5 rounded-full bg-hejaaz-secondary animate-pulse" />
@@ -129,7 +129,7 @@ export default function ManualProductDetail({ manual, slug }) {
               {/* Schematic Zoom View */}
               <motion.div
                 {...fadeInSlideUp}
-                className="lg:col-span-6 flex justify-center lg:sticky lg:top-32"
+                className="lg:col-span-7 flex justify-center lg:sticky lg:top-32"
               >
                 <div
                   className="relative group cursor-zoom-in w-full"
@@ -140,7 +140,7 @@ export default function ManualProductDetail({ manual, slug }) {
                     <img
                       src={manual.heroImage || manual.systemLayout?.image || "/images/products/placeholder.svg"}
                       alt={manual.name}
-                      className="w-full h-auto object-contain max-h-[500px] transition-all duration-700 group-hover:scale-105"
+                      className="w-full h-auto object-contain max-h-[700px] transition-all duration-700 group-hover:scale-105"
                     />
                     <div className="absolute top-6 right-6 p-3 bg-hejaaz-secondary text-white rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-all scale-90 group-hover:scale-100">
                       <Maximize2 size={18} />
