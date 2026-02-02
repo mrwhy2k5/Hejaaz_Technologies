@@ -53,18 +53,18 @@ export default function Services() {
         <div className="absolute top-0 right-0 w-1/3 h-full bg-hejaaz-secondary/5 blur-[120px] -z-10" />
 
         <div className="container-content">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto text-center">
             <motion.div
               {...fadeInSlideUp}
             >
-              <div className="flex items-center gap-4 mb-8">
+              <div className="flex items-center gap-4 mb-8 justify-center">
                 <div className="w-12 h-1 rounded-full bg-hejaaz-secondary" />
                 <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary">Our Protocol</h2>
               </div>
               <h1 className="text-4xl lg:text-7xl font-black tracking-tighter leading-[0.95] mb-10 heading-reveal uppercase">
-                End-to-End <br /><span className="text-hejaaz-secondary">Engineering Integration.</span>
+                End-to-End <span className="text-hejaaz-secondary">Engineering Integration.</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-[var(--text-muted)] font-bold uppercase tracking-tight max-w-2xl leading-tight">
+              <p className="text-xl lg:text-2xl text-[var(--text-muted)] font-bold uppercase tracking-tight max-w-4xl mx-auto leading-tight">
                 We bridge the gap between complex industrial problems and reliable technical solutions,
                 offering everything from initial proof-of-concept to nationwide maintenance.
               </p>
