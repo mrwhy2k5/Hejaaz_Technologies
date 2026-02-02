@@ -24,18 +24,18 @@ export default function PageHeader({ title, subtitle, backgroundImage, backTo = 
     <div
       className="relative min-h-[300px] lg:h-[400px] flex items-center overflow-hidden bg-hejaaz-primary transition-colors duration-300"
     >
-      {/* Background Image Layer with Dark Overlay (60-70%) */}
+      {/* Background Image Layer with Lighter Overlay (30-40%) */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="absolute inset-0 z-0"
       >
-        <div className="absolute inset-0 bg-hejaaz-primary/50 dark:bg-black/40 z-10 transition-colors duration-300" />
+        <div className="absolute inset-0 bg-hejaaz-primary/30 dark:bg-black/25 z-10 transition-colors duration-300" />
         <img
           src={bgImage}
           alt={title}
-          className="w-full h-full object-cover grayscale opacity-60 dark:opacity-40 transition-opacity duration-300"
+          className="w-full h-full object-cover opacity-90 dark:opacity-70 transition-opacity duration-300"
           onError={(e) => {
             e.target.src = DEFAULT_BG
           }}
