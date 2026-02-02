@@ -10,45 +10,47 @@
    ======================================== */
 
 :root {
-  /* --- Core Brand Colors (Engineered Palette) --- */
-  --hejaaz-primary: #0F172A;      /* Rich Slate Navy */
-  --hejaaz-secondary: #00D1C1;    /* Vibrant Cyber Teal */
-  --hejaaz-secondary-glow: rgba(0, 209, 193, 0.4);
-  --hejaaz-secondary-dark: #00A396;
-  --hejaaz-accent-orange: #F59E0B; /* Safety Orange for alerts */
+  /* --- Core Brand Colors (New Warm Industrial Palette) --- */
+  --hejaaz-primary: #222222;      /* Dark Text / Footer */
+  --hejaaz-secondary: #FA8112;    /* Primary Orange Accent */
+  --hejaaz-secondary-glow: rgba(250, 129, 18, 0.4);
+  --hejaaz-secondary-dark: #E07310;
+  --hejaaz-accent-success: #2ECC71; /* Success / Safe Green */
+  --hejaaz-accent-warning: #F1C40F; /* Warning Yellow */
+  --hejaaz-accent-danger: #E74C3C;  /* Danger / Overload Red */
   
   /* --- Theme Variables - LIGHT MODE --- */
-  --bg-main: #F8FAFC;
-  --bg-secondary: #FFFFFF;
-  --text-main: #0F172A;
-  --text-muted: #64748B;
+  --bg-main: #FAF3E1;             /* Warm Cream Background */
+  --bg-secondary: #F5E7C6;        /* Card / Section Light Beige */
+  --text-main: #222222;           /* Dark Text */
+  --text-muted: #5A5A5A;          /* Muted Gray Text */
   --text-on-dark: #FFFFFF;
-  --card-bg: #FFFFFF;
-  --card-border: #E2E8F0;
-  --header-bg: rgba(255, 255, 255, 0.94);
-  --footer-bg: #0F172A;
+  --card-bg: #F5E7C6;             /* Cards Background */
+  --card-border: #E8D7B0;         /* Subtle Border */
+  --header-bg: rgba(250, 243, 225, 0.94);
+  --footer-bg: #222222;           /* Dark Footer */
   
   /* --- UI Tokens --- */
-  --hejaaz-surface: #F1F5F9;
-  --hejaaz-border: #E2E8F0;
+  --hejaaz-surface: #F5E7C6;
+  --hejaaz-border: #E8D7B0;
   --shadow-premium: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
   --transition-speed: 0.4s;
 }
 
 .dark {
   /* --- Theme Variables - DARK MODE --- */
-  --bg-main: #0B0F17;           /* Deep Midnight */
-  --bg-secondary: #111827;
-  --text-main: #F1F5F9;
-  --text-muted: #94A3B8;
+  --bg-main: #1A1A1A;           /* Dark Background */
+  --bg-secondary: #2A2A2A;
+  --text-main: #FAF3E1;
+  --text-muted: #B8B8B8;
   --text-on-dark: #FFFFFF;
-  --card-bg: #1E293B;           /* Elevated Slate */
-  --card-border: rgba(255, 255, 255, 0.05);
-  --header-bg: rgba(11, 15, 23, 0.94);
-  --footer-bg: #05070A;
+  --card-bg: #2A2A2A;           /* Elevated Dark Cards */
+  --card-border: rgba(250, 129, 18, 0.1);
+  --header-bg: rgba(26, 26, 26, 0.94);
+  --footer-bg: #0F0F0F;
   
-  --hejaaz-surface: #1E293B;
-  --hejaaz-border: rgba(255, 255, 255, 0.08);
+  --hejaaz-surface: #2A2A2A;
+  --hejaaz-border: rgba(250, 129, 18, 0.15);
   --shadow-premium: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
 }
 

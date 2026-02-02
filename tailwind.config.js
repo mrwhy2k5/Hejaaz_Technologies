@@ -7,54 +7,53 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Industrial Theme Color Palette
-        // Inspired by Siemens, ABB, Klug Avalon, Schneider Electric
+        // Warm Industrial Theme Color Palette
+        // Hejaaz Technologies Orange & Cream Theme
         hejaaz: {
-          // Primary - Deep Industrial Blue
-          primary: '#0B1F3A',
-          'primary-light': '#132B4D',
-          'primary-dark': '#071428',
+          // Primary - Dark Text & Footer
+          primary: '#222222',
+          'primary-light': '#3A3A3A',
+          'primary-dark': '#0F0F0F',
 
-          // Secondary - Safety Teal
-          secondary: '#1FB6AA',
-          'secondary-light': '#3CC9BE',
-          'secondary-dark': '#17928A',
+          // Secondary - Orange Accent
+          secondary: '#FA8112',
+          'secondary-light': '#FB9B42',
+          'secondary-dark': '#E07310',
 
-          // Accent - Warning Amber
-          accent: '#F5A623',
-          'accent-light': '#FFBA47',
-          'accent-dark': '#D8910F',
+          // Accent Colors - Safety Indicators
+          success: '#2ECC71',      // Safe / Success Green
+          warning: '#F1C40F',      // Warning Yellow
+          danger: '#E74C3C',       // Danger / Overload Red
+          accent: '#FA8112',       // Main Orange Accent
 
           // Backgrounds
-          surface: '#F1F5F9',
-          'surface-light': '#F8FAFC',
-          'surface-alt': '#EEF2F7',
+          surface: '#F5E7C6',      // Light Beige Cards
+          'surface-light': '#FAF3E1',  // Main Cream Background
+          'surface-alt': '#F0DFB5',    // Alternative Beige
           white: '#FFFFFF',
 
-
-
           // Text Colors
-          dark: '#1F2937',
-          'dark-secondary': '#374151',
-          gray: '#6B7280',
-          'gray-light': '#9CA3AF',
+          dark: '#222222',
+          'dark-secondary': '#3A3A3A',
+          gray: '#5A5A5A',
+          'gray-light': '#8A8A8A',
 
           // Border Colors
-          border: '#E2E8F0',
+          border: '#E8D7B0',
 
           // Legacy mappings (for backward compatibility)
-          'industrial-blue': '#0B1F3A',
-          'safety-teal': '#1FB6AA',
-          steel: '#475569',
+          'industrial-blue': '#222222',  // Now dark gray
+          'safety-teal': '#FA8112',      // Now orange
+          steel: '#5A5A5A',
         },
       },
 
       // Extend ring colors to include custom hejaaz colors
       ringColor: {
         hejaaz: {
-          primary: '#0B1F3A',
-          secondary: '#1FB6AA',
-          accent: '#F5A623',
+          primary: '#222222',
+          secondary: '#FA8112',
+          accent: '#FA8112',
         },
       },
       // Extend border colors
@@ -95,7 +94,7 @@ export default {
         'card-hover': '0 10px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.04)',
         'elevated': '0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05)',
         'header': '0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px 0 rgb(0 0 0 / 0.03)',
-        'industrial': '0 4px 20px -2px rgb(11 31 58 / 0.12)',
+        'industrial': '0 4px 20px -2px rgb(34 34 34 / 0.12)',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out',
@@ -117,9 +116,9 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-industrial': 'linear-gradient(135deg, #0B1F3A 0%, #132B4D 100%)',
-        'gradient-safety': 'linear-gradient(135deg, #1FB6AA 0%, #17928A 100%)',
-        'gradient-surface': 'linear-gradient(180deg, #F6F8FB 0%, #FFFFFF 100%)',
+        'gradient-industrial': 'linear-gradient(135deg, #222222 0%, #3A3A3A 100%)',
+        'gradient-safety': 'linear-gradient(135deg, #FA8112 0%, #E07310 100%)',
+        'gradient-surface': 'linear-gradient(180deg, #FAF3E1 0%, #F5E7C6 100%)',
       },
     },
   },
