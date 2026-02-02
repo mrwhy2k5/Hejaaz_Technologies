@@ -209,7 +209,7 @@ export default function Home() {
                 <MapPin size={12} /> PAN-India Service Network
               </div>
               <h2 className="text-4xl lg:text-6xl font-black tracking-tighter leading-[0.95] mb-10 uppercase">
-                Deployed across <br /><span className="text-black/30">1,200+ Sites.</span>
+                Deployed across <br /><span className="text-black/30">500+ Sites.</span>
               </h2>
               <p className="text-xl font-bold uppercase tracking-tight opacity-80 mb-12">
                 We provide site-ready safety systems with complete documentation and technical support.
