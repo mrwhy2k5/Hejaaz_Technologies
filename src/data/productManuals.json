@@ -30,8 +30,8 @@
       "description": "The SLI system features a built-in Wi-Fi Access Point, enabling wireless calibration and configuration. All adjustments are performed via a secure, mobile-friendly web page.",
       "image": "/images/manuals/calibration-interface.png",
       "steps": [
-        "Tilt Angle Setup: 'Angle Reset' button instantly sets current angle as 0°.",
         "Multi-Load Calibration: Supports up to 8 independent load points for precision.",
+        "Tilt Angle Setup: 'Angle Reset' button instantly sets current angle as 0°.",
         "Safety Configuration: Input boxes for Load, Tilt, Wind, and Rope slack limits.",
         "Toggling Options: Interface buttons to enable/disable safety parameters."
       ]
