@@ -53,18 +53,18 @@ export default function Services() {
         <div className="absolute top-0 right-0 w-1/3 h-full bg-hejaaz-secondary/5 blur-[120px] -z-10" />
 
         <div className="container-content">
-          <div className="max-w-6xl ml-auto text-right">
+          <div className="max-w-6xl mr-auto text-left">
             <motion.div
               {...fadeInSlideUp}
             >
-              <div className="flex items-center gap-4 mb-8 justify-end">
+              <div className="flex items-center gap-4 mb-8 justify-start">
                 <div className="w-12 h-1 rounded-full bg-hejaaz-secondary" />
                 <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary">Our Protocol</h2>
               </div>
               <h1 className="text-4xl lg:text-7xl font-black tracking-tighter leading-[0.95] mb-10 heading-reveal uppercase">
                 End-to-End <span className="text-hejaaz-secondary">Engineering Integration.</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-[var(--text-muted)] font-bold uppercase tracking-tight max-w-4xl ml-auto leading-tight">
+              <p className="text-xl lg:text-2xl text-[var(--text-muted)] font-bold uppercase tracking-tight max-w-4xl mr-auto leading-tight">
                 We bridge the gap between complex industrial problems and reliable technical solutions,
                 offering everything from initial proof-of-concept to nationwide maintenance.
               </p>
@@ -76,9 +76,9 @@ export default function Services() {
       {/* ============ SERVICE MATRIX ============ */}
       <section className="section-padding bg-[var(--bg-secondary)] transition-colors duration-500">
         <div className="container-content">
-          <div className="flex flex-col items-end justify-end mb-16 gap-8 text-right">
+          <div className="flex flex-col items-start justify-start mb-16 gap-8 text-left">
             <div className="max-w-4xl">
-              <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary mb-6 flex items-center gap-3 justify-end">
+              <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary mb-6 flex items-center gap-3 justify-start">
                 <div className="w-2 h-2 rounded-full bg-hejaaz-secondary animate-pulse" />
                 Service Matrix
               </h2>
