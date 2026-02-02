@@ -58,14 +58,16 @@ export default function Header() {
             </div>
             <div className="flex flex-col">
               <span
-                className={`font-black text-xl leading-none tracking-tighter uppercase transition-colors duration-500 ${isGlass ? 'text-[var(--text-main)]' : 'text-white'}`}
+                className={`text-xl leading-none uppercase transition-colors duration-500 ${isGlass ? 'text-[var(--text-main)]' : 'text-white'}`}
+                style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.15em', fontWeight: '400' }}
               >
                 HEJAAZ
               </span>
               <span
-                className={`font-bold text-[10px] uppercase tracking-[0.4em] leading-none mt-1.5 transition-colors duration-500 ${isGlass ? 'text-[var(--text-muted)]' : 'text-white/70'}`}
+                className={`text-[10px] uppercase leading-none mt-1 transition-colors duration-500 ${isGlass ? 'text-[var(--text-muted)]' : 'text-white/70'}`}
+                style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.35em', fontWeight: '400' }}
               >
-                Technologies
+                TECHNOLOGIES
               </span>
             </div>
           </Link>

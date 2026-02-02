@@ -35,11 +35,11 @@ export default function Footer() {
                 <img src="/images/logo.png" alt="Hejaaz Technologies Logo" className="w-9 h-9 object-contain" />
               </div>
               <div className="flex flex-col">
-                <span className="text-white font-black text-xl leading-none tracking-tighter uppercase">
+                <span className="text-white text-xl leading-none uppercase" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.15em', fontWeight: '400' }}>
                   HEJAAZ
                 </span>
-                <span className="text-white/40 font-bold text-[10px] uppercase tracking-[0.3em] leading-none mt-1">
-                  Technologies
+                <span className="text-white/40 text-[10px] uppercase leading-none mt-1" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.35em', fontWeight: '400' }}>
+                  TECHNOLOGIES
                 </span>
               </div>
             </Link>
