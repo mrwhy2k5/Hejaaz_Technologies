@@ -7,18 +7,22 @@ import Services from './pages/Services'
 import Industries from './pages/Industries'
 import Certifications from './pages/Certifications'
 import Contact from './pages/Contact'
+import ScrollToTop from './components/ScrollToTop'
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/products" element={<Products />} />
-      <Route path="/products/:slug" element={<ProductDetail />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/industries" element={<Industries />} />
-      <Route path="/certifications" element={<Certifications />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:slug" element={<ProductDetail />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/industries" element={<Industries />} />
+        <Route path="/certifications" element={<Certifications />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   )
 }
