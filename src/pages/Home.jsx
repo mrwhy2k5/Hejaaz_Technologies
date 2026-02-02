@@ -209,13 +209,13 @@ export default function Home() {
                 <MapPin size={12} /> PAN-India Service Network
               </div>
               <h2 className="text-4xl lg:text-6xl font-black tracking-tighter leading-[0.95] mb-10 uppercase">
-                Deployed across <br /><span className="text-black/30">500+ Sites.</span>
+                Deployed across <br /><span className="text-white/40">500+ Sites.</span>
               </h2>
-              <p className="text-xl font-bold uppercase tracking-tight opacity-80 mb-12">
+              <p className="text-xl font-bold uppercase tracking-tight opacity-90 mb-12">
                 We provide site-ready safety systems with complete documentation and technical support.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/contact" className="bg-white text-hejaaz-secondary !py-6 !px-12 !text-[13px] uppercase tracking-[0.2em] font-black rounded-2xl hover:shadow-2xl transition-all hover:scale-105 active:scale-95 flex items-center gap-3">
+                <Link to="/contact#quote-form" className="bg-white text-hejaaz-secondary !py-6 !px-12 !text-[13px] uppercase tracking-[0.2em] font-black rounded-2xl hover:shadow-2xl transition-all hover:scale-105 active:scale-95 flex items-center gap-3">
                   <Headset size={20} /> Request Consultation
                 </Link>
               </div>
