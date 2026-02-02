@@ -62,16 +62,16 @@ export default function HeroSlider() {
             variants={zoomVariants}
             initial="initial"
             animate="animate"
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat grayscale"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: `url(${heroSlides[currentIndex].image})`,
             }}
           />
 
-          {/* Advanced Industrial Gradient Overlay */}
-          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/60 to-transparent z-10" />
-          <div className="absolute inset-0 bg-gradient-to-r from-hejaaz-primary via-hejaaz-primary/80 to-transparent z-10" />
-          <div className="absolute inset-0 bg-gradient-to-t from-hejaaz-primary via-transparent to-transparent z-10" />
+          {/* Lighter Industrial Gradient Overlay */}
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/30 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-hejaaz-primary/60 via-hejaaz-primary/30 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-hejaaz-primary/50 via-transparent to-transparent z-10" />
 
           {/* Content Overlay */}
           <div className="container-content relative h-full flex flex-col justify-center pt-20 lg:pt-24 z-20">
