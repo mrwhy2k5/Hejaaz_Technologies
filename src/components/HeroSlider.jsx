@@ -74,7 +74,7 @@ export default function HeroSlider() {
           <div className="absolute inset-0 bg-gradient-to-t from-hejaaz-primary via-transparent to-transparent z-10" />
 
           {/* Content Overlay */}
-          <div className="container-content relative h-full flex items-center pt-32 lg:pt-40 z-20">
+          <div className="container-content relative h-full flex items-center pt-28 lg:pt-36 z-20">
             <div className="max-w-5xl text-left">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -85,14 +85,14 @@ export default function HeroSlider() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.2 }}
-                  className="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-hejaaz-secondary/20 border border-hejaaz-secondary/30 mb-10 backdrop-blur-md"
+                  className="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-hejaaz-secondary/20 border border-hejaaz-secondary/30 mb-6 lg:mb-8 backdrop-blur-md"
                 >
                   <div className="w-2 h-2 rounded-full bg-hejaaz-secondary animate-pulse" />
                   <span className="text-[10px] font-black text-white uppercase tracking-[0.4em]">Engineering Excellence</span>
                 </motion.div>
 
                 <motion.h1
-                  className="text-6xl lg:text-[6.5rem] font-black text-white leading-[0.9] tracking-tighter mb-12 uppercase"
+                  className="text-6xl lg:text-[6.5rem] font-black text-white leading-[0.9] tracking-tighter mb-8 lg:mb-10 uppercase"
                 >
                   {heroSlides[currentIndex].title.split(' ').map((word, i) => (
                     <span key={i} className={i % 2 === 1 ? 'text-hejaaz-secondary' : 'text-white'}>
@@ -102,7 +102,7 @@ export default function HeroSlider() {
                 </motion.h1>
 
                 <motion.p
-                  className="text-xl lg:text-3xl text-white/70 font-bold mb-16 max-w-3xl leading-tight uppercase tracking-tight"
+                  className="text-xl lg:text-2xl text-white/70 font-bold mb-10 lg:mb-12 max-w-3xl leading-tight uppercase tracking-tight"
                 >
                   {heroSlides[currentIndex].subtitle}
                 </motion.p>
