@@ -199,7 +199,8 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
-                className="p-8 lg:p-12 rounded-xl bg-[var(--card-bg)] border border-[var(--card-border)] shadow-sm transition-colors duration-300"
+                id="quote-form"
+                className="p-8 lg:p-12 rounded-xl bg-[var(--card-bg)] border border-[var(--card-border)] shadow-sm transition-colors duration-300 scroll-mt-32"
               >
                 <div className="flex items-center gap-3 mb-10">
                   <div className="w-10 h-1 rounded-full bg-hejaaz-secondary" />

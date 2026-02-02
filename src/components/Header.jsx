@@ -121,7 +121,7 @@ export default function Header() {
 
               {/* CTA Button */}
               <Link
-                to="/contact"
+                to="/contact#quote-form"
                 className="btn-primary !py-3 !px-10 text-[11px] font-black uppercase tracking-widest shadow-2xl"
               >
                 Get Quote
@@ -181,7 +181,7 @@ export default function Header() {
               })}
               <div className="mt-6 pt-6 border-t border-hejaaz-border">
                 <Link
-                  to="/contact"
+                  to="/contact#quote-form"
                   onClick={() => setMobileOpen(false)}
                   className="btn-primary w-full justify-center !py-5"
                 >
