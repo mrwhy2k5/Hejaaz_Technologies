@@ -229,7 +229,7 @@ export default function ManualProductDetail({ manual, slug }) {
               <div className="grid lg:grid-cols-2 gap-20 items-center mb-32">
                 <motion.div {...fadeInSlideUp}>
                   <div className="flex items-center gap-4 mb-8">
-                    <Settings className="text-hejaaz-secondary" size={24} />
+                    <Settings className="text-hejaaz-secondary" size={40} />
                     <h2 className="text-2xl lg:text-4xl font-black tracking-tight uppercase" style={{ color: 'var(--text-main)' }}>
                       {manual.calibrationSetup.title}
                     </h2>
