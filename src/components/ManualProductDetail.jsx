@@ -275,7 +275,7 @@ export default function ManualProductDetail({ manual, slug }) {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">
                 <h3 className="text-[11px] font-black text-hejaaz-secondary uppercase tracking-[0.4em] mb-4">Metric Analysis</h3>
-                <h2 className="text-3xl lg:text-5xl font-black tracking-tight uppercase" style={{ color: 'var(--text-main)' }}>System Performance</h2>
+                <h2 className="text-3xl lg:text-5xl font-black tracking-tight uppercase" style={{ color: 'var(--text-main)' }}>System Specification</h2>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-3">
