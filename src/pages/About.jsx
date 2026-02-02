@@ -65,15 +65,18 @@ export default function About() {
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="lg:col-span-5 relative aspect-square rounded-[3rem] bg-hejaaz-surface border border-hejaaz-border flex items-center justify-center overflow-hidden transition-colors duration-500 shadow-premium"
+              className="lg:col-span-5 relative aspect-square rounded-[3rem] overflow-hidden shadow-premium border border-hejaaz-border group"
             >
-              <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
-              <div className="text-center p-12">
-                <Shield className="w-24 h-24 text-hejaaz-secondary/20 mx-auto mb-8 transition-colors" />
-                <p className="text-[11px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary">Engineering Integrity</p>
+              <img
+                src="/images/about-engineering.jpg"
+                alt="Engineering Integrity"
+                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-hejaaz-primary/80 via-transparent to-transparent" />
+              <div className="absolute bottom-12 left-12">
+                <p className="text-[11px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary mb-2">Engineering Integrity</p>
+                <div className="w-12 h-1 bg-white/50 rounded-full" />
               </div>
-              <div className="absolute top-8 left-8 w-10 h-10 border-l-2 border-t-2 border-hejaaz-secondary/20" />
-              <div className="absolute bottom-8 right-8 w-10 h-10 border-r-2 border-b-2 border-hejaaz-secondary/20" />
             </motion.div>
           </div>
         </div>
