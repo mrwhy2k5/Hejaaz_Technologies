@@ -31,8 +31,8 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-4 group shrink-0">
-              <div className="w-12 h-12 rounded-xl bg-hejaaz-secondary flex items-center justify-center text-white shadow-lg shadow-hejaaz-secondary/30 transition-all group-hover:scale-110 group-hover:rotate-3">
-                <span className="font-black text-sm tracking-tighter">HT</span>
+              <div className="w-12 h-12 rounded-xl bg-hejaaz-secondary flex items-center justify-center shadow-lg shadow-hejaaz-secondary/30 transition-all group-hover:scale-110 group-hover:rotate-3 overflow-hidden">
+                <img src="/images/logo.png" alt="Hejaaz Technologies Logo" className="w-9 h-9 object-contain" />
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-black text-xl leading-none tracking-tighter uppercase">

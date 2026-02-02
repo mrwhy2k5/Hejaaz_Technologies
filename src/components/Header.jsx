@@ -53,8 +53,8 @@ export default function Header() {
             className="flex items-center gap-4 group shrink-0"
             aria-label="Hejaaz Technologies Home"
           >
-            <div className="w-11 h-11 rounded-xl bg-hejaaz-secondary flex items-center justify-center text-white shadow-lg shadow-hejaaz-secondary/30 transition-all group-hover:scale-110 group-hover:rotate-3">
-              <span className="font-black text-[15px] tracking-tighter">HT</span>
+            <div className={`w-11 h-11 rounded-xl flex items-center justify-center transition-all group-hover:scale-110 group-hover:rotate-3 overflow-hidden ${isGlass ? 'bg-hejaaz-secondary shadow-lg shadow-hejaaz-secondary/30' : 'bg-white/10 backdrop-blur-md border border-white/20'}`}>
+              <img src="/images/logo.png" alt="Hejaaz Technologies Logo" className="w-8 h-8 object-contain" />
             </div>
             <div className="flex flex-col">
               <span
