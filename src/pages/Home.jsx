@@ -131,13 +131,12 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-hejaaz-secondary/10 rounded-[3rem] blur-3xl" />
                 <div className="relative rounded-[3rem] p-4 lg:p-6 transition-all duration-500">
-                  <div className="aspect-video flex items-center justify-center p-0 overflow-hidden group rounded-[2rem] shadow-2xl border border-hejaaz-border/50">
+                  <div className="aspect-video flex items-center justify-center p-8 overflow-hidden group rounded-[2rem] shadow-2xl border border-hejaaz-border/50 bg-white">
                     <img
-                      src="/images/products/tower-crane.jpg"
-                      alt="Industrial Tower Crane"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                      src="/images/heavy-lifting.jpg"
+                      alt="Crane Safety Illustration"
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-hejaaz-primary/40 to-transparent" />
                   </div>
                 </div>
               </div>
