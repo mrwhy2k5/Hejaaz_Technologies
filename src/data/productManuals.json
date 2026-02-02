@@ -555,11 +555,11 @@
     "slug": "safe-load-indicator-tipper-truck",
     "name": "Safe Load Indicator – Tipper Truck",
     "tagline": "Axle Load and Tipping Stability System",
-    "heroImage": "/images/manuals/sli-tipper.png",
+    "heroImage": "/images/manuals/tipper-schematic.png",
     "overview": "Advanced payload monitoring and tipping safety for heavy dump trucks and tippers. Prevents overloading and ensures chassis stability during discharge operations in mines and construction sites.",
     "systemLayout": {
-      "title": "Tipper SLI Layout Correct",
-      "image": "/images/manuals/sli-tipper.png",
+      "title": "Tipper SLI System Layout",
+      "image": "/images/manuals/tipper-schematic.png",
       "items": [
         "Main Display",
         "Buzzer/Alarm Unit",
