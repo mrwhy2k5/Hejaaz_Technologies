@@ -76,18 +76,18 @@ export default function Services() {
       {/* ============ SERVICE MATRIX ============ */}
       <section className="section-padding bg-[var(--bg-secondary)] transition-colors duration-500">
         <div className="container-content">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">
-            <div className="max-w-2xl">
-              <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary mb-6 flex items-center gap-3">
+          <div className="flex flex-col items-center justify-center mb-16 gap-8 text-center">
+            <div className="max-w-4xl">
+              <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary mb-6 flex items-center gap-3 justify-center">
                 <div className="w-2 h-2 rounded-full bg-hejaaz-secondary animate-pulse" />
                 Service Matrix
               </h2>
-              <h2 className="text-4xl lg:text-6xl font-black tracking-tighter leading-none heading-reveal uppercase">
-                Standardized <br />Engineering Deliverables.
+              <h2 className="text-4xl lg:text-6xl font-black tracking-tighter leading-none heading-reveal uppercase mb-6">
+                Standardized Engineering Deliverables.
               </h2>
-            </div>
-            <div className="text-[10px] font-black text-hejaaz-secondary uppercase tracking-[0.3em] bg-hejaaz-surface px-5 py-3 rounded-xl border border-hejaaz-border shadow-sm">
-              Safety First Methodology
+              <div className="text-[10px] font-black text-hejaaz-secondary uppercase tracking-[0.3em] bg-hejaaz-surface px-5 py-3 rounded-xl border border-hejaaz-border shadow-sm inline-block">
+                Safety First Methodology
+              </div>
             </div>
           </div>
 
