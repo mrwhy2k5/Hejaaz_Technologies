@@ -264,7 +264,7 @@ export default function ManualProductDetail({ manual, slug }) {
                     className="relative flex justify-center"
                   >
                     <div className="absolute -inset-4 bg-hejaaz-secondary/5 rounded-[3rem] -z-10" />
-                    <div className="p-0 transition-all max-w-[320px] lg:max-w-sm mx-auto">
+                    <div className="p-0 transition-all max-w-[450px] lg:max-w-xl mx-auto">
                       <img
                         src={manual.calibrationSetup.image}
                         alt="Calibration Interface"
