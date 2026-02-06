@@ -757,7 +757,7 @@
     "slug": "safe-load-indicator-tipper-truck",
     "name": "Safe Load Indicator – Tipper Truck",
     "tagline": "Payload monitoring and tipping stability for heavy trucks",
-    "heroImage": "/images/manuals/sli-tipper-layout.png",
+    "heroImage": "/images/products/tipper-truck.jpg",
     "overview": "The Hejaaz Technologies Tipper Truck SLI (Model TT-SLI / V1.0) is a dedicated safety system designed for dump trucks and tippers. It provides continuous payload monitoring, body position alerts (DALA Raise), and anti-tilt protection to prevent vehicle overturning during discharge and transport operations in mining and construction sites.",
     "systemLayout": {
       "title": "Tipper Truck SLI Configuration",
