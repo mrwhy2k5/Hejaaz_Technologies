@@ -701,15 +701,15 @@
     "slug": "safe-load-indicator-forklift",
     "name": "Safe Load Indicator – Forklift",
     "tagline": "Safety and Stability Monitoring for Forklifts",
-    "heroImage": "/images/manuals/sli-forklift.png",
+    "heroImage": "/images/manuals/sli-forklift-layout.png",
     "overview": "The Hejaaz Forklift Safe Load Indicator provides critical stability monitoring for warehouse and industrial forklifts. By tracking load weight and lift height, it prevents forward tip-overs and ensures operator safety during high-reach maneuvers.",
     "systemLayout": {
-      "title": "Forklift SLI Layout Correct",
-      "image": "/images/manuals/sli-forklift.png",
+      "title": "Forklift SLI System Layout",
+      "image": "/images/manuals/sli-forklift-layout.png",
       "items": [
-        "Display Unit",
-        "Pressure Sensor",
-        "Height Sensor"
+        "Digital Display Unit",
+        "Hydraulic Pressure Sensor",
+        "Mast Height Sensor"
       ]
     },
     "safetyParameters": [
