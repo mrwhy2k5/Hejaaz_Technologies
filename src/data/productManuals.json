@@ -415,7 +415,7 @@
     "calibrationSetup": {
       "title": "Seamless Setup & Smart Control",
       "description": "The Pick & Carry Crane SLI features an integrated on-board display that allows accurate calibration and system configuration directly at the crane. All operating parameters are set locally through the display keypad, ensuring a secure, site-ready setup without external devices.",
-      "image": "/images/manuals/calibration-interface.png",
+      "image": "/images/manuals/sli-display-labels.png",
       "steps": [
         "Multi-Load Calibration: Supports up to 8 independent load points for precision.",
         "Boom Angle Setup: Angle calibration with configurable reference points for radius calculation.",
@@ -540,7 +540,7 @@
     "calibrationSetup": {
       "title": "Seamless Setup & Smart Control",
       "description": "The Crawler Crane SLI is equipped with an integrated on-board display that allows accurate calibration and system configuration directly at the crane. All operating parameters are set locally through the display keypad, ensuring safe, efficient commissioning for heavy-duty crawler crane operations, even in remote or demanding site conditions.",
-      "image": "/images/manuals/calibration-interface.png",
+      "image": "/images/manuals/sli-display-labels.png",
       "steps": [
         "Multi-Load Calibration: Supports up to 8 independent load points for precision.",
         "Boom Angle & Length Setup: Calibration for radius calculation and load moment indicator (LMI).",
