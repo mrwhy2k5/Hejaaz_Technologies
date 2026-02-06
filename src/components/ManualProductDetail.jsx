@@ -198,7 +198,7 @@ export default function ManualProductDetail({ manual, slug }) {
                 <div className="bg-hejaaz-primary p-10 lg:p-14 rounded-[2.5rem] text-white shadow-2xl relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-hejaaz-secondary/20 blur-3xl" />
                   <h3 className="text-[10px] font-black text-hejaaz-secondary uppercase tracking-[0.4em] mb-12">Hardware Inventory</h3>
-                  <div className="space-y-6">
+                  <div className="space-y-6 mb-12">
                     {manual.systemLayout?.items?.map((item, i) => (
                       <div key={i} className="flex items-center gap-6 group">
                         <span className="text-hejaaz-secondary font-black text-[10px] tracking-tighter opacity-50 group-hover:opacity-100 transition-opacity">
@@ -211,6 +211,20 @@ export default function ManualProductDetail({ manual, slug }) {
                       </div>
                     ))}
                   </div>
+
+                  {/* Only show system layout image here if it's different from hero image to avoid repetition */}
+                  {manual.systemLayout?.image && manual.systemLayout.image !== (manual.heroImage || "") && (
+                    <div className="mt-8 relative rounded-2xl overflow-hidden border border-white/10 group/layout">
+                      <img
+                        src={manual.systemLayout.image}
+                        alt="System Schematic"
+                        className="w-full h-auto object-contain bg-white transition-transform duration-700 group-hover/layout:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-hejaaz-primary/20 opacity-0 group-hover/layout:opacity-100 transition-opacity flex items-center justify-center">
+                        <span className="text-[10px] font-black uppercase tracking-[0.3em] bg-hejaaz-secondary px-4 py-2 rounded-lg text-white shadow-xl">Engineering View</span>
+                      </div>
+                    </div>
+                  )}
 
                   <div className="mt-16 pt-10 border-t border-white/10">
                     <Link
