@@ -379,56 +379,112 @@
     "id": "sli-pick-carry-crane",
     "slug": "safe-load-indicator-pick-and-carry-crane",
     "name": "Safe Load Indicator – Pick & Carry Crane",
-    "tagline": "Dynamic Safety for Mobile Loading",
+    "tagline": "Advanced Hydraulic Protection and Display-Based Calibration System",
     "heroImage": "/images/manuals/sli-pick-and-carry.png",
-    "overview": "Specialized SLI for mobile lifting units. Accounts for dynamic forces during travel and ensures the crane operates within safe tipping limits during pick-and-carry maneuvers.",
+    "overview": "The Hejaaz Technologies Pick & Carry Crane SLI (Model SLI-PNC/V1.1) is a comprehensive safety system designed specifically for mobile Pick & Carry crane operations. Featuring real-time load monitoring, Anti-Two-Block protection, and automatic hydraulic cut-off, this system prevents overloading, boom collisions, and unsafe lifting conditions. The integrated 20×4 LCD display enables on-site calibration and configuration without external tools, making it ideal for remote and harsh industrial environments.",
     "systemLayout": {
-      "title": "Pick & Carry Layout Correct",
+      "title": "Pick & Carry SLI System Configuration",
       "image": "/images/manuals/sli-pick-and-carry.png",
       "items": [
-        "Display Unit",
-        "Cable Tension Drum",
-        "Laser Length Sensor",
-        "Pressure Sensor Unit",
-        "Limit Switch Safety",
-        "Contactless Limit Switch"
+        "20×4 LCD Display Unit with Programming Interface",
+        "Pressure Sensors (2-core wire) - Red: +VE, Black: -VE Signal",
+        "Load Cell (4-core wire) - Red: +VE, Black: -VE, White: -VE Signal, Green: +VE Signal",
+        "Cable Tension Drum (5-core wire) - Angle & Length Sensors",
+        "Contactless Limit Switch (A2B Protection)",
+        "Standard Limit Switch for Safety Monitoring",
+        "Hydraulic Cut-Off Relay System",
+        "Alarm Unit with Buzzer and LED Indicators"
       ]
     },
+    "features": [
+      {
+        "title": "Display-Based Control & Calibration",
+        "description": "Complete on-board calibration through 20×4 LCD display with step-by-step guided menus. Configure load calibration (No-Load & Full-Load), Rated Capacity Limiter (RCL) parameters, boom angle/radius setup, with tamper-resistant password-protected access."
+      },
+      {
+        "title": "Real-Time Load Monitoring",
+        "description": "Hydraulic pressure-based sensing combined with load cell measurements provides ±2.5% accuracy. Visual LED indicators show load status at 0%, 85% (warning), and 100% (maximum) of Safe Working Load."
+      },
+      {
+        "title": "Wire Connection System",
+        "description": "Standardized color-coded wiring: Harness Cable (5-core) for main supply, buzzer, hydraulic cut-off. Load Cell (4-core) for precise sensing. Pressure Sensors (2-core) for hydraulic monitoring. Cable Drum (5-core) for angle, length, and A2B signals."
+      },
+      {
+        "title": "Seamless Setup Process",
+        "description": "All crane parameters configured locally through display keypad. Calibration toggling for load, boom length, and boom angle. Safety limits locked after setup. Reliable site-ready operation even in restricted environments."
+      }
+    ],
     "safetyParameters": [
       {
         "icon": "overload",
-        "title": "Dynamic Overload",
-        "description": "Protects against momentum-based tipping."
+        "title": "Safe Working Load (SWL) Cut-Off",
+        "description": "Prevents lifting beyond rated crane capacity. Continuously monitors actual load vs rated SWL, triggers 'OVLD' warning on display, activates buzzer alert at overload condition, and provides automatic hydraulic cut-off to prevent toppling, tyre overload, and structural failure."
       },
       {
-        "icon": "anti-tilt",
-        "title": "Travel Safety",
-        "description": "Inhibits travel if load is unstable."
-      },
-      {
-        "icon": "angle",
-        "title": "Height Control",
-        "description": "Limits boom height for low-clearance travel."
+        "icon": "anti-collision",
+        "title": "Anti-Two-Block (A2B) Indication",
+        "description": "Prevents hook block collision with boom head during lifting operations. Detects minimum safe distance between hook block and boom tip, displays A2B warning on SLI display, activates audible alarm, and automatically stops hoist-up motion to prevent wire rope damage and boom structural failure."
       },
       {
         "icon": "error",
-        "title": "System Check",
-        "description": "Real-time verification of sensor array."
+        "title": "Hydraulic Cut-Off Protection",
+        "description": "Stops unsafe crane movement during critical fault or overload conditions. Automatically cuts off hydraulic functions when SWL is exceeded, A2B condition is active, or unsafe lifting detected. Prevents further hoisting, boom extension, and load instability for fail-safe operation."
+      },
+      {
+        "icon": "display",
+        "title": "Intelligent Display Interface",
+        "description": "20×4 LCD screen displays real-time crane operating data including load percentage, system status, calibration menus, warnings, and fault messages. Features PROG button for calibration access, UP/DOWN arrows for navigation, ENT button for confirmation, and RED bypass button for authorized service use only."
       }
     ],
     "specs": [
       {
-        "param": "Static Accuracy",
-        "value": "±0.5%"
+        "param": "Model Number",
+        "value": "SLI-PNC / V1.1"
       },
       {
-        "param": "Enclosure",
-        "value": "Vibration Resistant IP65"
+        "param": "Power Supply",
+        "value": "12V / 24V DC (Vehicle Battery)"
+      },
+      {
+        "param": "Accuracy",
+        "value": "±2.5% of Full Scale (better with calibration)"
+      },
+      {
+        "param": "Enclosure Rating",
+        "value": "Industrial Grade IP65"
+      },
+      {
+        "param": "Display Unit",
+        "value": "20×4 Character LCD with Backlight"
+      },
+      {
+        "param": "Operating Temperature",
+        "value": "0°C to +60°C"
+      },
+      {
+        "param": "Load Capacity Range",
+        "value": "Configurable (typical Pick & Carry models)"
+      },
+      {
+        "param": "Load Measurement",
+        "value": "Hydraulic Pressure-based sensing + Load Cell"
+      },
+      {
+        "param": "Alarms & Indicators",
+        "value": "Overload alarm, SWL status, A2B warning, buzzer indicator"
+      },
+      {
+        "param": "Safety Features",
+        "value": "Overload cut-off, Anti-Two Block, Hydraulic Cut-off Protection"
+      },
+      {
+        "param": "Calibration Method",
+        "value": "Electronic calibration via operator panel (20×4 LCD)"
       }
     ],
     "compliance": [
       "ISO 9001:2015 CERTIFIED COMPANY",
-      "EXPERTISE IN SAFE LOAD SYSTEMS",
+      "EXPERT IN SAFE LOAD SYSTEMS",
       "INNOVATIVE AND COST-EFFECTIVE SOLUTIONS",
       "STRONG CUSTOMER SUPPORT",
       "PROVEN INDUSTRIAL SAFETY AUTOMATION"
