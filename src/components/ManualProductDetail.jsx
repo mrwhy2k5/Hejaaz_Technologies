@@ -17,7 +17,8 @@ import {
   AlertTriangle,
   Maximize2,
   X,
-  ArrowRight
+  ArrowRight,
+  Wind
 } from 'lucide-react'
 import Layout from './Layout'
 import SeoHead from './SeoHead'
@@ -48,7 +49,7 @@ export default function ManualProductDetail({ manual, slug }) {
     'rope-slack': ArrowDownCircle,
     'error': AlertTriangle,
     'alert': AlertTriangle,
-    'anemometer': Zap,
+    'anemometer': Wind,
     'zap': Zap,
     'power': Zap,
     'radius': Scale,
