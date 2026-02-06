@@ -1,85 +1,110 @@
 [
   {
-    "id": "sli-tower-crane",
-    "name": "Safe Load Indicator – Tower Crane",
-    "slug": "safe-load-indicator-tower-crane",
+    "id": "sli-pick-carry-crane",
+    "name": "Safe Load Indicator – Pick & Carry Crane",
+    "slug": "safe-load-indicator-pick-and-carry-crane",
     "category": "Safe Load Indicator",
-    "tagline": "Precision load monitoring for tower cranes",
-    "overview": "Our Safe Load Indicator (SLI) for Tower Cranes provides real-time load monitoring, radius-based capacity calculation, and overload prevention. Designed for construction and high-rise projects where tower cranes operate at varying radii and heights.",
+    "tagline": "Advanced hydraulic protection and display-based calibration for safe lifting operations",
+    "overview": "The Hejaaz Technologies Pick & Carry Crane SLI (Model SLI-PNC/V1.1) is an advanced safety system designed specifically for Pick & Carry crane operations. It prevents overloading, boom collisions, and unsafe lifting conditions through real-time monitoring and automatic hydraulic cut-off protection. The system features an integrated 20×4 LCD display for on-site calibration and configuration, ensuring reliable operation in remote and harsh environments.",
     "safetyParameters": [
       {
         "icon": "overload",
-        "title": "Moment Limit",
-        "description": "Prevents structural failure by tracking load x radius."
+        "title": "Safe Working Load (SWL) Cut-Off",
+        "description": "Automatic hydraulic cut-off when capacity is exceeded. Prevents toppling and structural failure."
       },
       {
-        "icon": "radius",
-        "title": "Radius Safety",
-        "description": "Automatic cut-off when reaching safe working limits."
+        "icon": "anti-collision",
+        "title": "Anti-Two-Block (A2B) Protection",
+        "description": "Detects hook proximity to boom head. Stops hoist-up motion automatically."
       },
       {
-        "icon": "anemometer",
-        "title": "Wind Monitor",
-        "description": "Continuous velocity tracking for site stability."
+        "icon": "power",
+        "title": "Hydraulic Cut-Off System",
+        "description": "Prevents unsafe crane movement during fault or overload conditions."
       },
       {
-        "icon": "error",
-        "title": "Fault Alert",
-        "description": "Immediate diagnostics for all connected sensors."
+        "icon": "monitor",
+        "title": "Display-Based Calibration",
+        "description": "On-board 20×4 LCD for setup and real-time monitoring without external tools."
       }
     ],
     "systemComponents": [
-      "Load cell / pressure transducer",
-      "Angle sensor",
-      "Length sensor",
-      "Display unit with LCD",
-      "Alarm unit (horn + light)",
-      "Control unit with microcontroller"
+      "Pressure sensors (2-core wire) for load measurement",
+      "Load cell (4-core wire) for precise weight sensing",
+      "Contactless limit switches for position detection",
+      "Cable tension drum with angle and length sensors",
+      "20×4 LCD display unit with backlight",
+      "Industrial-grade control unit (IP65 rated)",
+      "Alarm unit with buzzer and LED indicators",
+      "Hydraulic cut-off relay system"
     ],
-    "workingPrinciple": "The system measures hook load via load cell or boom strain, boom angle via inclinometer, and boom length where applicable. A microprocessor computes the moment (load × radius) and compares it against the crane’s load chart. Visual and audible alarms trigger when approaching or exceeding safe limits.",
+    "workingPrinciple": "The system uses hydraulic pressure-based sensing and load sensors to continuously monitor the actual load on the crane. Combined with boom angle and length measurements, the microprocessor calculates the real-time load percentage against the crane's Safe Working Load (SWL). Visual and audible alarms activate at pre-set warning levels (typically 85% SWL), and automatic hydraulic cut-off engages when limits are exceeded. The Anti-Two-Block system uses contactless limit switches on the cable drum to detect hook proximity to boom head, preventing dangerous collisions.",
     "keyFeatures": [
-      "Real-time load, radius, and moment display",
-      "Configurable overload and warning setpoints",
-      "Data logging and optional connectivity",
-      "Rugged enclosure (IP54+) for site conditions",
-      "Compliance with IS 14475 and similar standards"
+      "Display-based calibration and setup - no external tools required",
+      "Real-time load percentage, system status, and fault messages",
+      "Configurable safety limits through secure on-board menu",
+      "Load calibration with no-load and full-load reference points",
+      "Boom angle and radius configuration for accurate capacity calculation",
+      "Visual LED indicators for load status (0%, 85%, 100%)",
+      "Hydraulic pressure-based sensing with ±2.5% accuracy",
+      "Industrial-grade IP65 enclosure for harsh site conditions",
+      "Tamper-resistant programming access with password protection",
+      "Automatic data validation and fault diagnostics"
     ],
     "specs": [
       {
-        "param": "Load range",
-        "value": "Up to crane capacity"
+        "param": "Model",
+        "value": "SLI-PNC / V1.1"
+      },
+      {
+        "param": "Power Supply",
+        "value": "12V / 24V DC (Vehicle Battery)"
+      },
+      {
+        "param": "Accuracy",
+        "value": "±2.5% of Full Scale"
+      },
+      {
+        "param": "Enclosure Rating",
+        "value": "Industrial Grade IP65"
       },
       {
         "param": "Display",
-        "value": "LCD, sunlight readable"
+        "value": "20×4 Character LCD with Backlight"
       },
       {
-        "param": "Power",
-        "value": "24 V DC / crane supply"
+        "param": "Operating Temperature",
+        "value": "0°C to +60°C"
       },
       {
-        "param": "Enclosure",
-        "value": "IP54"
+        "param": "Load Measurement",
+        "value": "Hydraulic Pressure-based + Load Sensor"
       },
       {
-        "param": "Operating temp",
-        "value": "-10 °C to +55 °C"
+        "param": "Alarms",
+        "value": "Overload, A2B, Unsafe Condition, Buzzer"
+      },
+      {
+        "param": "Calibration",
+        "value": "Electronic via 20×4 LCD Display Panel"
       }
     ],
     "applications": [
-      "Construction sites",
-      "High-rise buildings",
-      "Infrastructure projects",
-      "Precast yards"
+      "Steel yards and fabrication facilities",
+      "Construction and infrastructure projects",
+      "Logistics and material handling operations",
+      "Warehouses and distribution centers",
+      "Precast concrete yards",
+      "Heavy industrial manufacturing"
     ],
     "compliance": [
       "ISO 9001:2015 CERTIFIED COMPANY",
-      "EXPERTISE IN SAFE LOAD SYSTEMS",
+      "EXPERT IN SAFE LOAD SYSTEMS",
       "INNOVATIVE AND COST-EFFECTIVE SOLUTIONS",
       "STRONG CUSTOMER SUPPORT",
       "PROVEN INDUSTRIAL SAFETY AUTOMATION"
     ],
-    "image": "/images/products/tower-crane.jpg"
+    "image": "/images/products/pick-carry-crane.jpg"
   },
   {
     "id": "sli-eot-crane",
@@ -511,111 +536,86 @@
     "image": "/images/products/telescopic-crane.jpg"
   },
   {
-    "id": "sli-pick-carry-crane",
-    "name": "Safe Load Indicator – Pick & Carry Crane",
-    "slug": "safe-load-indicator-pick-and-carry-crane",
+    "id": "sli-tower-crane",
+    "name": "Safe Load Indicator – Tower Crane",
+    "slug": "safe-load-indicator-tower-crane",
     "category": "Safe Load Indicator",
-    "tagline": "Advanced hydraulic protection and display-based calibration for safe lifting operations",
-    "overview": "The Hejaaz Technologies Pick & Carry Crane SLI (Model SLI-PNC/V1.1) is an advanced safety system designed specifically for Pick & Carry crane operations. It prevents overloading, boom collisions, and unsafe lifting conditions through real-time monitoring and automatic hydraulic cut-off protection. The system features an integrated 20×4 LCD display for on-site calibration and configuration, ensuring reliable operation in remote and harsh environments.",
+    "tagline": "Precision load monitoring for tower cranes",
+    "overview": "Our Safe Load Indicator (SLI) for Tower Cranes provides real-time load monitoring, radius-based capacity calculation, and overload prevention. Designed for construction and high-rise projects where tower cranes operate at varying radii and heights.",
     "safetyParameters": [
       {
         "icon": "overload",
-        "title": "Safe Working Load (SWL) Cut-Off",
-        "description": "Automatic hydraulic cut-off when capacity is exceeded. Prevents toppling and structural failure."
+        "title": "Moment Limit",
+        "description": "Prevents structural failure by tracking load x radius."
       },
       {
-        "icon": "anti-collision",
-        "title": "Anti-Two-Block (A2B) Protection",
-        "description": "Detects hook proximity to boom head. Stops hoist-up motion automatically."
+        "icon": "radius",
+        "title": "Radius Safety",
+        "description": "Automatic cut-off when reaching safe working limits."
       },
       {
-        "icon": "power",
-        "title": "Hydraulic Cut-Off System",
-        "description": "Prevents unsafe crane movement during fault or overload conditions."
+        "icon": "anemometer",
+        "title": "Wind Monitor",
+        "description": "Continuous velocity tracking for site stability."
       },
       {
-        "icon": "monitor",
-        "title": "Display-Based Calibration",
-        "description": "On-board 20×4 LCD for setup and real-time monitoring without external tools."
+        "icon": "error",
+        "title": "Fault Alert",
+        "description": "Immediate diagnostics for all connected sensors."
       }
     ],
     "systemComponents": [
-      "Pressure sensors (2-core wire) for load measurement",
-      "Load cell (4-core wire) for precise weight sensing",
-      "Contactless limit switches for position detection",
-      "Cable tension drum with angle and length sensors",
-      "20×4 LCD display unit with backlight",
-      "Industrial-grade control unit (IP65 rated)",
-      "Alarm unit with buzzer and LED indicators",
-      "Hydraulic cut-off relay system"
+      "Load cell / pressure transducer",
+      "Angle sensor",
+      "Length sensor",
+      "Display unit with LCD",
+      "Alarm unit (horn + light)",
+      "Control unit with microcontroller"
     ],
-    "workingPrinciple": "The system uses hydraulic pressure-based sensing and load sensors to continuously monitor the actual load on the crane. Combined with boom angle and length measurements, the microprocessor calculates the real-time load percentage against the crane's Safe Working Load (SWL). Visual and audible alarms activate at pre-set warning levels (typically 85% SWL), and automatic hydraulic cut-off engages when limits are exceeded. The Anti-Two-Block system uses contactless limit switches on the cable drum to detect hook proximity to boom head, preventing dangerous collisions.",
+    "workingPrinciple": "The system measures hook load via load cell or boom strain, boom angle via inclinometer, and boom length where applicable. A microprocessor computes the moment (load × radius) and compares it against the crane’s load chart. Visual and audible alarms trigger when approaching or exceeding safe limits.",
     "keyFeatures": [
-      "Display-based calibration and setup - no external tools required",
-      "Real-time load percentage, system status, and fault messages",
-      "Configurable safety limits through secure on-board menu",
-      "Load calibration with no-load and full-load reference points",
-      "Boom angle and radius configuration for accurate capacity calculation",
-      "Visual LED indicators for load status (0%, 85%, 100%)",
-      "Hydraulic pressure-based sensing with ±2.5% accuracy",
-      "Industrial-grade IP65 enclosure for harsh site conditions",
-      "Tamper-resistant programming access with password protection",
-      "Automatic data validation and fault diagnostics"
+      "Real-time load, radius, and moment display",
+      "Configurable overload and warning setpoints",
+      "Data logging and optional connectivity",
+      "Rugged enclosure (IP54+) for site conditions",
+      "Compliance with IS 14475 and similar standards"
     ],
     "specs": [
       {
-        "param": "Model",
-        "value": "SLI-PNC / V1.1"
-      },
-      {
-        "param": "Power Supply",
-        "value": "12V / 24V DC (Vehicle Battery)"
-      },
-      {
-        "param": "Accuracy",
-        "value": "±2.5% of Full Scale"
-      },
-      {
-        "param": "Enclosure Rating",
-        "value": "Industrial Grade IP65"
+        "param": "Load range",
+        "value": "Up to crane capacity"
       },
       {
         "param": "Display",
-        "value": "20×4 Character LCD with Backlight"
+        "value": "LCD, sunlight readable"
       },
       {
-        "param": "Operating Temperature",
-        "value": "0°C to +60°C"
+        "param": "Power",
+        "value": "24 V DC / crane supply"
       },
       {
-        "param": "Load Measurement",
-        "value": "Hydraulic Pressure-based + Load Sensor"
+        "param": "Enclosure",
+        "value": "IP54"
       },
       {
-        "param": "Alarms",
-        "value": "Overload, A2B, Unsafe Condition, Buzzer"
-      },
-      {
-        "param": "Calibration",
-        "value": "Electronic via 20×4 LCD Display Panel"
+        "param": "Operating temp",
+        "value": "-10 °C to +55 °C"
       }
     ],
     "applications": [
-      "Steel yards and fabrication facilities",
-      "Construction and infrastructure projects",
-      "Logistics and material handling operations",
-      "Warehouses and distribution centers",
-      "Precast concrete yards",
-      "Heavy industrial manufacturing"
+      "Construction sites",
+      "High-rise buildings",
+      "Infrastructure projects",
+      "Precast yards"
     ],
     "compliance": [
       "ISO 9001:2015 CERTIFIED COMPANY",
-      "EXPERT IN SAFE LOAD SYSTEMS",
+      "EXPERTISE IN SAFE LOAD SYSTEMS",
       "INNOVATIVE AND COST-EFFECTIVE SOLUTIONS",
       "STRONG CUSTOMER SUPPORT",
       "PROVEN INDUSTRIAL SAFETY AUTOMATION"
     ],
-    "image": "/images/products/pick-carry-crane.jpg"
+    "image": "/images/products/tower-crane.jpg"
   },
   {
     "id": "sli-forklift",
