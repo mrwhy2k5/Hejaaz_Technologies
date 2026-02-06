@@ -782,12 +782,14 @@
     ],
     "calibrationSetup": {
       "title": "Seamless Setup & Smart Control",
+      "description": "The Tipper Truck SLI is configured via the cab-mounted industrial display. Authorized technicians can zero the payload and tilt sensors, set DALA raise alert logic, and configure overload thresholds directly through the keypad interface, ensuring reliable safety monitoring in mining and haulier operations.",
       "image": "/images/manuals/sli-display-labels.png",
-      "items": [
-        "Payload Calibration: Zero and Span setting for axle/chassis load.",
-        "DALA Raise Logic: Configuration of buzzer alerts for raised body.",
-        "Tilt Zeroing: Calibration of the MEMS sensor on level ground.",
-        "Alarm Thresholds: Custom setpoints for ±7° tilt and max payload."
+      "steps": [
+        "Payload Calibration: Zero and Span setting for axle/chassis load calibration.",
+        "DALA Raise Logic: Configuration of buzzer alerts and display status for raised body.",
+        "Tilt Zeroing: Calibration of the MEMS tilt sensor while vehicle is on level ground.",
+        "Alarm Thresholds: Custom setpoints for ±7° tilt warning and max payload capacity.",
+        "Toggling Options: Interface buttons to enable/disable specific safety parameters for site-specific maintenance."
       ]
     },
     "safetyParameters": [
