@@ -414,6 +414,17 @@
         "description": "All crane parameters configured locally through display keypad. Calibration toggling for load, boom length, and boom angle. Safety limits locked after setup. Reliable site-ready operation even in restricted environments."
       }
     ],
+    "calibrationSetup": {
+      "title": "Seamless Setup & Smart Control",
+      "description": "The Pick & Carry Crane SLI features an integrated on-board display that allows accurate calibration and system configuration directly at the crane. All operating parameters are set locally through the display keypad, ensuring a secure, site-ready setup without external devices.",
+      "image": "/images/manuals/calibration-interface.png",
+      "steps": [
+        "Multi-Load Calibration: Supports up to 8 independent load points for precision.",
+        "Boom Angle Setup: Angle calibration with configurable reference points for radius calculation.",
+        "Safety Configuration: Input for SWL, A2B, and hydraulic cut-off limits.",
+        "Toggling Options: Interface buttons to enable/disable safety parameters."
+      ]
+    },
     "safetyParameters": [
       {
         "icon": "overload",
@@ -529,6 +540,17 @@
         "description": "Standardized 4-core load cell wiring: Red (+VE), Black (-VE), White (-VE Signal), Green (+VE Signal). Complete wire specifications for anemometer, tower lamp, limit switches, and hydraulic cut-off relay integration."
       }
     ],
+    "calibrationSetup": {
+      "title": "Seamless Setup & Smart Control",
+      "description": "The Crawler Crane SLI is equipped with an integrated on-board display that allows accurate calibration and system configuration directly at the crane. All operating parameters are set locally through the display keypad, ensuring safe, efficient commissioning for heavy-duty crawler crane operations, even in remote or demanding site conditions.",
+      "image": "/images/manuals/calibration-interface.png",
+      "steps": [
+        "Multi-Load Calibration: Supports up to 8 independent load points for precision.",
+        "Boom Angle & Length Setup: Calibration for radius calculation and load moment indicator (LMI).",
+        "Safety Configuration: Input for SWL, load moment limits, and wind speed thresholds.",
+        "Toggling Options: Interface buttons to enable/disable safety parameters."
+      ]
+    },
     "safetyParameters": [
       {
         "icon": "overload",
