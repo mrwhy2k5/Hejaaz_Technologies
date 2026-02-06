@@ -141,11 +141,11 @@ export default function ManualProductDetail({ manual, slug }) {
                   onClick={() => setIsZoomed(true)}
                 >
                   <div className="absolute inset-0 bg-hejaaz-secondary/10 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="relative rounded-3xl p-4 lg:p-6 transition-all duration-500">
+                  <div className="relative rounded-[2.5rem] p-4 lg:p-6 bg-white dark:bg-zinc-900 shadow-2xl border border-hejaaz-border/50 overflow-hidden transition-all duration-500">
                     <img
                       src={manual.heroImage || manual.systemLayout?.image || "/images/products/placeholder.svg"}
                       alt={manual.name}
-                      className="w-full h-auto object-contain max-h-[700px] transition-all duration-700 group-hover:scale-105"
+                      className="w-full h-auto object-contain max-h-[700px] rounded-2xl transition-all duration-700 group-hover:scale-105"
                     />
                     <div className="absolute top-6 right-6 p-3 bg-hejaaz-secondary text-white rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-all scale-90 group-hover:scale-100">
                       <Maximize2 size={18} />

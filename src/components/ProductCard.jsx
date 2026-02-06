@@ -23,7 +23,7 @@ export default function ProductCard({ product, index = 0 }) {
       >
         <div className="card-premium h-full flex flex-col group/card">
           {/* Image Container - Neutral Frame */}
-          <div className="aspect-[4/3] flex items-center justify-center relative overflow-hidden transition-colors duration-300">
+          <div className="aspect-[4/3] flex items-center justify-center relative overflow-hidden rounded-2xl m-3 transition-colors duration-300">
             <img
               src={product.image || '/images/products/placeholder.svg'}
               alt=""
