@@ -293,73 +293,117 @@
     "name": "Safe Load Indicator – Crawler Crane",
     "slug": "safe-load-indicator-crawler-crane",
     "category": "Safe Load Indicator",
-    "tagline": "Heavy Duty Stability for Lattice Structures",
-    "overview": "The SLI for Crawler Cranes supports lattice and telescopic boom crawlers used in civil, infrastructure, and heavy lifting. It provides load moment indication (LMI), radius, and boom angle with overload protection.",
+    "tagline": "Advanced Load Moment Limiter with Wind Monitoring for Heavy-Duty Operations",
+    "overview": "The Hejaaz Technologies Crawler Crane SLI (Model SLI-XGC400-I) is a comprehensive Load Moment Indicator (LMI) system designed for lattice and telescopic boom crawler cranes. It provides real-time load moment calculation, wind speed monitoring, and automatic hydraulic cut-off protection to prevent structural overload and ensure safe heavy-lifting operations in demanding site conditions.",
     "safetyParameters": [
       {
-        "icon": "radius",
-        "title": "Moment Guard",
-        "description": "Real-time tracking of load vs. lattice extension."
-      },
-      {
-        "icon": "anti-tilt",
-        "title": "Level Sensor",
-        "description": "Monitoring for ground stability and chassis level."
-      },
-      {
-        "icon": "angle",
-        "title": "Angle Safety",
-        "description": "Verification of boom positioning against chart."
-      },
-      {
         "icon": "overload",
-        "title": "Winch Protection",
-        "description": "Immediate lockout on capacity threshold."
+        "title": "Safe Working Load (SWL) Cut-Off",
+        "description": "Monitors lifted load against rated SWL. Automatic hydraulic cut-off during overload considering boom length, angle, radius, and configuration."
+      },
+      {
+        "icon": "radius",
+        "title": "Load Moment Limiter (LML)",
+        "description": "Calculates load moment using load and operating radius. Prevents crane tipping and boom overstress with hydraulic cut-off."
+      },
+      {
+        "icon": "anemometer",
+        "title": "Wind Speed Monitoring",
+        "description": "Real-time wind monitoring with automatic lifting restrictions during high wind to prevent load swing and instability."
+      },
+      {
+        "icon": "power",
+        "title": "Hydraulic Cut-Off & Operating Control",
+        "description": "Automatic cut-off when SWL exceeded, load moment limit reached, or unsafe track/slew/wind conditions detected."
       }
     ],
     "systemComponents": [
-      "Load cell / pressure sensor",
-      "Boom angle sensor",
-      "Boom length sensor",
-      "Slew angle sensor (optional)",
-      "LMI display",
-      "Alarm unit"
+      "Angle tilting sensor for boom positioning",
+      "Load sensor for precise weight measurement",
+      "Anemometer for wind speed monitoring",
+      "Tower lamp for visual warnings",
+      "Contactless limit switch (A2B protection)",
+      "Standard limit switch for safety monitoring",
+      "20×4 LCD display unit with backlight",
+      "Industrial-grade control unit (IP65 rated)",
+      "Alarm unit with buzzer and LED indicators",
+      "Hydraulic cut-off relay system"
     ],
-    "workingPrinciple": "Load, boom angle, length, and optional slew are measured continuously. The LMI computer uses the crane’s load chart to compute allowable load vs. actual load. Alarms and cutoffs activate when limits are exceeded.",
+    "workingPrinciple": "The system continuously monitors lifted load, boom angle, boom length, and operating radius. The microprocessor calculates the real-time load moment and compares it against the crane's rated capacity considering the current configuration. Wind speed is monitored through an anemometer, and the system automatically restricts operations when permissible limits are exceeded. Visual and audible alarms activate as limits are approached, and automatic hydraulic cut-off engages to prevent hoisting, slewing, and travel during unsafe conditions.",
     "keyFeatures": [
-      "Full LMI with load chart compliance",
-      "Multi-configuration support (boom combinations)",
-      "Outdoor-rated display and sensors",
-      "Optional data logger and telematics"
+      "Display-based calibration and setup - no external tools required",
+      "Step-by-step guided calibration menus for boom angle and length",
+      "Load calibration with no-load and full-load reference points",
+      "Rated Capacity Limiter (RCL) parameter configuration",
+      "Real-time load, radius, and safety status display",
+      "Wind speed monitoring with configurable limits",
+      "Load moment calculation based on boom configuration",
+      "Hydraulic pressure-based sensing with ±2.5% accuracy",
+      "Visual LED indicators for load status (0%, 85%, 100%)",
+      "Industrial-grade IP65 enclosure for harsh site conditions",
+      "Secure, tamper-resistant programming access"
     ],
     "specs": [
       {
-        "param": "Load range",
-        "value": "As per crane"
+        "param": "Model",
+        "value": "SLI-XGC400-I"
+      },
+      {
+        "param": "Power Supply",
+        "value": "12V / 24V DC (Vehicle Battery)"
+      },
+      {
+        "param": "Accuracy",
+        "value": "±2.5% of Full Scale (better with calibration)"
+      },
+      {
+        "param": "Enclosure Rating",
+        "value": "Industrial Grade IP65"
       },
       {
         "param": "Display",
-        "value": "Sunlight-readable LCD"
+        "value": "20×4 Character LCD with Backlight"
       },
       {
-        "param": "Enclosure",
-        "value": "IP54 / IP65"
+        "param": "Operating Temperature",
+        "value": "-10°C to +60°C"
       },
       {
-        "param": "Operating temp",
-        "value": "-20 °C to +55 °C"
+        "param": "Wind Speed Input",
+        "value": "Configurable as per crawler crane model & OEM load chart"
+      },
+      {
+        "param": "Load Capacity Range",
+        "value": "Configurable as per crane model & OEM load chart"
+      },
+      {
+        "param": "Load Measurement",
+        "value": "Hydraulic pressure-based sensing + Load Sensor"
+      },
+      {
+        "param": "Alarms",
+        "value": "Overload, SWL status, A2B, Wind warning, Buzzer"
+      },
+      {
+        "param": "Safety Features",
+        "value": "SWL cut-off, Load Moment Limiter (LML), A2B, Hydraulic cut-off"
+      },
+      {
+        "param": "Calibration",
+        "value": "Electronic via 20×4 LCD Display Panel"
       }
     ],
     "applications": [
-      "Civil construction",
-      "Wind turbine erection",
-      "Heavy lifting",
-      "Refineries",
-      "Power projects"
+      "Civil construction and infrastructure projects",
+      "Wind turbine installation and erection",
+      "Heavy industrial lifting operations",
+      "Refinery and petrochemical facilities",
+      "Power plant construction",
+      "Bridge and tunnel construction"
     ],
     "compliance": [
       "ISO 9001:2015 CERTIFIED COMPANY",
-      "EXPERTISE IN SAFE LOAD SYSTEMS",
+      "EXPERT IN SAFE LOAD SYSTEMS",
       "INNOVATIVE AND COST-EFFECTIVE SOLUTIONS",
       "STRONG CUSTOMER SUPPORT",
       "PROVEN INDUSTRIAL SAFETY AUTOMATION"
