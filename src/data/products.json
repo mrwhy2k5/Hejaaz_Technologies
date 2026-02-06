@@ -713,85 +713,100 @@
     "name": "Safe Load Indicator – Tipper Truck",
     "slug": "safe-load-indicator-tipper-truck",
     "category": "Safe Load Indicator",
-    "tagline": "Payload monitoring for tippers and dump trucks",
-    "overview": "The Tipper Truck SLI measures payload using load cells on the chassis or axle. It helps prevent overloading, ensures compliance with transport regulations, and optimises loading cycles at quarries, mines, and construction sites.",
+    "tagline": "Payload monitoring and tipping stability for heavy trucks",
+    "overview": "The Hejaaz Technologies Tipper Truck SLI (Model TT-SLI / V1.0) is a dedicated safety system designed for dump trucks and tippers. It provides continuous payload monitoring, body position alerts (DALA Raise), and anti-tilt protection to prevent vehicle overturning during discharge and transport operations in mining and construction sites.",
     "safetyParameters": [
       {
+        "icon": "alert",
+        "title": "DALA Raise Alarm",
+        "description": "Detects raised tipper body. Triggers buzzer and display status to prevent travel with body raised."
+      },
+      {
         "icon": "overload",
-        "title": "Axle Loading",
-        "description": "Prevents road-legal limits from being exceeded."
+        "title": "Overload Protection",
+        "description": "Continuous load monitoring. Changes tower lamp from Green to Red and displays warning during overload."
       },
       {
         "icon": "anti-tilt",
-        "title": "Chassis Level",
-        "description": "Monitors tilt during tipping to avoid roll-over."
-      },
-      {
-        "icon": "error",
-        "title": "Load Variance",
-        "description": "Detects uneven load distribution on wheels."
-      },
-      {
-        "icon": "anemometer",
-        "title": "Speed Guard",
-        "description": "Optional alert if traveling with raised body."
+        "title": "Anti-Tilt Indicator",
+        "description": "Monitors chassis tilt angle. Triggers buzzer and warning if tilt exceeds ±7° to prevent overturning."
       }
     ],
     "systemComponents": [
-      "Load cells (chassis/axle)",
-      "Display unit (cab)",
-      "Optional printer / connectivity"
+      "Load cell for precise payload measurement",
+      "MEMS tilt sensor for chassis stability",
+      "DALA body raise sensor",
+      "20×4 LCD display unit for cab mounting",
+      "Tower lamp (Green/Red) status indicator",
+      "Industrial-grade control unit (IP65 rated)",
+      "Audible buzzer for safety alerts"
     ],
-    "workingPrinciple": "Load cells measure the weight on the axle(s) or chassis. Tare is stored; when loaded, net payload is displayed. The system can trigger alerts when legal or site-specific limits are exceeded.",
+    "workingPrinciple": "The system monitors payload weight via load cells and truck tilt via a MEMS-based inclinometer. It also tracks the tipper body (DALA) status. A microprocessor compares real-time data against safety limits (±7° tilt and rated load). Overload conditions trigger a red tower lamp and cab display warning, while a raised body or excessive tilt activates the audible buzzer to ensure safe discharge and travel.",
     "keyFeatures": [
-      "Gross, tare, and net weight display",
-      "Overload warning vs. legal limits",
-      "Rugged for mining and quarry use",
-      "Optional RFID, printer, or fleet link"
+      "Gross, tare, and net payload weight display",
+      "DALA body-up detection and alarm logic",
+      "±7° tilt angle monitoring and safety lockout",
+      "Tower lamp status (Green: Safe | Red: Overload)",
+      "Cab-mounted 20×4 LCD interface",
+      "Rugged IP65 design for mining environments",
+      "Electronic on-board calibration",
+      "Up to 55-ton capacity monitoring"
     ],
     "specs": [
       {
-        "param": "Capacity",
-        "value": "Up to 50 T typical"
+        "param": "Model",
+        "value": "TT-SLI / V1.0"
+      },
+      {
+        "param": "Power Supply",
+        "value": "12V / 24V DC (Vehicle Battery)"
       },
       {
         "param": "Accuracy",
-        "value": "±1–2% F.S."
+        "value": "±10% of Full Scale"
       },
       {
-        "param": "Display",
-        "value": "Cab-mount LCD"
+        "param": "Load Capacity",
+        "value": "Up to 55 Tons (Configurable)"
       },
       {
-        "param": "Power",
-        "value": "12 / 24 V DC"
+        "param": "Enclosure Rating",
+        "value": "Industrial Grade IP65"
+      },
+      {
+        "param": "Operating Temp",
+        "value": "Up to 55 °C"
+      },
+      {
+        "param": "Sensors",
+        "value": "Load Cell, MEMS Tilt, DALA Sensor"
+      },
+      {
+        "param": "Calibration",
+        "value": "Electronic via 20×4 LCD Display"
       }
     ],
     "applications": [
       {
         "id": "mining",
-        "name": "Mining"
+        "name": "Mining Operations"
       },
       {
         "id": "quarries",
-        "name": "Quarries"
+        "name": "Quarries & Aggregates"
       },
       {
         "id": "construction",
-        "name": "Construction"
+        "name": "Civil Construction"
       },
       {
-        "id": "aggregate-transport",
-        "name": "Aggregate Transport"
-      },
-      {
-        "id": "dams-and-earthwork",
-        "name": "Dams and Earthwork"
+        "id": "dams",
+        "name": "Dams & Earthwork"
       }
     ],
     "compliance": [
       "ISO 9001:2015 CERTIFIED COMPANY",
-      "EXPERTISE IN SAFE LOAD SYSTEMS",
+      "EXPERT IN SAFE LOAD SYSTEMS",
       "INNOVATIVE AND COST-EFFECTIVE SOLUTIONS",
       "STRONG CUSTOMER SUPPORT",
       "PROVEN INDUSTRIAL SAFETY AUTOMATION"

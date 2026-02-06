@@ -756,57 +756,101 @@
     "id": "sli-tipper-truck",
     "slug": "safe-load-indicator-tipper-truck",
     "name": "Safe Load Indicator – Tipper Truck",
-    "tagline": "Axle Load and Tipping Stability System",
-    "heroImage": "/images/manuals/tipper-schematic.png",
-    "overview": "Advanced payload monitoring and tipping safety for heavy dump trucks and tippers. Prevents overloading and ensures chassis stability during discharge operations in mines and construction sites.",
+    "tagline": "Payload monitoring and tipping stability for heavy trucks",
+    "heroImage": "/images/products/tipper-truck.jpg",
+    "overview": "The Hejaaz Technologies Tipper Truck SLI (Model TT-SLI / V1.0) is a dedicated safety system designed for dump trucks and tippers. It provides continuous payload monitoring, body position alerts (DALA Raise), and anti-tilt protection to prevent vehicle overturning during discharge and transport operations in mining and construction sites.",
     "systemLayout": {
-      "title": "Tipper SLI System Layout",
-      "image": "/images/manuals/tipper-schematic.png",
+      "title": "Tipper Truck SLI Configuration",
+      "image": "/images/products/tipper-truck.jpg",
       "items": [
-        "Main Display",
-        "Buzzer/Alarm Unit",
-        "External Indicator Lights",
-        "Anti-Tilt Sensor (+5/-5 Deg)",
-        "Proximity Sensor",
-        "Load Sensor 1",
-        "Load Sensor 2"
+        "20×4 LCD Display (Cab Unit)",
+        "MEMS Tilt Sensor (Chassis Mounting)",
+        "Load Cell (Precise Payload Sensing)",
+        "DALA Body Raise Sensor",
+        "Tower Lamp (Status Indicator)",
+        "Industrial Grade Control Hub (IP65)"
+      ]
+    },
+    "features": [
+      "Real-time Gross, Tare, and Net weight display",
+      "Tipper Body (DALA) raised position audible alert",
+      "Anti-Tilt monitoring with ±7° safety threshold",
+      "Dual-color Tower Lamp (Green for Safe, Red for Overload)",
+      "Rugged IP65 enclosure for high-dust mining environments",
+      "On-board LCD calibration - no laptop required"
+    ],
+    "calibrationSetup": {
+      "title": "Seamless Setup & Smart Control",
+      "image": "/images/manuals/sli-display-labels.png",
+      "items": [
+        "Payload Calibration: Zero and Span setting for axle/chassis load.",
+        "DALA Raise Logic: Configuration of buzzer alerts for raised body.",
+        "Tilt Zeroing: Calibration of the MEMS sensor on level ground.",
+        "Alarm Thresholds: Custom setpoints for ±7° tilt and max payload."
       ]
     },
     "safetyParameters": [
       {
+        "icon": "alert",
+        "title": "DALA Raise Alarm",
+        "description": "Monitors the status of the tipper body. If raised, status shows on display and buzzer sounds."
+      },
+      {
         "icon": "overload",
-        "title": "Payload Safety",
-        "description": "Prevents road-legal limits violation."
+        "title": "Overload Monitoring",
+        "description": "Continuous load check. Triggers Red light and Display warning if limit exceeded."
       },
       {
         "icon": "anti-tilt",
-        "title": "Roll-Over Guard",
-        "description": "Monitors tilt during body raise."
-      },
-      {
-        "icon": "error",
-        "title": "Axle Balance",
-        "description": "Detects uneven load distribution."
-      },
-      {
-        "icon": "anemometer",
-        "title": "Speed Interlock",
-        "description": "Alerts if moving with body raised."
+        "title": "Anti-Tilt Protection",
+        "description": "Monitors truck tilt. Warning on display and buzzer activated at ±7° angle."
       }
     ],
     "specs": [
       {
-        "param": "Load Capacity",
-        "value": "Up to 5 T"
+        "param": "Model",
+        "value": "TT-SLI / V1.0"
       },
       {
         "param": "Power Supply",
-        "value": "12/24V Vehicle DC"
+        "value": "12V / 24V DC (Vehicle Battery)"
+      },
+      {
+        "param": "Accuracy",
+        "value": "±10% of Full Scale"
+      },
+      {
+        "param": "No. of Inputs",
+        "value": "Load Cell, Tilt Sensor, DALA Sensor"
+      },
+      {
+        "param": "No. of Outputs",
+        "value": "2 Outputs (Lamp & Buzzer)"
+      },
+      {
+        "param": "Enclosure",
+        "value": "Industrial Grade (IP65)"
+      },
+      {
+        "param": "Load Capacity",
+        "value": "Up to 55 Tons (Configurable)"
+      },
+      {
+        "param": "Tilt Measurement",
+        "value": "MEMS Tilt Sensor"
+      },
+      {
+        "param": "Operating Temp",
+        "value": "Up to 55 °C"
+      },
+      {
+        "param": "Calibration",
+        "value": "20×4 LCD Display Panel"
       }
     ],
     "compliance": [
       "ISO 9001:2015 CERTIFIED COMPANY",
-      "EXPERTISE IN SAFE LOAD SYSTEMS",
+      "EXPERT IN SAFE LOAD SYSTEMS",
       "INNOVATIVE AND COST-EFFECTIVE SOLUTIONS",
       "STRONG CUSTOMER SUPPORT",
       "PROVEN INDUSTRIAL SAFETY AUTOMATION"
