@@ -380,20 +380,18 @@
     "slug": "safe-load-indicator-pick-and-carry-crane",
     "name": "Safe Load Indicator – Pick & Carry Crane",
     "tagline": "Advanced Hydraulic Protection and Display-Based Calibration System",
-    "heroImage": "/images/manuals/sli-pick-and-carry.png",
+    "heroImage": "/images/manuals/sli-pick-carry-layout.png",
     "overview": "The Hejaaz Technologies Pick & Carry Crane SLI (Model SLI-PNC/V1.1) is a comprehensive safety system designed specifically for mobile Pick & Carry crane operations. Featuring real-time load monitoring, Anti-Two-Block protection, and automatic hydraulic cut-off, this system prevents overloading, boom collisions, and unsafe lifting conditions. The integrated 20×4 LCD display enables on-site calibration and configuration without external tools, making it ideal for remote and harsh industrial environments.",
     "systemLayout": {
       "title": "Pick & Carry SLI System Configuration",
-      "image": "/images/manuals/sli-pick-and-carry.png",
+      "image": "/images/manuals/sli-pick-carry-layout.png",
       "items": [
-        "20×4 LCD Display Unit with Programming Interface",
-        "Pressure Sensors (2-core wire) - Red: +VE, Black: -VE Signal",
-        "Load Cell (4-core wire) - Red: +VE, Black: -VE, White: -VE Signal, Green: +VE Signal",
-        "Cable Tension Drum (5-core wire) - Angle & Length Sensors",
-        "Contactless Limit Switch (A2B Protection)",
-        "Standard Limit Switch for Safety Monitoring",
-        "Hydraulic Cut-Off Relay System",
-        "Alarm Unit with Buzzer and LED Indicators"
+        "Cable Tension Drum (Angle & Length Sensors)",
+        "20×4 LCD Display Unit with Keys",
+        "Pressure Sensor (Hoist Monitoring)",
+        "Pressure Sensor (Load Monitoring)",
+        "Standard Limit Switch (Safety Monitoring)",
+        "Contactless Limit Switch (A2B Protection)"
       ]
     },
     "features": [
@@ -506,20 +504,19 @@
     "slug": "safe-load-indicator-crawler-crane",
     "name": "Safe Load Indicator – Crawler Crane",
     "tagline": "Advanced Load Moment Limiter with Wind Speed Monitoring System",
-    "heroImage": "/images/manuals/sli-crawler.png",
+    "heroImage": "/images/manuals/sli-crawler-layout.png",
     "overview": "The Hejaaz Technologies Crawler Crane SLI (Model SLI-XGC400-I) is engineered for heavy-duty lattice and telescopic boom crawler cranes. Featuring comprehensive Load Moment Indicator (LMI) functionality, real-time wind speed monitoring, and display-based calibration, this system manages massive moment calculations and ensures ground stability during stationary and travelling lifts in demanding construction environments.",
     "systemLayout": {
       "title": "Crawler Crane SLI System Configuration",
-      "image": "/images/manuals/sli-crawler.png",
+      "image": "/images/manuals/sli-crawler-layout.png",
       "items": [
-        "Angle Tilting Sensor - Boom position monitoring",
-        "Load Sensor (4-core wire) - Red: +VE, Black: -VE, White: -VE Signal, Green: +VE Signal",
-        "Anemometer Unit - Wind speed monitoring",
-        "Tower Lamp - Visual warning indicator",
-        "20×4 LCD Display Unit with Programming Interface",
-        "Contactless Limit Switch (A2B Protection)",
-        "Standard Limit Switch for Safety Monitoring",
-        "Hydraulic Cut-Off Relay System"
+        "Anemometer (Wind Speed Monitoring)",
+        "Tower Lamp (Warning Indicator)",
+        "Load Sensor (Precise Weight Sensing)",
+        "Angle Tilting Sensor (Boom Monitoring)",
+        "20×4 LCD Display Unit with Backlight",
+        "Standard Limit Switch (Safety Monitoring)",
+        "Contactless Limit Switch (A2B Protection)"
       ]
     },
     "features": [
