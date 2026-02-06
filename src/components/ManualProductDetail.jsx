@@ -44,13 +44,17 @@ export default function ManualProductDetail({ manual, slug }) {
     'shield': Shield,
     'anti-tilt': Activity,
     'activity': Activity,
+    'anti-collision': AlertTriangle,
     'rope-slack': ArrowDownCircle,
     'error': AlertTriangle,
     'alert': AlertTriangle,
     'anemometer': Zap,
     'zap': Zap,
+    'power': Zap,
     'radius': Scale,
-    'angle': Monitor,
+    'angle': Maximize2,
+    'monitor': Monitor,
+    'display': Monitor,
     'hook': ArrowDownCircle,
   }
 
