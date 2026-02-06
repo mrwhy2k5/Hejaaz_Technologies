@@ -453,22 +453,22 @@
       {
         "icon": "overload",
         "title": "Safe Working Load (SWL) Cut-Off",
-        "description": "Prevents lifting beyond rated capacity. Continuously monitors actual load vs rated SWL, triggers overload warning on digital display, activates buzzer alert, and provides automatic hydraulic cut-off to prevent toppling, tyre overload, and structural failure."
+        "description": "Automatic hydraulic cut-off when capacity is exceeded. Prevents toppling and structural failure."
       },
       {
         "icon": "anti-collision",
         "title": "Anti-Two-Block (A2B) Protection",
-        "description": "Prevents hook block collision with boom head during lifting. Detects minimum safe distance between hook block and boom tip, displays A2B warning, activates audible alarm, and automatically stops hoist-up motion to prevent wire rope damage and boom failure."
+        "description": "Detects hook proximity to boom head. Stops hoist-up motion automatically."
       },
       {
-        "icon": "error",
-        "title": "Hydraulic Cut-Off Protection",
-        "description": "Stops unsafe crane movement during critical fault or overload conditions. Cuts off hydraulic functions when SWL is exceeded, A2B condition is active, or unsafe lifting condition is detected. Prevents further hoisting, boom extension, and load instability."
+        "icon": "power",
+        "title": "Hydraulic Cut-Off System",
+        "description": "Prevents unsafe crane movement during fault or overload conditions."
       },
       {
-        "icon": "display",
+        "icon": "monitor",
         "title": "Display-Based Calibration",
-        "description": "Integrated on-board display enables direct calibration and configuration. Step-by-step guided menus for load calibration, rated capacity limiter settings, boom angle and radius configuration, with real-time status display and tamper-resistant access."
+        "description": "On-board 20×4 LCD for setup and real-time monitoring without external tools."
       }
     ],
     "systemComponents": [

@@ -418,22 +418,22 @@
       {
         "icon": "overload",
         "title": "Safe Working Load (SWL) Cut-Off",
-        "description": "Prevents lifting beyond rated crane capacity. Continuously monitors actual load vs rated SWL, triggers 'OVLD' warning on display, activates buzzer alert at overload condition, and provides automatic hydraulic cut-off to prevent toppling, tyre overload, and structural failure."
+        "description": "Automatic hydraulic cut-off when capacity is exceeded. Prevents toppling and structural failure."
       },
       {
         "icon": "anti-collision",
-        "title": "Anti-Two-Block (A2B) Indication",
-        "description": "Prevents hook block collision with boom head during lifting operations. Detects minimum safe distance between hook block and boom tip, displays A2B warning on SLI display, activates audible alarm, and automatically stops hoist-up motion to prevent wire rope damage and boom structural failure."
+        "title": "Anti-Two-Block (A2B) Protection",
+        "description": "Detects hook proximity to boom head. Stops hoist-up motion automatically."
       },
       {
-        "icon": "error",
-        "title": "Hydraulic Cut-Off Protection",
-        "description": "Stops unsafe crane movement during critical fault or overload conditions. Automatically cuts off hydraulic functions when SWL is exceeded, A2B condition is active, or unsafe lifting detected. Prevents further hoisting, boom extension, and load instability for fail-safe operation."
+        "icon": "power",
+        "title": "Hydraulic Cut-Off System",
+        "description": "Prevents unsafe crane movement during fault or overload conditions."
       },
       {
-        "icon": "display",
-        "title": "Intelligent Display Interface",
-        "description": "20×4 LCD screen displays real-time crane operating data including load percentage, system status, calibration menus, warnings, and fault messages. Features PROG button for calibration access, UP/DOWN arrows for navigation, ENT button for confirmation, and RED bypass button for authorized service use only."
+        "icon": "monitor",
+        "title": "Display-Based Calibration",
+        "description": "On-board 20×4 LCD for setup and real-time monitoring without external tools."
       }
     ],
     "specs": [
