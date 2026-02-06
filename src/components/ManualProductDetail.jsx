@@ -212,8 +212,8 @@ export default function ManualProductDetail({ manual, slug }) {
                     ))}
                   </div>
 
-                  {/* Always show system layout image here if provided */}
-                  {manual.systemLayout?.image && (
+                  {/* Only show system layout image here if it's different from hero image to avoid repetition */}
+                  {manual.systemLayout?.image && manual.systemLayout.image !== (manual.heroImage || "") && (
                     <div className="mt-8 relative rounded-2xl overflow-hidden border border-white/10 group/layout">
                       <img
                         src={manual.systemLayout.image}
