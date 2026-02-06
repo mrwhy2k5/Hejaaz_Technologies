@@ -318,53 +318,121 @@
     "id": "sli-telescopic-crane",
     "slug": "safe-load-indicator-telescopic-crane",
     "name": "Safe Load Indicator – Telescopic Crane",
-    "tagline": "Multi-Section Boom Extension Safety",
+    "tagline": "Advanced Load Moment Limiter with Multi-Section Boom Monitoring",
     "heroImage": "/images/manuals/sli-telescopic.png",
-    "overview": "Automated capacity monitoring for telescopic cranes. Dynamically tracks boom length and angle to calculate safe lifting limits across all extension stages.",
+    "overview": "The Hejaaz Technologies Telescopic Crane SLI (Model SLI-TSC / V1.1) provides automated capacity monitoring for multi-stage telescopic cranes. It dynamically tracks boom length, angle, and real-time load to calculate safe lifting limits. Featuring integrated Anti-Two-Block (A2B) protection and a Load Moment Limiter (LML), it ensures structural integrity and stability across all extension stages.",
     "systemLayout": {
-      "title": "Telescopic SLI Layout Correct",
+      "title": "Telescopic Crane SLI System Configuration",
       "image": "/images/manuals/sli-telescopic.png",
       "items": [
-        "Main Display Unit",
-        "Anemometer Integration",
-        "Tower Indicator Lamp",
-        "Cable Tension Drum",
-        "Laser Length Sensor",
-        "Load Sensor Unit",
-        "Limit Switch (Standard)",
-        "Contactless Limit Switch"
+        "Cable Tension Drum (Length & Angle Monitoring)",
+        "Tower Lamp (Status Indicator)",
+        "Load Sensor (Hydraulic Pressure or Load Cell)",
+        "Anemometer (Optional Wind Monitoring)",
+        "Standard Limit Switch (Safety Lockout)",
+        "Contactless Limit Switch (A2B Protection)",
+        "20×4 LCD Display Unit with Calibration Keys"
+      ]
+    },
+    "features": [
+      {
+        "title": "Display-Based Calibration & Control",
+        "description": "Complete on-board setup through integrated 20×4 LCD. Features guided calibration for multi-stage booms, angle calibration, and load setting (No-Load/Full-Load). Secure, password-protected configuration without external tools."
+      },
+      {
+        "title": "Load Moment Limiter (LML)",
+        "description": "Calculates load moment using real-time load and operating radius. Prevents crane overturning and boom overstress by triggering automatic hydraulic cut-off when the rated capacity is approached."
+      },
+      {
+        "title": "Anti-Two-Block (A2B) Protection",
+        "description": "Detects the minimum safe distance between the hook block and boom head. Triggers audible alarms and automatically stops hoist-up motion to prevent wire rope damage and catastrophic boom failure."
+      },
+      {
+        "title": "Fly Jib & Auxiliary Support",
+        "description": "Optional configuration for fly jib operations. Safety parameters are dynamically updated through the HMI display to ensure accurate load calculation during auxiliary jib lifting."
+      }
+    ],
+    "calibrationSetup": {
+      "title": "Seamless Setup & Smart Control",
+      "description": "The Telescopic Crane SLI logic is configured directly through the on-board industrial display. Authorized personnel can calibrate boom length, angle, and load points using the tactile keypad, ensuring a site-ready, reliable configuration in any environment.",
+      "image": "/images/manuals/sli-display-labels.png",
+      "steps": [
+        "Multi-Load Calibration: Supports up to 8 independent load points for precision.",
+        "Boom Length & Angle: Calibration for precise radius calculation in multi-stage booms.",
+        "A2B & Safety Limits: Configuration for hook safety and hydraulic lockout thresholds.",
+        "Toggling Options: Interface buttons to enable/disable specific safety parameters."
       ]
     },
     "safetyParameters": [
       {
-        "icon": "angle",
-        "title": "Boom Angle",
-        "description": "Precision sensing for geometry calculation."
-      },
-      {
         "icon": "overload",
-        "title": "Capacity Lock",
-        "description": "Inhibits unsafe extension or boom lowering."
+        "title": "Safe Working Load (SWL) Cut-Off",
+        "description": "Prevents lifting beyond rated capacity. Automatically cuts off hoisting to prevent structural damage."
       },
       {
-        "icon": "error",
-        "title": "A2B Protection",
-        "description": "Prevents hook-to-boom collision errors."
+        "icon": "anti-collision",
+        "title": "Anti-Two-Block (A2B) Protection",
+        "description": "Detects safe distance between hook and boom tip. Prevents wire rope and boom head damage."
       },
       {
-        "icon": "anti-tilt",
-        "title": "Tip-Over Prevention",
-        "description": "Maintains center of gravity safety logic."
+        "icon": "radius",
+        "title": "Load Moment Limiter (LML)",
+        "description": "Calculates load vs radius in real-time. Prevents crane overturning and boom overstress."
+      },
+      {
+        "icon": "power",
+        "title": "Hydraulic Cut-Off Protection",
+        "description": "Stops unsafe movement during faults or overload. Ensures fail-safe crane operation."
       }
     ],
     "specs": [
       {
-        "param": "Response Time",
-        "value": "<100ms"
+        "param": "Model Number",
+        "value": "SLI-TSC / V1.1"
       },
       {
-        "param": "IP Rating",
-        "value": "IP67 (External Sensors)"
+        "param": "Power Supply",
+        "value": "12V / 24V DC (Vehicle Battery)"
+      },
+      {
+        "param": "Accuracy",
+        "value": "±2.5% of Full Scale"
+      },
+      {
+        "param": "Enclosure Rating",
+        "value": "Industrial Grade IP65"
+      },
+      {
+        "param": "Display Unit",
+        "value": "20×4 Character LCD with Backlight"
+      },
+      {
+        "param": "Operating Temperature",
+        "value": "-10°C to +60°C"
+      },
+      {
+        "param": "Wind Speed Input",
+        "value": "Optional (as per OEM / Site requirement)"
+      },
+      {
+        "param": "Load Capacity Range",
+        "value": "Configurable as per crane model & load chart"
+      },
+      {
+        "param": "Load Measurement",
+        "value": "Hydraulic pressure-based sensing + Load sensor"
+      },
+      {
+        "param": "Alarms & Indicators",
+        "value": "Overload, SWL status, A2B warning, audible buzzer"
+      },
+      {
+        "param": "Safety Features",
+        "value": "SWL cut-off, LML, A2B, Hydraulic cut-off"
+      },
+      {
+        "param": "Calibration Method",
+        "value": "Electronic calibration via operator panel (20×4 LCD)"
       }
     ],
     "compliance": [

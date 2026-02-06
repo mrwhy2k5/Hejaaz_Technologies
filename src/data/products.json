@@ -415,71 +415,95 @@
     "name": "Safe Load Indicator – Telescopic Crane",
     "slug": "safe-load-indicator-telescopic-crane",
     "category": "Safe Load Indicator",
-    "tagline": "Capacity monitoring for telescopic boom cranes",
-    "overview": "Our SLI for Telescopic Cranes covers mobile and truck-mounted cranes with telescopic booms. It provides real-time load, radius, boom length, and angle with overload and tip-over prevention.",
+    "tagline": "Multi-Section Boom Extension Safety with Load Moment Limiting",
+    "overview": "The Hejaaz Technologies Telescopic Crane SLI (Model SLI-TSC/V1.1) is a precision safety system designed for mobile and truck-mounted telescopic cranes. It monitors boom extension, angle, and load in real-time to provide comprehensive Load Moment Limiting (LML) and Anti-Two-Block (A2B) protection, ensuring fail-safe operations during complex lifting maneuvers.",
     "safetyParameters": [
       {
-        "icon": "angle",
-        "title": "Boom Extension",
-        "description": "Sensing for multi-stage telescopic deployment."
-      },
-      {
         "icon": "overload",
-        "title": "Load Chart Logic",
-        "description": "Dynamically updates capacity vs. boom length."
+        "title": "Safe Working Load (SWL) Cut-Off",
+        "description": "Prevents lifting beyond rated capacity. Automatically cuts off hoisting to prevent structural damage."
       },
       {
-        "icon": "anti-tilt",
-        "title": "Tip-Over Guard",
-        "description": "Stability calculation for outrigger deployment."
+        "icon": "anti-collision",
+        "title": "Anti-Two-Block (A2B) Protection",
+        "description": "Detects safe distance between hook and boom tip. Prevents wire rope and boom head damage."
       },
       {
-        "icon": "error",
-        "title": "A2B Alert",
-        "description": "Prevents block-to-boom physical contact errors."
+        "icon": "radius",
+        "title": "Load Moment Limiter (LML)",
+        "description": "Calculates load vs radius in real-time. Prevents crane overturning and boom overstress."
+      },
+      {
+        "icon": "power",
+        "title": "Hydraulic Cut-Off Protection",
+        "description": "Stops unsafe movement during faults or overload. Ensures fail-safe crane operation."
       }
     ],
     "systemComponents": [
-      "Load cell",
-      "Angle sensor",
-      "Length sensors (multi-section)",
-      "LMI display",
-      "Alarm and cutoff unit"
+      "Hydraulic pressure sensors for load measurement",
+      "Boom angle and multi-stage length sensors",
+      "Anemometer for wind speed monitoring (optional)",
+      "Tower lamp for visual status warning",
+      "Contactless limit switch for A2B protection",
+      "20×4 LCD display unit with backlight",
+      "Industrial-grade control unit (IP65 rated)",
+      "Hydraulic cut-off relay system"
     ],
-    "workingPrinciple": "Load, boom angle, and extended length are measured. The LMI uses the crane’s load chart to determine safe capacity for the current configuration. Warning and overload stages trigger alerts and hoist/boom lockout as required.",
+    "workingPrinciple": "The system measures hook load, boom angle, and extended length across all telescopic stages. The microprocessor calculates the current operating radius and compares the actual load against the crane's load chart. Real-time LML calculation prevents tipping, while A2B sensors prevent hook-to-boom collisions. Alarms and hydraulic lockouts activate automatically when safe limits are breached.",
     "keyFeatures": [
-      "Multi-section boom length measurement",
-      "Outrigger status consideration where applicable",
-      "Compact display for cab mounting",
-      "Calibration support for various OEMs"
+      "Display-based calibration for multi-stage booms",
+      "Real-time load, radius, and boom length display",
+      "Configurable safety limits for auxiliary fly jib",
+      "Automatic hydraulic lockout for overload and A2B",
+      "Load calibration with no-load and full-load points",
+      "Rugged IP65 enclosure for external mounting",
+      "Sunlight-readable 20×4 LCD operator interface",
+      "Secure password-protected calibration menus"
     ],
     "specs": [
       {
-        "param": "Load range",
-        "value": "As per crane"
+        "param": "Model",
+        "value": "SLI-TSC / V1.1"
       },
       {
-        "param": "Boom sections",
-        "value": "2–5 typical"
+        "param": "Power Supply",
+        "value": "12V / 24V DC (Vehicle Battery)"
+      },
+      {
+        "param": "Accuracy",
+        "value": "±2.5% of Full Scale"
+      },
+      {
+        "param": "Enclosure Rating",
+        "value": "Industrial Grade IP65"
       },
       {
         "param": "Display",
-        "value": "Cab-mount LCD"
+        "value": "20×4 Character LCD with Backlight"
       },
       {
-        "param": "Enclosure",
-        "value": "IP54"
+        "param": "Operating Temperature",
+        "value": "-10°C to +60°C"
+      },
+      {
+        "param": "Safety Features",
+        "value": "SWL Cut-off, LML, A2B, Hydraulic Protection"
+      },
+      {
+        "param": "Calibration",
+        "value": "Electronic via 20×4 LCD Operator Panel"
       }
     ],
     "applications": [
-      "Mobile cranes",
-      "Truck cranes",
-      "Utility and rental fleets",
-      "Construction"
+      "Mobile truck-mounted cranes",
+      "Construction and infrastructure sites",
+      "Utility and maintenance operations",
+      "Logistics and container handling",
+      "Industrial plant maintenance"
     ],
     "compliance": [
       "ISO 9001:2015 CERTIFIED COMPANY",
-      "EXPERTISE IN SAFE LOAD SYSTEMS",
+      "EXPERT IN SAFE LOAD SYSTEMS",
       "INNOVATIVE AND COST-EFFECTIVE SOLUTIONS",
       "STRONG CUSTOMER SUPPORT",
       "PROVEN INDUSTRIAL SAFETY AUTOMATION"
