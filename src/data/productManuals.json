@@ -786,8 +786,8 @@
       "image": "/images/manuals/sli-display-labels.png",
       "steps": [
         "Payload Calibration: Zero and Span setting for axle/chassis load calibration.",
-        "DALA Raise Logic: Configuration of buzzer alerts and display status for raised body.",
         "Tilt Zeroing: Calibration of the MEMS tilt sensor while vehicle is on level ground.",
+        "Alarm Thresholds: Custom setpoints for ±7° tilt warning and max payload capacity.",
         "Toggling Options: Interface buttons to enable/disable specific safety parameters for site-specific maintenance."
       ]
     },
