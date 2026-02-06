@@ -319,19 +319,19 @@
     "slug": "safe-load-indicator-telescopic-crane",
     "name": "Safe Load Indicator – Telescopic Crane",
     "tagline": "Advanced Load Moment Limiter with Multi-Section Boom Monitoring",
-    "heroImage": "/images/manuals/sli-telescopic.png",
+    "heroImage": "/images/manuals/sli-telescopic-layout.png",
     "overview": "The Hejaaz Technologies Telescopic Crane SLI (Model SLI-TSC / V1.1) provides automated capacity monitoring for multi-stage telescopic cranes. It dynamically tracks boom length, angle, and real-time load to calculate safe lifting limits. Featuring integrated Anti-Two-Block (A2B) protection and a Load Moment Limiter (LML), it ensures structural integrity and stability across all extension stages.",
     "systemLayout": {
       "title": "Telescopic Crane SLI System Configuration",
-      "image": "/images/manuals/sli-telescopic.png",
+      "image": "/images/manuals/sli-telescopic-layout.png",
       "items": [
-        "Cable Tension Drum (Length & Angle Monitoring)",
+        "Anemometer (Wind Speed Monitoring)",
         "Tower Lamp (Status Indicator)",
+        "Cable Tension Drum (Length & Angle Monitoring)",
         "Load Sensor (Hydraulic Pressure or Load Cell)",
-        "Anemometer (Optional Wind Monitoring)",
         "Standard Limit Switch (Safety Lockout)",
         "Contactless Limit Switch (A2B Protection)",
-        "20×4 LCD Display Unit with Calibration Keys"
+        "20×4 LCD Display (Control Interface)"
       ]
     },
     "features": [
