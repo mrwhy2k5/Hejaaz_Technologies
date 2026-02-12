@@ -53,13 +53,13 @@ export default function Header() {
             className="flex items-center gap-4 group shrink-0"
             aria-label="Hejaaz Technologies Home"
           >
-            <div className={`w-11 h-11 rounded-xl flex items-center justify-center transition-all group-hover:scale-110 group-hover:rotate-3 overflow-hidden ${isGlass ? 'bg-hejaaz-secondary shadow-lg shadow-hejaaz-secondary/30' : 'bg-white/10 backdrop-blur-md border border-white/20'}`}>
+            <div className={`w-11 h-11 rounded-xl flex items-center justify-center transition-all group-hover:scale-110 group-hover:rotate-3 overflow-hidden ${isGlass ? 'bg-black shadow-lg shadow-black/30' : 'bg-black/80 backdrop-blur-md border border-white/20'}`}>
               <img src="/images/logo.png" alt="Hejaaz Technologies Logo" className="w-8 h-8 object-contain" />
             </div>
             <div className="flex flex-col">
               <span
                 className={`text-xl leading-none uppercase transition-colors duration-500 ${isGlass ? 'text-[var(--text-main)]' : 'text-white'}`}
-                style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.15em', fontWeight: '400' }}
+                style={{ fontFamily: "'Allerta Stencil', sans-serif", letterSpacing: '0.15em', fontWeight: '400' }}
               >
                 HEJAAZ
               </span>
