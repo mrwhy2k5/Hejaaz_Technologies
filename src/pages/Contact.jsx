@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import SeoHead from '../components/SeoHead'
 import PageHeader from '../components/PageHeader'
 
-const address = '192-2A, Haji Mohammed Abdul Hafiz Sahib Street, Dashamakan, Chennai – 600012, Tamil Nadu'
+const address = '2nd Floor, 4A, Anderson Rd, Vasantha Nagar, Signal, Ayanavaram, Chennai, Tamil Nadu 600023'
 const phone = '+91 9361227290'
 const email = 'hejaaztechnologies@gmail.com'
 

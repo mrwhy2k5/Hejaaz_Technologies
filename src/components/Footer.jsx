@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react'
 
-const address = '192-2A, Haji Mohammed Abdul Hafiz Sahib Street, Dashamakan, Chennai – 600012, Tamil Nadu'
+const address = '2nd Floor, 4A, Anderson Rd, Vasantha Nagar, Signal, Ayanavaram, Chennai, Tamil Nadu 600023'
 const phone = '+91 9361227290'
 const email = 'hejaaztechnologies@gmail.com'
 
@@ -135,6 +135,32 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Google Maps Embed */}
+        <div className="mt-16 pt-12 border-t border-white/5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="font-black text-hejaaz-secondary mb-4 text-[11px] uppercase tracking-[0.4em]">
+                Find Us
+              </h3>
+              <p className="text-[11px] font-bold text-white/50 uppercase tracking-tight leading-relaxed">
+                {address}
+              </p>
+            </div>
+            <div className="w-full h-[250px] rounded-2xl overflow-hidden border border-white/10 shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2!2d80.2293!3d13.1005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDA2JzAxLjgiTiA4MMKwMTMnNDUuNSJF!5e0!3m2!1sen!2sin!4v1707000000000!5m2!1sen!2sin&q=4A+Anderson+Road+Ayanavaram+Chennai+Tamil+Nadu+600023"
+                width="100%"
+                height="100%"
+                style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(0.9) contrast(1.1)' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Hejaaz Technologies Office Location"
+              />
+            </div>
           </div>
         </div>
       </div>
