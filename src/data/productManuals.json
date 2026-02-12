@@ -73,7 +73,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±1.5% of F.S"
+        "value": "±2.5% of Full Scale (better with calibration)"
       },
       {
         "param": "No.of outputs",
@@ -199,7 +199,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±1.5% of F.S"
+        "value": "±2.5% of Full Scale (better with calibration)"
       },
       {
         "param": "No.of outputs",
@@ -303,7 +303,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±1% Moment Calculation"
+        "value": "±2.5% of Full Scale (better with calibration)"
       }
     ],
     "compliance": [
