@@ -65,7 +65,7 @@ export default function Header() {
               </span>
               <span
                 className={`text-[10px] uppercase leading-none mt-1 transition-colors duration-500 ${isGlass ? 'text-[var(--text-muted)]' : 'text-white/70'}`}
-                style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.35em', fontWeight: '400' }}
+                style={{ fontFamily: "'Cabin', sans-serif", letterSpacing: '0.35em', fontWeight: '700' }}
               >
                 TECHNOLOGIES
               </span>

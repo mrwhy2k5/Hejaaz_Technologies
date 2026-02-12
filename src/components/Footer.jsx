@@ -38,7 +38,7 @@ export default function Footer() {
                 <span className="text-white text-xl leading-none uppercase" style={{ fontFamily: "'Allerta Stencil', sans-serif", letterSpacing: '0.15em', fontWeight: '400' }}>
                   HEJAAZ
                 </span>
-                <span className="text-white/40 text-[10px] uppercase leading-none mt-1" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: '0.35em', fontWeight: '400' }}>
+                <span className="text-white/40 text-[10px] uppercase leading-none mt-1" style={{ fontFamily: "'Cabin', sans-serif", letterSpacing: '0.35em', fontWeight: '700' }}>
                   TECHNOLOGIES
                 </span>
               </div>
