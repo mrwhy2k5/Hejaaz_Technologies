@@ -127,7 +127,7 @@ export default function Home() {
         <div className="container-content">
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Left column — text + specs (slides in from left) */}
-            <motion.div {...fadeInLeft} className="lg:col-span-6 xl:col-span-5">
+            <motion.div {...fadeInLeft} className="lg:col-span-5">
               <motion.div {...sectionTagReveal} className="flex items-center gap-4 mb-8">
                 <motion.div {...lineExpand} className="w-12 h-1 bg-hejaaz-secondary rounded-full" />
                 <span className="text-[10px] font-black uppercase tracking-[0.4em]" style={{ color: 'var(--text-muted)' }}>Reliability Metrics</span>
@@ -167,7 +167,7 @@ export default function Home() {
             {/* Right column — image (slides in from right with scale) */}
             <motion.div
               {...imageReveal}
-              className="lg:col-span-6 xl:col-span-7 flex justify-end"
+              className="lg:col-span-7"
             >
               <div className="relative">
                 {/* Glowing background pulse */}
@@ -176,8 +176,8 @@ export default function Home() {
                   animate={{ scale: [1, 1.05, 1], opacity: [0.3, 0.6, 0.3] }}
                   transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                 />
-                <div className="relative rounded-2xl sm:rounded-[3rem] p-2 sm:p-4 lg:p-6 transition-all duration-500 max-w-xl ml-auto">
-                  <div className="flex items-center justify-center overflow-hidden group rounded-xl sm:rounded-[2rem] shadow-2xl border border-hejaaz-border/50 bg-white max-h-[400px]">
+                <div className="relative rounded-2xl sm:rounded-[3rem] p-2 sm:p-4 lg:p-6 transition-all duration-500">
+                  <div className="flex items-center justify-center overflow-hidden group rounded-xl sm:rounded-[2rem] shadow-2xl border border-hejaaz-border/50 bg-white">
                     <img
                       src="/images/heavy-lifting.jpg"
                       alt="Crane Safety Illustration"
@@ -287,7 +287,7 @@ export default function Home() {
       </section>
 
       {/* ============ LEVEL 6: BANNER ============ */}
-      <section className="bg-hejaaz-secondary py-12 sm:py-20 lg:py-24 text-white relative overflow-hidden transition-colors duration-500">
+      <section className="bg-hejaaz-secondary py-16 sm:py-24 lg:py-32 text-white relative overflow-hidden transition-colors duration-500">
         <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
         <div className="container-content relative z-10">
