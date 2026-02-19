@@ -52,8 +52,8 @@ export default function HeroSlider() {
     <section
       className="relative w-full overflow-hidden bg-hejaaz-primary"
       style={{
-        height: 'clamp(500px, 90vh, 100vh)',
-        minHeight: '500px',
+        height: 'clamp(400px, 70vh, 85vh)',
+        minHeight: '400px',
         WebkitBackfaceVisibility: 'hidden',
         WebkitTransform: 'translateZ(0)',
       }}
