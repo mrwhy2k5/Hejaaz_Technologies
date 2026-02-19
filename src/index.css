@@ -63,7 +63,6 @@
     -ms-text-size-adjust: 100%;
     overflow-x: hidden;
     width: 100%;
-    scrollbar-gutter: stable;
   }
 
   body {
@@ -200,19 +199,17 @@
 
 /* ========== PREMIUM THEMED SCROLLBAR ========== */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
   background: var(--bg-main);
-  border-left: 1px solid var(--hejaaz-border);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--hejaaz-border);
-  border-radius: 100px;
-  border: 3px solid var(--bg-main);
+  border-radius: 10px;
   transition: background 0.3s ease;
 }
 
@@ -223,7 +220,7 @@
 /* Firefox Support */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--hejaaz-secondary) var(--bg-main);
+  scrollbar-color: var(--hejaaz-border) var(--bg-main);
 }
 
 /* ========== iOS SAFE AREA SUPPORT ========== */
