@@ -219,7 +219,7 @@ export default function Contact() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
                 id="quote-form"
-                className="p-5 sm:p-8 lg:p-12 rounded-xl bg-[var(--card-bg)] border border-[var(--card-border)] shadow-sm transition-colors duration-300 scroll-mt-32"
+                className="p-5 sm:p-6 lg:p-8 rounded-xl bg-[var(--card-bg)] border border-[var(--card-border)] shadow-sm transition-colors duration-300 scroll-mt-32"
               >
                 <div className="flex items-center gap-3 mb-10">
                   <div className="w-10 h-1 rounded-full bg-hejaaz-secondary" />
@@ -239,8 +239,8 @@ export default function Contact() {
                     <p className="mt-4 text-[var(--text-muted)] text-sm font-medium transition-colors">Your request has been logged. Our engineering desk will respond within 24 business hours.</p>
                   </motion.div>
                 ) : (
-                  <form ref={formRef} onSubmit={handleSubmit} className="space-y-8">
-                    <div className="grid md:grid-cols-2 gap-8">
+                  <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="name" className="block text-[10px] font-black uppercase tracking-widest mb-3 transition-colors" style={{ color: 'var(--text-main)' }}>Identification *</label>
                         <input
@@ -261,7 +261,7 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label htmlFor="phone" className="block text-[10px] font-black uppercase tracking-widest mb-3 transition-colors" style={{ color: 'var(--text-main)' }}>Interface Phone</label>
                         <input

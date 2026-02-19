@@ -31,7 +31,7 @@ export default function ProductCard({ product, index = 0 }) {
 
           {/* Image Container — smooth zoom on hover */}
           <div
-            className="aspect-[4/3] flex items-center justify-center relative overflow-hidden rounded-xl m-2 sm:m-3 bg-white"
+            className="aspect-[4/3] flex items-center justify-center relative overflow-hidden rounded-xl m-1.5 sm:m-2 bg-white"
             style={{ contain: 'layout style paint' }}
           >
             <img
@@ -50,7 +50,7 @@ export default function ProductCard({ product, index = 0 }) {
             />
 
             {/* Shield Icon - Dynamic background */}
-            <div className="absolute top-2 left-2 sm:top-3 sm:left-3">
+            <div className="absolute top-2 left-2 sm:top-2.5 sm:left-2.5">
               <motion.div
                 whileHover={{ rotate: 10, scale: 1.1 }}
                 className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center text-hejaaz-secondary bg-white/90 backdrop-blur-sm shadow-md transition-all duration-300 group-hover:bg-hejaaz-secondary group-hover:text-white"
@@ -61,7 +61,7 @@ export default function ProductCard({ product, index = 0 }) {
           </div>
 
           {/* Content - Grouped Technical Info */}
-          <div className="p-4 sm:p-5 flex-1 flex flex-col">
+          <div className="p-3.5 sm:p-4 flex-1 flex flex-col">
             <div className="flex items-center gap-2 mb-2 sm:mb-3">
               <span className="text-[8px] sm:text-[9px] font-black text-hejaaz-secondary uppercase tracking-[0.25em]">
                 {product.category}

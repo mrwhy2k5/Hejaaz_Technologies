@@ -69,7 +69,7 @@ export default function ManualProductDetail({ manual, slug }) {
 
       <div className="bg-[var(--bg-main)] min-h-screen pt-20 sm:pt-24 transition-colors duration-500">
         {/* ============ 🟢 SECTION 1: HERO & SYSTEM OVERVIEW ============ */}
-        <section className="py-10 sm:py-16 lg:pt-20 lg:pb-32 relative overflow-hidden">
+        <section className="py-10 sm:py-16 lg:pt-16 lg:pb-24 relative overflow-hidden">
           {/* Subtle Background Accent */}
           <div className="absolute top-0 right-0 w-1/3 h-full bg-hejaaz-secondary/5 blur-[100px] -z-10" />
 
@@ -166,7 +166,7 @@ export default function ManualProductDetail({ manual, slug }) {
         </section>
 
         {/* ============ 🟢 SECTION 2: SYSTEM LAYOUT & PARAMETERS ============ */}
-        <section className="py-12 sm:py-24 bg-[var(--bg-secondary)] border-y border-hejaaz-border transition-colors duration-500">
+        <section className="py-8 sm:py-16 bg-[var(--bg-secondary)] border-y border-hejaaz-border transition-colors duration-500">
           <div className="container-content">
             <div className="grid lg:grid-cols-12 gap-10 lg:gap-20 items-center">
               {/* Dynamic Safety Parameter Grid */}
@@ -253,7 +253,7 @@ export default function ManualProductDetail({ manual, slug }) {
         </section>
 
         {/* ============ 🟢 SECTION 3: CALIBRATION & TECH SPECS ============ */}
-        <section className="py-12 sm:py-24 lg:py-32">
+        <section className="py-8 sm:py-16 lg:py-24">
           <div className="container-content">
             {/* Setup & Calibration Section */}
             {manual.calibrationSetup && (
@@ -327,7 +327,7 @@ export default function ManualProductDetail({ manual, slug }) {
         </section>
 
         {/* ============ 🟢 SECTION 4: COMPLIANCE BANNER ============ */}
-        <section className="py-12 sm:py-24 bg-hejaaz-secondary text-white relative overflow-hidden">
+        <section className="py-10 sm:py-20 bg-hejaaz-secondary text-white relative overflow-hidden">
           <div className="absolute inset-0 z-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
           <div className="container-content relative z-10">
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">

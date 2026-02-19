@@ -97,7 +97,7 @@ export default function Services() {
       {/* ============ SERVICE MATRIX ============ */}
       <section className="section-padding bg-[var(--bg-secondary)] transition-colors duration-500">
         <div className="container-content">
-          <div className="flex flex-col items-start justify-start mb-16 gap-8 text-left">
+          <div className="flex flex-col items-start justify-start mb-12 gap-8 text-left">
             <div className="max-w-4xl">
               <motion.h2
                 {...sectionTagReveal}
@@ -135,7 +135,7 @@ export default function Services() {
                     whileInView: { opacity: 1, y: 0, scale: 1 },
                   }}
                   transition={{ duration: 0.9, ease: easings.industrial }}
-                  className="group card-premium p-6 sm:p-10 flex flex-col h-full"
+                  className="group card-premium p-4 sm:p-8 flex flex-col h-full"
                 >
                   <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mb-6 sm:mb-8 bg-hejaaz-surface border border-hejaaz-border group-hover:bg-hejaaz-secondary group-hover:text-white transition-all duration-500 shadow-sm group-hover:scale-110">
                     <Icon size={28} strokeWidth={1.5} className="group-hover:scale-110 transition-transform duration-500" />
@@ -181,7 +181,7 @@ export default function Services() {
             {...scaleIn}
             className="mt-16 sm:mt-24 lg:mt-32"
           >
-            <div className="bg-hejaaz-secondary p-6 sm:p-12 lg:p-24 rounded-2xl sm:rounded-[3rem] text-white relative overflow-hidden shadow-2xl">
+            <div className="bg-hejaaz-secondary p-6 sm:p-10 lg:p-16 rounded-2xl sm:rounded-[3rem] text-white relative overflow-hidden shadow-2xl">
               <div className="absolute inset-0 z-0 opacity-10 pointer-events-none"
                 style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 

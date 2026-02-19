@@ -59,7 +59,7 @@ export default function Industries() {
         />
 
         <div className="container-content">
-          <div className="grid lg:grid-cols-12 gap-10 lg:gap-24 items-center">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             <motion.div
               {...fadeInLeft}
               className="lg:col-span-8"
@@ -88,7 +88,7 @@ export default function Industries() {
 
       <section className="section-padding bg-[var(--bg-secondary)] transition-colors duration-500">
         <div className="container-content">
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-16 gap-8">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-8 lg:mb-12 gap-8">
             <div className="max-w-2xl text-center lg:text-left">
               <motion.h2
                 {...sectionTagReveal}
@@ -126,7 +126,7 @@ export default function Industries() {
                     whileInView: { opacity: 1, y: 0, scale: 1 },
                   }}
                   transition={{ duration: 0.8, ease: easings.industrial }}
-                  className="group card-premium p-5 sm:p-10 flex flex-col h-full"
+                  className="group card-premium p-4 sm:p-8 flex flex-col h-full"
                 >
                   <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-8 bg-hejaaz-surface border border-hejaaz-border group-hover:bg-hejaaz-secondary group-hover:text-white transition-all duration-500 shadow-sm group-hover:scale-110">
                     <Icon size={24} strokeWidth={1.5} className="group-hover:scale-110 transition-transform duration-500" />
@@ -149,7 +149,7 @@ export default function Industries() {
             {...scaleIn}
             className="mt-16 sm:mt-24 lg:mt-32"
           >
-            <div className="bg-hejaaz-secondary p-6 sm:p-12 lg:p-24 rounded-2xl sm:rounded-[3rem] text-white relative overflow-hidden shadow-2xl">
+            <div className="bg-hejaaz-secondary p-6 sm:p-10 lg:p-16 rounded-2xl sm:rounded-[3rem] text-white relative overflow-hidden shadow-2xl">
               <div
                 className="absolute inset-0 z-0 opacity-20 grayscale scale-110 transition-transform hover:scale-100 duration-1000"
                 style={{ backgroundImage: `url('/images/industrial-bg-port.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
