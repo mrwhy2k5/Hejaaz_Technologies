@@ -62,7 +62,7 @@ export default function Home() {
       <HeroSlider />
 
       {/* ============ LEVEL 2: SCAN & UNDERSTAND ============ */}
-      <section className="bg-[var(--bg-main)] section-padding border-b border-hejaaz-border relative overflow-x-hidden transition-colors duration-500">
+      <section className="bg-[var(--bg-main)] section-padding border-b border-hejaaz-border relative transition-colors duration-500">
         {/* Decorative floating glow */}
         <motion.div
           className="absolute top-0 right-0 w-1/3 h-1/3 bg-hejaaz-secondary/5 blur-[120px] -z-10 rounded-full"
@@ -118,7 +118,7 @@ export default function Home() {
       </section>
 
       {/* ============ LEVEL 3: TECHNICAL DETAILS (FOR ENGINEERS) ============ */}
-      <section className="section-padding bg-[var(--bg-secondary)] relative overflow-hidden transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-secondary)] relative transition-colors duration-500">
         {/* Decorative spinning gear */}
         <div className="absolute -right-20 -bottom-20 w-64 h-64 opacity-[0.03] pointer-events-none">
           <Cog className="w-full h-full animate-spin-slow" />
