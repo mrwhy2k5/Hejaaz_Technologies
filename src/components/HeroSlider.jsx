@@ -5,14 +5,15 @@ import { Link } from 'react-router-dom'
 import heroSlides from '../data/heroSlides.json'
 
 /**
- * FULL-WIDTH HERO SLIDER (MODERN INDUSTRIAL)
- * - 85-90vh height
- * - DARK BLUE / CHARCOAL OVERLAY (70%)
- * - LARGE BOLD TYPOGRAPHY
+ * FULL-WIDTH HERO SLIDER (MOBILE-OPTIMIZED)
+ * - Fixed height for iOS stability
+ * - GPU-accelerated transitions
+ * - Optimized image loading
  */
 export default function HeroSlider() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
+  const [imagesLoaded, setImagesLoaded] = useState({})
 
   const slideCount = heroSlides.length
 
@@ -30,20 +31,32 @@ export default function HeroSlider() {
     return () => clearInterval(interval)
   }, [nextSlide, isPaused])
 
+  // Preload all hero images on mount for faster transitions
+  useEffect(() => {
+    heroSlides.forEach((slide, index) => {
+      const img = new Image()
+      img.onload = () => {
+        setImagesLoaded(prev => ({ ...prev, [index]: true }))
+      }
+      img.src = slide.image
+    })
+  }, [])
+
   const fadeVariants = {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
     exit: { opacity: 0 }
   }
 
-  const zoomVariants = {
-    initial: { scale: 1.1, opacity: 0 },
-    animate: { scale: 1, opacity: 0.5, transition: { duration: 10, ease: "easeOut" } }
-  }
-
   return (
     <section
-      className="relative h-[90vh] lg:h-screen w-full overflow-hidden bg-hejaaz-primary"
+      className="relative w-full overflow-hidden bg-hejaaz-primary"
+      style={{
+        height: 'clamp(500px, 90vh, 100vh)',
+        minHeight: '500px',
+        WebkitBackfaceVisibility: 'hidden',
+        WebkitTransform: 'translateZ(0)',
+      }}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -54,19 +67,26 @@ export default function HeroSlider() {
           initial="initial"
           animate="animate"
           exit="exit"
-          transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           className="absolute inset-0 w-full h-full"
+          style={{ WebkitBackfaceVisibility: 'hidden' }}
         >
-          {/* Background Image with Slow Zoom */}
-          <motion.div
-            variants={zoomVariants}
-            initial="initial"
-            animate="animate"
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: `url(${heroSlides[currentIndex].image})`,
-            }}
-          />
+          {/* Background Image - Using img tag for better iOS rendering */}
+          <div className="absolute inset-0 overflow-hidden">
+            <img
+              src={heroSlides[currentIndex].image}
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover"
+              style={{
+                opacity: 0.5,
+                transform: 'scale(1.05)',
+                WebkitBackfaceVisibility: 'hidden',
+                willChange: 'transform',
+              }}
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
 
           {/* Lighter Industrial Gradient Overlay */}
           <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/30 to-transparent z-10" />
@@ -92,7 +112,8 @@ export default function HeroSlider() {
                 </motion.div>
 
                 <motion.h1
-                  className="text-5xl lg:text-[5.5rem] font-black text-white leading-[0.9] tracking-tighter mb-6 lg:mb-8 uppercase"
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-[5.5rem] font-black text-white leading-[0.95] tracking-tighter mb-6 lg:mb-8 uppercase"
+                  style={{ wordBreak: 'break-word' }}
                 >
                   {heroSlides[currentIndex].title.split(' ').map((word, i) => (
                     <span key={i} className={i % 2 === 1 ? 'text-hejaaz-secondary' : 'text-white'}>
@@ -102,23 +123,23 @@ export default function HeroSlider() {
                 </motion.h1>
 
                 <motion.p
-                  className="text-lg lg:text-xl text-white/70 font-bold mb-8 lg:mb-10 max-w-3xl leading-tight uppercase tracking-tight"
+                  className="text-sm sm:text-base lg:text-xl text-white/70 font-bold mb-8 lg:mb-10 max-w-3xl leading-tight uppercase tracking-tight"
                 >
                   {heroSlides[currentIndex].subtitle}
                 </motion.p>
 
-                <motion.div className="flex flex-wrap gap-6">
+                <motion.div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6">
                   <a
                     href={heroSlides[currentIndex].link_primary}
-                    className="btn-primary !py-6 !px-16 !text-[13px] shadow-hejaaz-secondary/40"
+                    className="btn-primary !py-4 !px-8 sm:!py-6 sm:!px-16 !text-[11px] sm:!text-[13px] shadow-hejaaz-secondary/40 text-center"
                   >
                     {heroSlides[currentIndex].cta_primary}
                   </a>
                   <Link
                     to={heroSlides[currentIndex].link_secondary}
-                    className="group relative inline-flex items-center justify-center gap-2 px-10 py-5 rounded-xl 
-                             font-black text-[12px] uppercase tracking-[0.2em] text-white 
-                             transition-all duration-300 border-2 border-white/20 hover:border-white hover:bg-white hover:text-hejaaz-primary"
+                    className="group relative inline-flex items-center justify-center gap-2 px-6 sm:px-10 py-4 sm:py-5 rounded-xl 
+                             font-black text-[11px] sm:text-[12px] uppercase tracking-[0.2em] text-white 
+                             transition-all duration-300 border-2 border-white/20 hover:border-white hover:bg-white hover:text-hejaaz-primary text-center"
                   >
                     {heroSlides[currentIndex].cta_secondary}
                   </Link>
@@ -156,6 +177,19 @@ export default function HeroSlider() {
             <ChevronRight size={24} className="group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
+      </div>
+
+      {/* Mobile slide indicators */}
+      <div className="absolute bottom-6 inset-x-0 z-30 flex lg:hidden justify-center gap-2">
+        {heroSlides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`h-1 transition-all duration-500 rounded-full ${index === currentIndex ? 'w-8 bg-hejaaz-secondary' : 'w-3 bg-white/30'}`}
+            aria-label={`Go to slide ${index + 1}`}
+            style={{ WebkitTapHighlightColor: 'transparent' }}
+          />
+        ))}
       </div>
     </section>
   )

@@ -48,10 +48,10 @@ export default function About() {
                 <div className="w-12 h-1 rounded-full bg-hejaaz-secondary" />
                 <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary">Our DNA</h2>
               </div>
-              <h1 className="text-4xl lg:text-7xl font-black leading-[0.95] tracking-tighter mb-10 heading-reveal uppercase">
+              <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black leading-[0.95] tracking-tighter mb-6 sm:mb-10 heading-reveal uppercase">
                 We make complex <br />crane safety <span className="text-hejaaz-secondary">simple.</span>
               </h1>
-              <div className="space-y-6 text-[var(--text-muted)] text-lg lg:text-xl leading-relaxed font-bold uppercase tracking-tight">
+              <div className="space-y-4 sm:space-y-6 text-[var(--text-muted)] text-base sm:text-lg lg:text-xl leading-relaxed font-bold uppercase tracking-tight">
                 <p>
                   Hejaaz Technologies is an industrial engineering house specializing in the design and integration of safety-critical systems.
                 </p>
@@ -71,6 +71,9 @@ export default function About() {
                 src="/images/about-engineering.jpg"
                 alt="Engineering Integrity"
                 className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
+                loading="lazy"
+                decoding="async"
+                style={{ WebkitBackfaceVisibility: 'hidden', transform: 'translateZ(0)' }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-hejaaz-primary/80 via-transparent to-transparent" />
               <div className="absolute bottom-12 left-12">
@@ -87,10 +90,10 @@ export default function About() {
         <div className="container-content">
           <div className="flex flex-col items-center mb-16">
             <h2 className="text-[11px] font-black text-hejaaz-secondary uppercase tracking-[0.4em] mb-6">Our Protocol</h2>
-            <h2 className="text-4xl lg:text-6xl font-black tracking-tighter heading-reveal text-center">Engineered for <br />Heavy Industry.</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter heading-reveal text-center">Engineered for <br />Heavy Industry.</h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {values.map((v, i) => (
               <motion.div
                 key={v.title}
@@ -119,7 +122,7 @@ export default function About() {
 
             <div className="relative z-10 grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
               <div>
-                <h2 className="text-4xl lg:text-6xl font-black mb-10 leading-[0.95] tracking-tighter uppercase text-white">ISO 9001:2015 <br /><span className="text-black/30">Certified.</span></h2>
+                <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black mb-6 sm:mb-10 leading-[0.95] tracking-tighter uppercase text-white">ISO 9001:2015 <br /><span className="text-black/30">Certified.</span></h2>
                 <div className="grid gap-4">
                   {highlights.map((item) => (
                     <div key={item} className="flex gap-5 p-5 rounded-2xl bg-white/10 border border-white/20 items-center transition-all hover:bg-white/15">

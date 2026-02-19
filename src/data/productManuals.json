@@ -870,7 +870,7 @@
       "image": "/images/manuals/sli-scissor-lift.png",
       "items": [
         "Display Unit (20×4 LCD)",
-        "Hydraulic Pressure Sensor",
+        "Load Cell (Weight Sensor)",
         "MEMS Tilt Sensor (±3°)",
         "Height Limit Sensor",
         "Audible Buzzer & LED Indicators",
@@ -888,7 +888,7 @@
       "description": "The Scissor Lift SLI is configured via the cab-mounted industrial LCD display. Technicians can zero the load sensor, set tilt thresholds, configure height restrictions, and calibrate load points directly through the keypad interface.",
       "image": "/images/manuals/sli-display-labels.png",
       "steps": [
-        "Load Calibration: Zero and span setup for hydraulic pressure sensing.",
+        "Load Calibration: Zero and span setup for load cell weight sensing.",
         "Tilt Zeroing: Calibration of MEMS tilt sensor on level ground.",
         "Height Limit Setup: Configure maximum elevation thresholds.",
         "Safety Toggling: Enable/disable specific safety parameters per site requirements."
@@ -947,7 +947,7 @@
       },
       {
         "param": "Load Measurement",
-        "value": "Hydraulic Pressure Sensor"
+        "value": "Load Cell (Strain Gauge)"
       },
       {
         "param": "Tilt Detection",
@@ -988,7 +988,7 @@
         "Display Unit (20×4 LCD)",
         "Boom Angle Sensor (Inclinometer)",
         "Boom Extension Length Sensor",
-        "Hydraulic Pressure Sensor",
+        "Load Cell (Weight Sensor)",
         "MEMS Chassis Tilt Sensor",
         "Anemometer (Wind Speed – Optional)",
         "Hydraulic Cut-Off Relay System"
@@ -1005,7 +1005,7 @@
       "description": "The Boom Lift SLI is configured via the on-board industrial LCD display. Technicians can calibrate boom angle, extension length, load sensors, and tilt thresholds through the secure keypad interface for site-ready operation.",
       "image": "/images/manuals/sli-display-labels.png",
       "steps": [
-        "Load Calibration: No-load and full-load reference point setup for hydraulic pressure sensing.",
+        "Load Calibration: No-load and full-load reference point setup for load cell weight sensing.",
         "Boom Angle & Length: Calibration for precise radius and load moment calculation.",
         "Tilt Zeroing: MEMS tilt sensor calibration on level ground.",
         "Safety Configuration: Set SWL, moment limits, tilt thresholds, and wind speed limits."
@@ -1082,7 +1082,7 @@
       },
       {
         "param": "Load Measurement",
-        "value": "Hydraulic Pressure Sensor + Load Cell"
+        "value": "Load Cell (Strain Gauge) + Load Moment Calculation"
       },
       {
         "param": "Wind Speed Input",

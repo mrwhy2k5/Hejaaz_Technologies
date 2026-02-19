@@ -61,10 +61,10 @@ export default function Services() {
                 <div className="w-12 h-1 rounded-full bg-hejaaz-secondary" />
                 <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary">Our Protocol</h2>
               </div>
-              <h1 className="text-4xl lg:text-7xl font-black tracking-tighter leading-[0.95] mb-10 heading-reveal uppercase">
+              <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black tracking-tighter leading-[0.95] mb-6 sm:mb-10 heading-reveal uppercase">
                 End-to-End <span className="text-hejaaz-secondary">Engineering Integration.</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-[var(--text-muted)] font-bold uppercase tracking-tight max-w-4xl mr-auto leading-tight">
+              <p className="text-base sm:text-xl lg:text-2xl text-[var(--text-muted)] font-bold uppercase tracking-tight max-w-4xl mr-auto leading-tight">
                 We bridge the gap between complex industrial problems and reliable technical solutions,
                 offering everything from initial proof-of-concept to nationwide maintenance.
               </p>
@@ -82,7 +82,7 @@ export default function Services() {
                 <div className="w-2 h-2 rounded-full bg-hejaaz-secondary animate-pulse" />
                 Service Matrix
               </h2>
-              <h2 className="text-4xl lg:text-6xl font-black tracking-tighter leading-none heading-reveal uppercase mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter leading-none heading-reveal uppercase mb-6">
                 Standardized Engineering Deliverables.
               </h2>
               <div className="text-[10px] font-black text-hejaaz-secondary uppercase tracking-[0.3em] bg-hejaaz-surface px-5 py-3 rounded-xl border border-hejaaz-border shadow-sm inline-block">
@@ -91,7 +91,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {servicesData.map((svc, i) => {
               const Icon = iconMap[svc.icon] || Settings
               return (
@@ -101,9 +101,9 @@ export default function Services() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: i * 0.05, ease: [0.22, 1, 0.36, 1] }}
-                  className="group card-premium p-10 flex flex-col h-full"
+                  className="group card-premium p-6 sm:p-10 flex flex-col h-full"
                 >
-                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-8 bg-hejaaz-surface border border-hejaaz-border group-hover:bg-hejaaz-secondary group-hover:text-white transition-all duration-500 shadow-sm">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center mb-6 sm:mb-8 bg-hejaaz-surface border border-hejaaz-border group-hover:bg-hejaaz-secondary group-hover:text-white transition-all duration-500 shadow-sm">
                     <Icon size={28} strokeWidth={1.5} className="group-hover:scale-110 transition-transform" />
                   </div>
 
@@ -148,9 +148,9 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-24 lg:mt-32"
+            className="mt-16 sm:mt-24 lg:mt-32"
           >
-            <div className="bg-hejaaz-secondary p-12 lg:p-24 rounded-[3rem] text-white relative overflow-hidden shadow-2xl">
+            <div className="bg-hejaaz-secondary p-6 sm:p-12 lg:p-24 rounded-2xl sm:rounded-[3rem] text-white relative overflow-hidden shadow-2xl">
               <div className="absolute inset-0 z-0 opacity-10 pointer-events-none"
                 style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
@@ -160,8 +160,8 @@ export default function Services() {
                     <div className="w-2 h-2 rounded-full bg-white animate-pulse" />
                     <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white">Engineering Support</span>
                   </div>
-                  <h2 className="text-4xl lg:text-6xl font-black mb-10 tracking-tighter leading-[0.95] text-white uppercase">Partner With Our <br /><span className="text-black/30">Technical Team.</span></h2>
-                  <p className="text-xl lg:text-2xl text-white/80 mb-12 leading-tight font-bold uppercase tracking-tight max-w-lg">
+                  <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black mb-6 sm:mb-10 tracking-tighter leading-[0.95] text-white uppercase">Partner With Our <br /><span className="text-black/30">Technical Team.</span></h2>
+                  <p className="text-base sm:text-xl lg:text-2xl text-white/80 mb-8 sm:mb-12 leading-tight font-bold uppercase tracking-tight max-w-lg">
                     We specialize in Proof of Concept (POC) projects and custom industrial integrations.
                   </p>
                   <div className="flex">
@@ -169,7 +169,8 @@ export default function Services() {
                       href="https://wa.me/919361227290"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-white text-hejaaz-secondary py-6 px-12 text-[12px] uppercase tracking-[0.3em] font-black rounded-2xl hover:shadow-2xl transition-all hover:scale-105 active:scale-95 flex items-center gap-4"
+                      className="bg-white text-hejaaz-secondary py-4 px-8 sm:py-6 sm:px-12 text-[11px] sm:text-[12px] uppercase tracking-[0.3em] font-black rounded-xl sm:rounded-2xl hover:shadow-2xl transition-all hover:scale-105 active:scale-95 flex items-center gap-4"
+                      style={{ WebkitTapHighlightColor: 'transparent' }}
                     >
                       <MessageCircle size={20} /> Log Technical Inquiry
                     </a>

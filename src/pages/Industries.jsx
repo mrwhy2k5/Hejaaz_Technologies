@@ -42,7 +42,7 @@ export default function Industries() {
         <div className="absolute top-0 right-0 w-1/3 h-full bg-hejaaz-secondary/5 blur-[120px] -z-10" />
 
         <div className="container-content">
-          <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-24 items-center">
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -53,10 +53,10 @@ export default function Industries() {
                 <div className="w-12 h-1 rounded-full bg-hejaaz-secondary" />
                 <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary transition-colors">Our Reach</h2>
               </div>
-              <h1 className="text-4xl lg:text-7xl font-black tracking-tighter leading-[0.95] transition-colors heading-reveal uppercase mb-10">
+              <h1 className="text-3xl sm:text-4xl lg:text-7xl font-black tracking-tighter leading-[0.95] transition-colors heading-reveal uppercase mb-6 sm:mb-10">
                 Critical Safety <br />Integration <span className="text-hejaaz-secondary">Across Sectors.</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-[var(--text-muted)] font-bold uppercase tracking-tight max-w-3xl leading-tight transition-colors">
+              <p className="text-base sm:text-xl lg:text-2xl text-[var(--text-muted)] font-bold uppercase tracking-tight max-w-3xl leading-tight transition-colors">
                 Hejaaz Technologies serves as a technical partner for mission-critical operations, delivering
                 robust automation and monitoring systems for high-stakes industrial environments.
               </p>
@@ -73,14 +73,14 @@ export default function Industries() {
                 <div className="w-2 h-2 rounded-full bg-hejaaz-secondary animate-pulse" />
                 Industry Matrix
               </h2>
-              <h2 className="text-4xl lg:text-6xl font-black tracking-tighter leading-none heading-reveal uppercase">Verified Sectors.</h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter leading-none heading-reveal uppercase">Verified Sectors.</h2>
             </div>
             <div className="hidden lg:block text-[10px] font-black text-hejaaz-secondary uppercase tracking-[0.3em] bg-hejaaz-surface px-5 py-3 rounded-xl border border-hejaaz-border shadow-sm">
               Global Support Active
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {industriesData.map((ind, i) => {
               const Icon = iconMap[ind.icon] || Factory
               return (
@@ -90,13 +90,13 @@ export default function Industries() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: i * 0.05, ease: [0.22, 1, 0.36, 1] }}
-                  className="group card-premium p-10 flex flex-col h-full"
+                  className="group card-premium p-5 sm:p-10 flex flex-col h-full"
                 >
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 bg-hejaaz-surface border border-hejaaz-border group-hover:bg-hejaaz-secondary group-hover:text-white transition-all duration-500 shadow-sm">
+                  <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-8 bg-hejaaz-surface border border-hejaaz-border group-hover:bg-hejaaz-secondary group-hover:text-white transition-all duration-500 shadow-sm">
                     <Icon size={24} strokeWidth={1.5} className="group-hover:scale-110 transition-transform" />
                   </div>
-                  <h3 className="text-[12px] font-black uppercase tracking-widest mb-4 group-hover:text-hejaaz-secondary transition-colors text-main line-clamp-1">{ind.name}</h3>
-                  <p className="text-[11px] font-bold leading-tight mb-8 flex-1 line-clamp-3 uppercase tracking-tight text-muted transition-colors">{ind.description}</p>
+                  <h3 className="text-[10px] sm:text-[12px] font-black uppercase tracking-wider sm:tracking-widest mb-2 sm:mb-4 group-hover:text-hejaaz-secondary transition-colors text-main line-clamp-1">{ind.name}</h3>
+                  <p className="text-[9px] sm:text-[11px] font-bold leading-tight mb-4 sm:mb-8 flex-1 line-clamp-3 uppercase tracking-tight text-muted transition-colors hidden sm:block">{ind.description}</p>
 
                   <div className="mt-auto pt-6 border-t border-hejaaz-border flex items-center justify-between transition-colors">
                     <span className="text-[10px] font-black uppercase tracking-[0.2em] text-hejaaz-secondary transition-colors">
@@ -114,9 +114,9 @@ export default function Industries() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-24 lg:mt-32"
+            className="mt-16 sm:mt-24 lg:mt-32"
           >
-            <div className="bg-hejaaz-secondary p-12 lg:p-24 rounded-[3rem] text-white relative overflow-hidden shadow-2xl">
+            <div className="bg-hejaaz-secondary p-6 sm:p-12 lg:p-24 rounded-2xl sm:rounded-[3rem] text-white relative overflow-hidden shadow-2xl">
               <div
                 className="absolute inset-0 z-0 opacity-20 grayscale scale-110 transition-transform hover:scale-100 duration-1000"
                 style={{ backgroundImage: `url('/images/industrial-bg-port.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
@@ -124,8 +124,8 @@ export default function Industries() {
               <div className="absolute inset-0 bg-hejaaz-secondary/40 backdrop-blur-[2px]" />
 
               <div className="relative z-10 max-w-3xl">
-                <h2 className="text-4xl lg:text-7xl font-black mb-10 text-white tracking-tighter leading-[0.95] uppercase">Serving Your <br />Specific Sector.</h2>
-                <p className="text-white/80 text-xl lg:text-2xl mb-12 font-bold uppercase tracking-tight leading-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-7xl font-black mb-6 sm:mb-10 text-white tracking-tighter leading-[0.95] uppercase">Serving Your <br />Specific Sector.</h2>
+                <p className="text-white/80 text-base sm:text-xl lg:text-2xl mb-8 sm:mb-12 font-bold uppercase tracking-tight leading-tight">
                   Whether you are a crane OEM starting a new project or a safety consultant conducting an audit, our engineering team can provide the specific documentation and system support required for your sector.
                 </p>
                 <div className="flex">

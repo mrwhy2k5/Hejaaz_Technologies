@@ -74,7 +74,7 @@ export default function Contact() {
     }
   }
 
-  const inputClasses = "w-full px-4 py-4 rounded-xl border border-[var(--card-border)] bg-[var(--bg-secondary)] dark:bg-white/5 focus:bg-white dark:focus:bg-white/10 focus:ring-2 focus:ring-hejaaz-secondary outline-none transition-all text-xs font-bold uppercase tracking-tight"
+  const inputClasses = "w-full px-4 py-3 sm:py-4 rounded-xl border border-[var(--card-border)] bg-[var(--bg-secondary)] dark:bg-white/5 focus:bg-white dark:focus:bg-white/10 focus:ring-2 focus:ring-hejaaz-secondary outline-none transition-all text-[16px] sm:text-xs font-bold uppercase tracking-tight"
 
   return (
     <Layout>
@@ -87,7 +87,7 @@ export default function Contact() {
 
       <section className="section-padding bg-[var(--bg-secondary)] border-b border-hejaaz-border transition-colors duration-500">
         <div className="container-content">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
               <motion.div
                 initial={{ opacity: 0, y: 15 }}
@@ -98,7 +98,7 @@ export default function Contact() {
                   <div className="w-8 h-0.5 rounded-full bg-hejaaz-secondary" />
                   <h2 className="text-[10px] font-bold uppercase tracking-widest transition-colors" style={{ color: 'var(--text-muted)' }}>Partner With Us</h2>
                 </div>
-                <h1 className="text-3xl lg:text-5xl font-black tracking-tight leading-tight transition-colors" style={{ color: 'var(--text-main)' }}>Technical Support & Quotation Protocol</h1>
+                <h1 className="text-2xl sm:text-3xl lg:text-5xl font-black tracking-tight leading-tight transition-colors" style={{ color: 'var(--text-main)' }}>Technical Support & Quotation Protocol</h1>
                 <p className="mt-3 text-[var(--text-muted)] text-sm font-medium leading-relaxed transition-colors">
                   Connect with our engineering house for project-specific safety systems, automation prototypes,
                   and comprehensive service agreements.
@@ -111,7 +111,7 @@ export default function Contact() {
 
       <section className="section-padding-sm bg-[var(--bg-main)] transition-colors duration-300">
         <div className="container-content">
-          <div className="grid lg:grid-cols-12 gap-8 lg:gap-10">
+          <div className="grid lg:grid-cols-12 gap-6 lg:gap-10">
             {/* Left: Industrial Contact Matrix */}
             <div className="lg:col-span-5 space-y-6">
               <motion.h2
@@ -130,7 +130,7 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1, ease: [0.4, 0, 0.2, 1] }}
-                className="p-8 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl hover:border-hejaaz-secondary/30 transition-all flex gap-6 shadow-sm"
+                className="p-5 sm:p-8 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl hover:border-hejaaz-secondary/30 transition-all flex gap-4 sm:gap-6 shadow-sm"
               >
                 <div className="shrink-0 w-12 h-12 rounded-xl bg-hejaaz-secondary/10 flex items-center justify-center text-hejaaz-secondary">
                   <MapPin size={24} />
@@ -146,7 +146,7 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
-                className="p-8 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl hover:border-hejaaz-secondary/30 transition-all flex gap-6 shadow-sm"
+                className="p-5 sm:p-8 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl hover:border-hejaaz-secondary/30 transition-all flex gap-4 sm:gap-6 shadow-sm"
               >
                 <div className="shrink-0 w-12 h-12 rounded-xl bg-hejaaz-secondary/10 flex items-center justify-center text-hejaaz-secondary">
                   <Phone size={24} />
@@ -164,7 +164,7 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3, ease: [0.4, 0, 0.2, 1] }}
-                className="p-8 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl hover:border-hejaaz-secondary/30 transition-all flex gap-6 shadow-sm"
+                className="p-5 sm:p-8 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-xl hover:border-hejaaz-secondary/30 transition-all flex gap-4 sm:gap-6 shadow-sm"
               >
                 <div className="shrink-0 w-12 h-12 rounded-xl bg-hejaaz-secondary/10 flex items-center justify-center text-hejaaz-secondary">
                   <Mail size={24} />
@@ -200,7 +200,7 @@ export default function Contact() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
                 id="quote-form"
-                className="p-8 lg:p-12 rounded-xl bg-[var(--card-bg)] border border-[var(--card-border)] shadow-sm transition-colors duration-300 scroll-mt-32"
+                className="p-5 sm:p-8 lg:p-12 rounded-xl bg-[var(--card-bg)] border border-[var(--card-border)] shadow-sm transition-colors duration-300 scroll-mt-32"
               >
                 <div className="flex items-center gap-3 mb-10">
                   <div className="w-10 h-1 rounded-full bg-hejaaz-secondary" />

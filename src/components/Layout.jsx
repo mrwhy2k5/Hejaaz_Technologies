@@ -12,7 +12,7 @@ export default function Layout({ children }) {
   const isHome = location.pathname === '/'
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-screen overflow-x-hidden w-full">
       <Header />
       <motion.main
         initial={{ opacity: 0 }}
