@@ -63,6 +63,7 @@
     -ms-text-size-adjust: 100%;
     overflow-x: hidden;
     width: 100%;
+    scrollbar-gutter: stable;
   }
 
   body {
