@@ -116,12 +116,7 @@ export default function Header() {
 
           {/* Desktop Navigation - CRYSTAL CLEAR */}
           <nav className="hidden lg:flex items-center flex-1 justify-end ml-16" aria-label="Main navigation">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4, duration: 1 }}
-              className="flex items-center gap-10 mr-12"
-            >
+            <div className="flex items-center gap-10 mr-12">
               {navItems.map(({ to, label }) => {
                 const active = isActiveLink(to)
                 return (
@@ -139,17 +134,21 @@ export default function Header() {
                     `}
                   >
                     {label}
-                    {active && (
-                      <motion.div
-                        layoutId="nav-underline"
-                        className="absolute -bottom-2 left-0 right-0 h-0.5 bg-hejaaz-secondary rounded-full shadow-[0_0_15px_var(--hejaaz-secondary)]"
-                        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                      />
-                    )}
+                    <AnimatePresence>
+                      {active && (
+                        <motion.div
+                          initial={{ scaleX: 0, opacity: 0 }}
+                          animate={{ scaleX: 1, opacity: 1 }}
+                          exit={{ scaleX: 0, opacity: 0 }}
+                          className="absolute -bottom-2 left-0 right-0 h-0.5 bg-hejaaz-secondary rounded-full shadow-[0_0_15px_var(--hejaaz-secondary)]"
+                          transition={{ duration: 0.3, ease: 'easeOut' }}
+                        />
+                      )}
+                    </AnimatePresence>
                   </Link>
                 )
               })}
-            </motion.div>
+            </div>
 
             <div className="flex items-center gap-6">
               <div className={`w-[1px] h-6 transition-colors duration-500 ${isGlass ? 'bg-hejaaz-border' : 'bg-white/20'}`} />

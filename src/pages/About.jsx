@@ -48,7 +48,7 @@ export default function About() {
       />
 
       {/* ============ 1️⃣ MISSION CLARITY ============ */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[var(--bg-main)] border-b border-hejaaz-border relative transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-main)] border-b border-hejaaz-border relative overflow-hidden transition-colors duration-500">
         <motion.div
           className="absolute top-0 right-0 w-1/3 h-full bg-hejaaz-secondary/5 blur-[120px] -z-10 rounded-full"
           animate={{ scale: [1, 1.15, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -110,7 +110,7 @@ export default function About() {
       </section>
 
       {/* ============ 2️⃣ CORE VALUES ============ */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[var(--bg-secondary)] transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-secondary)] transition-colors duration-500">
         <div className="container-content">
           <div className="flex flex-col items-center mb-16">
             <motion.h2
@@ -153,7 +153,7 @@ export default function About() {
       </section>
 
       {/* ============ 3️ NATIONAL REACH ============ */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[var(--bg-main)] transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-main)] transition-colors duration-500">
         <div className="container-content">
           <motion.div
             {...scaleIn}
