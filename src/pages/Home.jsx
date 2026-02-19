@@ -287,7 +287,7 @@ export default function Home() {
       </section>
 
       {/* ============ LEVEL 6: BANNER ============ */}
-      <section className="bg-hejaaz-secondary py-6 sm:py-10 lg:py-12 text-white relative overflow-hidden transition-colors duration-500">
+      <section className="bg-hejaaz-secondary py-16 sm:py-24 lg:py-32 text-white relative overflow-hidden transition-colors duration-500">
         <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
         <div className="container-content relative z-10">
@@ -295,29 +295,29 @@ export default function Home() {
             <motion.div {...fadeInLeft}>
               <motion.div
                 {...withDelay(blurIn, 0.1)}
-                className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/20 border border-white/30 mb-3 sm:mb-4 font-black uppercase tracking-widest text-[9px]"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/20 border border-white/30 mb-6 sm:mb-8 font-black uppercase tracking-widest text-[10px]"
               >
-                <MapPin size={10} /> PAN-India Service Network
+                <MapPin size={12} /> PAN-India Service Network
               </motion.div>
               <motion.h2
                 {...withDelay(fadeInUp, 0.2)}
-                className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tighter leading-[0.95] mb-3 sm:mb-4 uppercase"
+                className="text-3xl sm:text-4xl lg:text-6xl font-black tracking-tighter leading-[0.95] mb-6 sm:mb-10 uppercase"
               >
                 Deployed across <br /><span className="text-white/40">500+ Sites.</span>
               </motion.h2>
               <motion.p
                 {...withDelay(fadeInUp, 0.35)}
-                className="text-sm sm:text-base font-bold uppercase tracking-tight opacity-90 mb-4 sm:mb-6"
+                className="text-base sm:text-xl font-bold uppercase tracking-tight opacity-90 mb-8 sm:mb-12"
               >
                 We provide site-ready safety systems with complete documentation and technical support.
               </motion.p>
               <motion.div {...withDelay(fadeInUp, 0.5)} className="flex flex-wrap gap-4">
                 <Link
                   to="/contact#quote-form"
-                  className="bg-white text-hejaaz-secondary !py-2.5 !px-5 sm:!py-3.5 sm:!px-8 !text-[10px] sm:!text-[11px] uppercase tracking-[0.2em] font-black rounded-xl sm:rounded-2xl hover:shadow-2xl transition-all active:scale-95 flex items-center gap-3 hover:scale-105 duration-500"
+                  className="bg-white text-hejaaz-secondary !py-4 !px-8 sm:!py-6 sm:!px-12 !text-[11px] sm:!text-[13px] uppercase tracking-[0.2em] font-black rounded-xl sm:rounded-2xl hover:shadow-2xl transition-all active:scale-95 flex items-center gap-3 hover:scale-105 duration-500"
                   style={{ WebkitTapHighlightColor: 'transparent' }}
                 >
-                  <Headset size={16} /> Request Consultation
+                  <Headset size={18} /> Request Consultation
                 </Link>
               </motion.div>
             </motion.div>
@@ -326,16 +326,16 @@ export default function Home() {
             <div className="hidden lg:flex justify-end">
               <div className="relative">
                 <motion.div
-                  className="w-48 h-48 rounded-full border-2 border-white/10 flex items-center justify-center"
+                  className="w-80 h-80 rounded-full border-2 border-white/10 flex items-center justify-center"
                   animate={{ rotate: 360 }}
                   transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
                 >
                   <motion.div
-                    className="w-36 h-36 rounded-full border-2 border-white/20 flex items-center justify-center"
+                    className="w-64 h-64 rounded-full border-2 border-white/20 flex items-center justify-center"
                     animate={{ rotate: -360 }}
                     transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
                   >
-                    <div className="w-24 h-24 rounded-full border-2 border-white/40 flex items-center justify-center" />
+                    <div className="w-48 h-48 rounded-full border-2 border-white/40 flex items-center justify-center" />
                   </motion.div>
                 </motion.div>
                 <motion.div
@@ -343,7 +343,7 @@ export default function Home() {
                   animate={{ scale: [1, 1.08, 1] }}
                   transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                 >
-                  <Shield size={40} className="text-white" />
+                  <Shield size={100} className="text-white" />
                 </motion.div>
               </div>
             </div>
