@@ -5,6 +5,19 @@ import emailjs from '@emailjs/browser'
 import Layout from '../components/Layout'
 import SeoHead from '../components/SeoHead'
 import PageHeader from '../components/PageHeader'
+import {
+  fadeInUp,
+  fadeInLeft,
+  fadeInRight,
+  scaleIn,
+  staggerContainer,
+  sectionTagReveal,
+  sectionHeadingReveal,
+  sectionDescReveal,
+  lineExpand,
+  withDelay,
+  easings,
+} from '../utils/animations'
 
 const address = '2nd Floor, 4A, Anderson Rd, Vasantha Nagar, Signal, Ayanavaram, Chennai, Tamil Nadu 600023'
 const phone = '+91 9361227290'
@@ -88,23 +101,29 @@ export default function Contact() {
       <section className="section-padding bg-[var(--bg-secondary)] border-b border-hejaaz-border transition-colors duration-500">
         <div className="container-content">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-            <div>
+            <motion.div {...fadeInLeft}>
               <motion.div
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
+                {...fadeInLeft}
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <div className="w-8 h-0.5 rounded-full bg-hejaaz-secondary" />
+                  <motion.div {...lineExpand} className="w-8 h-0.5 rounded-full bg-hejaaz-secondary" />
                   <h2 className="text-[10px] font-bold uppercase tracking-widest transition-colors" style={{ color: 'var(--text-muted)' }}>Partner With Us</h2>
                 </div>
-                <h1 className="text-2xl sm:text-3xl lg:text-5xl font-black tracking-tight leading-tight transition-colors" style={{ color: 'var(--text-main)' }}>Technical Support & Quotation Protocol</h1>
-                <p className="mt-3 text-[var(--text-muted)] text-sm font-medium leading-relaxed transition-colors">
+                <motion.h1
+                  {...sectionHeadingReveal}
+                  className="text-2xl sm:text-3xl lg:text-5xl font-black tracking-tight leading-tight transition-colors" style={{ color: 'var(--text-main)' }}
+                >
+                  Technical Support & Quotation Protocol
+                </motion.h1>
+                <motion.p
+                  {...sectionDescReveal}
+                  className="mt-3 text-[var(--text-muted)] text-sm font-medium leading-relaxed transition-colors"
+                >
                   Connect with our engineering house for project-specific safety systems, automation prototypes,
                   and comprehensive service agreements.
-                </p>
+                </motion.p>
               </motion.div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

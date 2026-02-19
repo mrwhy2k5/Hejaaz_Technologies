@@ -4,6 +4,19 @@ import Layout from '../components/Layout'
 import SeoHead from '../components/SeoHead'
 import PageHeader from '../components/PageHeader'
 import CTAButtons from '../components/CTAButtons'
+import {
+  fadeInUp,
+  fadeInLeft,
+  fadeInRight,
+  scaleIn,
+  staggerContainer,
+  sectionTagReveal,
+  sectionHeadingReveal,
+  sectionDescReveal,
+  lineExpand,
+  withDelay,
+  easings,
+} from '../utils/animations'
 
 const certs = [
   {
@@ -45,31 +58,36 @@ export default function Certifications() {
         <div className="container-content">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              {...fadeInLeft}
             >
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-0.5 rounded-full bg-hejaaz-secondary" />
+              <motion.div {...sectionTagReveal} className="flex items-center gap-3 mb-6">
+                <motion.div {...lineExpand} className="w-10 h-0.5 rounded-full bg-hejaaz-secondary" />
                 <h2 className="text-[10px] font-black uppercase tracking-[0.2em] transition-colors" style={{ color: 'var(--text-muted)' }}>Verified Credentials</h2>
-              </div>
-              <h1 className="text-3xl lg:text-5xl font-black tracking-tight mb-8 transition-colors" style={{ color: 'var(--text-main)' }}>
+              </motion.div>
+              <motion.h1
+                {...sectionHeadingReveal}
+                className="text-3xl lg:text-5xl font-black tracking-tight mb-8 transition-colors" style={{ color: 'var(--text-main)' }}
+              >
                 Systems built to rigorous industrial law.
-              </h1>
-              <p className="text-[var(--text-muted)] text-[15px] leading-relaxed font-medium transition-colors">
+              </motion.h1>
+              <motion.p
+                {...sectionDescReveal}
+                className="text-[var(--text-muted)] text-[15px] leading-relaxed font-medium transition-colors"
+              >
                 We maintain strict adherence to workplace safety regulations (Factory Acts) and international engineering standards to ensure our products are legally compliant and technically superior.
-              </p>
+              </motion.p>
             </motion.div>
 
-            <div className="space-y-4">
+            <motion.div {...staggerContainer(0.15)} className="space-y-4">
               {certs.map((c, i) => (
                 <motion.div
                   key={c.id}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="bg-[var(--bg-secondary)] dark:bg-white/5 p-6 rounded-xl border border-[var(--card-border)] flex gap-6 group hover:border-hejaaz-secondary/30 transition-all"
+                  variants={{
+                    initial: { opacity: 0, x: 30 },
+                    whileInView: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ duration: 0.8, ease: easings.industrial }}
+                  className="bg-[var(--bg-secondary)] dark:bg-white/5 p-6 rounded-xl border border-[var(--card-border)] flex gap-6 group hover:border-hejaaz-secondary/30 transition-all duration-500 hover:scale-[1.02]"
                 >
                   <div className="shrink-0 w-12 h-12 rounded-lg bg-[var(--card-bg)] border border-[var(--card-border)] flex items-center justify-center text-hejaaz-secondary transition-colors">
                     <c.icon size={24} strokeWidth={1.5} />
@@ -81,7 +99,7 @@ export default function Certifications() {
                   </div>
                 </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -138,6 +156,6 @@ export default function Certifications() {
           </div>
         </div>
       </section>
-    </Layout>
+    </Layout >
   )
 }
