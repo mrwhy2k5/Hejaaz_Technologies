@@ -63,11 +63,10 @@
     -ms-text-size-adjust: 100%;
     overflow-x: hidden;
     width: 100%;
-    @apply no-scrollbar;
   }
 
   body {
-    @apply font-sans transition-colors duration-500 no-scrollbar;
+    @apply font-sans transition-colors duration-500;
     font-family: 'Inter', system-ui, sans-serif;
     color: var(--text-main);
     background-color: var(--bg-main);
@@ -193,8 +192,37 @@
   }
 
   section {
-    @apply no-scrollbar;
+    position: relative;
+    overflow-x: hidden;
   }
+}
+
+/* ========== PREMIUM THEMED SCROLLBAR ========== */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+  border-left: 1px solid var(--hejaaz-border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hejaaz-border);
+  border-radius: 100px;
+  border: 3px solid var(--bg-main);
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hejaaz-secondary);
+}
+
+/* Firefox Support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--hejaaz-secondary) var(--bg-main);
 }
 
 /* ========== iOS SAFE AREA SUPPORT ========== */
