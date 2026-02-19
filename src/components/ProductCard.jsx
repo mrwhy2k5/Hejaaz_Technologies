@@ -20,20 +20,24 @@ export default function ProductCard({ product, index = 0 }) {
       style={{ WebkitTapHighlightColor: 'transparent' }}
     >
       <motion.article
-        whileHover={{ y: -4 }}
-        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-        className="h-full"
+        whileHover={{ y: -8, scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        className="h-full relative z-0"
       >
-        <div className="card-premium h-full flex flex-col group/card">
+        <div className="card-premium h-full flex flex-col group/card bg-[var(--card-bg)] border-[var(--card-border)] shadow-premium hover:border-hejaaz-secondary/30">
+          {/* Animated Glare Effect on Hover */}
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-white/5 to-transparent pointer-events-none transition-opacity duration-700 rounded-2xl" />
+
           {/* Image Container — smooth zoom on hover */}
           <div
-            className="aspect-[4/3] flex items-center justify-center relative overflow-hidden rounded-2xl m-2 sm:m-3 transition-colors duration-300"
+            className="aspect-[4/3] flex items-center justify-center relative overflow-hidden rounded-xl m-2 sm:m-3 bg-white"
             style={{ contain: 'layout style paint' }}
           >
             <img
               src={product.image || '/images/products/placeholder.svg'}
               alt={product.name}
-              className="w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110 dark:brightness-105"
+              className="w-full h-full object-cover transition-transform duration-[1.5s] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-110"
               style={{
                 WebkitBackfaceVisibility: 'hidden',
                 backfaceVisibility: 'hidden',
@@ -45,39 +49,43 @@ export default function ProductCard({ product, index = 0 }) {
               }}
             />
 
-            {/* Asset Identifier — slides down on hover */}
-            <div className="absolute top-3 left-3 sm:top-4 sm:left-4">
-              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-hejaaz-secondary bg-white/90 dark:bg-hejaaz-primary/90 backdrop-blur-sm shadow-sm transition-all duration-500 group-hover:bg-hejaaz-secondary group-hover:text-white">
-                <Shield size={14} />
-              </div>
+            {/* Shield Icon - Dynamic background */}
+            <div className="absolute top-2 left-2 sm:top-3 sm:left-3">
+              <motion.div
+                whileHover={{ rotate: 10, scale: 1.1 }}
+                className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center text-hejaaz-secondary bg-white/90 backdrop-blur-sm shadow-md transition-all duration-300 group-hover:bg-hejaaz-secondary group-hover:text-white"
+              >
+                <Shield size={12} strokeWidth={2.5} />
+              </motion.div>
             </div>
           </div>
 
           {/* Content - Grouped Technical Info */}
-          <div className="p-4 sm:p-6 flex-1 flex flex-col">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-[9px] font-black text-hejaaz-secondary uppercase tracking-[0.25em] transition-colors">
+          <div className="p-4 sm:p-5 flex-1 flex flex-col">
+            <div className="flex items-center gap-2 mb-2 sm:mb-3">
+              <span className="text-[8px] sm:text-[9px] font-black text-hejaaz-secondary uppercase tracking-[0.25em]">
                 {product.category}
               </span>
-              <div className="flex-1 h-[1px] bg-hejaaz-secondary/20 transition-all duration-700 group-hover:bg-hejaaz-secondary/50" />
+              <div className="flex-1 h-[1px] bg-hejaaz-secondary/20 group-hover:bg-hejaaz-secondary/60 transition-all duration-700 origin-left" />
             </div>
 
-            <h3 className="text-xs sm:text-sm font-black uppercase tracking-tight leading-tight mb-3 transition-colors duration-500 group-hover:text-hejaaz-secondary" style={{ color: 'var(--text-main)' }}>
+            <h3 className="text-[11px] sm:text-[13px] font-extrabold uppercase tracking-tight leading-tight mb-2 sm:mb-3 transition-colors duration-500 group-hover:text-hejaaz-secondary" style={{ color: 'var(--text-main)' }}>
               {product.name}
             </h3>
 
             {product.tagline && (
-              <p className="text-[10px] sm:text-[11px] font-medium leading-snug mb-4 sm:mb-6 line-clamp-2 transition-colors" style={{ color: 'var(--text-muted)' }}>
+              <p className="text-[9px] sm:text-[10px] font-bold leading-relaxed mb-4 line-clamp-2 transition-colors duration-500 group-hover:text-[var(--text-main)]" style={{ color: 'var(--text-muted)' }}>
                 {product.tagline}
               </p>
             )}
 
-            <div className="mt-auto pt-3 sm:pt-4 border-t border-hejaaz-border flex items-center justify-between transition-colors">
-              <span className="text-[8px] sm:text-[9px] font-black uppercase tracking-widest transition-colors" style={{ color: 'var(--text-muted)' }}>
-                Engineering Data
+            <div className="mt-auto pt-3 border-t border-hejaaz-border flex items-center justify-between">
+              <span className="text-[7px] sm:text-[8px] font-black uppercase tracking-widest text-hejaaz-secondary/60">
+                INDUSTRIAL_SLI
               </span>
-              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-hejaaz-surface flex items-center justify-center text-hejaaz-secondary transition-all duration-500 group-hover:bg-hejaaz-secondary group-hover:text-white group-hover:scale-110">
-                <ArrowRight size={12} className="transition-transform duration-500 group-hover:translate-x-0.5" />
+              <div className="flex items-center gap-2 text-hejaaz-secondary group-hover:translate-x-1 transition-transform duration-500">
+                <span className="text-[8px] font-black uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Analyze</span>
+                <ArrowRight size={10} strokeWidth={3} />
               </div>
             </div>
           </div>

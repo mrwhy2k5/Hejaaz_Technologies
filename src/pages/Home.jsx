@@ -233,11 +233,7 @@ export default function Home() {
             {productsData.slice(0, 3).map((product, i) => (
               <motion.div
                 key={product.id}
-                variants={{
-                  initial: { opacity: 0, y: 50, scale: 0.95 },
-                  whileInView: { opacity: 1, y: 0, scale: 1 },
-                }}
-                transition={{ duration: 0.9, ease: easings.industrial }}
+                variants={staggerChildScale}
               >
                 <ProductCard product={product} index={i} />
               </motion.div>
