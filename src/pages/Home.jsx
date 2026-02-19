@@ -62,7 +62,7 @@ export default function Home() {
       <HeroSlider />
 
       {/* ============ LEVEL 2: SCAN & UNDERSTAND ============ */}
-      <section className="bg-[var(--bg-main)] section-padding border-b border-hejaaz-border relative overflow-hidden no-scrollbar transition-colors duration-500">
+      <section className="bg-[var(--bg-main)] section-padding border-b border-hejaaz-border relative overflow-hidden transition-colors duration-500">
         {/* Decorative floating glow */}
         <motion.div
           className="absolute top-0 right-0 w-1/3 h-1/3 bg-hejaaz-secondary/5 blur-[120px] -z-10 rounded-full"
@@ -118,7 +118,7 @@ export default function Home() {
       </section>
 
       {/* ============ LEVEL 3: TECHNICAL DETAILS (FOR ENGINEERS) ============ */}
-      <section className="section-padding bg-[var(--bg-secondary)] relative overflow-hidden no-scrollbar transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-secondary)] relative overflow-hidden transition-colors duration-500">
         {/* Decorative spinning gear */}
         <div className="absolute -right-20 -bottom-20 w-64 h-64 opacity-[0.03] pointer-events-none">
           <Cog className="w-full h-full animate-spin-slow" />
@@ -197,7 +197,7 @@ export default function Home() {
       </section>
 
       {/* ============ LEVEL 4: PRODUCT SPOTLIGHT ============ */}
-      <section className="section-padding bg-[var(--bg-main)] overflow-hidden no-scrollbar transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-main)] overflow-hidden transition-colors duration-500">
         <div className="container-content">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-8 mb-10 lg:mb-20">
             <div className="max-w-2xl">
@@ -243,7 +243,7 @@ export default function Home() {
       </section>
 
       {/* ============ LEVEL 5: INDUSTRY INTEGRATION ============ */}
-      <section className="section-padding bg-[var(--bg-secondary)] border-y border-hejaaz-border overflow-hidden no-scrollbar transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-secondary)] border-y border-hejaaz-border overflow-hidden transition-colors duration-500">
         <div className="container-content">
           <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-20">
             <motion.h2
@@ -287,7 +287,7 @@ export default function Home() {
       </section>
 
       {/* ============ LEVEL 6: BANNER ============ */}
-      <section className="bg-hejaaz-secondary py-16 sm:py-24 lg:py-32 text-white relative overflow-hidden no-scrollbar transition-colors duration-500">
+      <section className="bg-hejaaz-secondary py-16 sm:py-24 lg:py-32 text-white relative overflow-hidden transition-colors duration-500">
         <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
         <div className="container-content relative z-10">
