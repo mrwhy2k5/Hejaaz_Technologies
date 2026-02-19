@@ -191,16 +191,17 @@
     display: none !important;
   }
 
+  /* Clean Sections: Forced No-Scroll */
   section {
     position: relative;
-    overflow-x: hidden;
+    overflow: clip !important; /* Prevents internal scrollbars entirely */
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
   }
-}
-
-/* Clean Sections */
-section {
-  position: relative;
-  overflow-x: hidden;
+  
+  section::-webkit-scrollbar {
+    display: none !important;
+  }
 }
 
 /* ========== iOS SAFE AREA SUPPORT ========== */
@@ -222,8 +223,9 @@ section {
   }
 
   /* Fix section overflow on mobile */
+  /* Fix section overflow on mobile */
   section {
-    overflow: hidden !important;
+    overflow: clip !important;
   }
   
   /* Tighter mobile padding */
