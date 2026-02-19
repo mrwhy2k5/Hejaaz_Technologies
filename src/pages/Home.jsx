@@ -118,7 +118,7 @@ export default function Home() {
       </section>
 
       {/* ============ LEVEL 3: TECHNICAL DETAILS (FOR ENGINEERS) ============ */}
-      <section className="section-padding bg-[var(--bg-secondary)] relative overflow-hidden transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-secondary)] relative overflow-hidden no-scrollbar transition-colors duration-500">
         {/* Decorative spinning gear */}
         <div className="absolute -right-20 -bottom-20 w-64 h-64 opacity-[0.03] pointer-events-none">
           <Cog className="w-full h-full animate-spin-slow" />
