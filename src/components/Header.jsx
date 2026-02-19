@@ -100,16 +100,7 @@ export default function Header() {
                 className={`text-xl sm:text-2xl leading-none uppercase transition-colors duration-500 ${isGlass ? 'text-[var(--text-main)]' : 'text-white'}`}
                 style={{ fontFamily: "'Allerta Stencil', sans-serif", letterSpacing: '0.25em', fontWeight: '400' }}
               >
-                {"HEJAAZ".split("").map((char, i) => (
-                  <motion.span
-                    key={i}
-                    initial={{ opacity: 0, y: 5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 + i * 0.05, duration: 0.6 }}
-                  >
-                    {char}
-                  </motion.span>
-                ))}
+                HEJAAZ
               </span>
               <motion.span
                 initial={{ opacity: 0 }}
@@ -131,36 +122,31 @@ export default function Header() {
               transition={{ delay: 0.4, duration: 1 }}
               className="flex items-center gap-10 mr-12"
             >
-              {navItems.map(({ to, label }, i) => {
+              {navItems.map(({ to, label }) => {
                 const active = isActiveLink(to)
                 return (
-                  <motion.div
+                  <Link
                     key={to}
-                    initial={{ opacity: 0, y: -5 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5 + i * 0.05, duration: 0.6, ease: easings.smooth }}
+                    to={to}
+                    className={`
+                      relative px-1 py-1 text-[11px] font-black uppercase tracking-[0.25em] transition-all duration-300
+                      ${active
+                        ? 'text-hejaaz-secondary'
+                        : (isGlass
+                          ? 'text-[var(--text-main)] hover:text-hejaaz-secondary'
+                          : 'text-white/90 hover:text-white')
+                      }
+                    `}
                   >
-                    <Link
-                      to={to}
-                      className={`
-                        relative px-1 py-1 text-[11px] font-black uppercase tracking-[0.25em] transition-all duration-300
-                        ${active
-                          ? 'text-hejaaz-secondary'
-                          : (isGlass
-                            ? 'text-[var(--text-main)] hover:text-hejaaz-secondary'
-                            : 'text-white/90 hover:text-white')
-                        }
-                      `}
-                    >
-                      {label}
-                      {active && (
-                        <motion.div
-                          layoutId="nav-underline"
-                          className="absolute -bottom-2 left-0 right-0 h-0.5 bg-hejaaz-secondary rounded-full shadow-[0_0_15px_var(--hejaaz-secondary)]"
-                        />
-                      )}
-                    </Link>
-                  </motion.div>
+                    {label}
+                    {active && (
+                      <motion.div
+                        layoutId="nav-underline"
+                        className="absolute -bottom-2 left-0 right-0 h-0.5 bg-hejaaz-secondary rounded-full shadow-[0_0_15px_var(--hejaaz-secondary)]"
+                        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                      />
+                    )}
+                  </Link>
                 )
               })}
             </motion.div>
