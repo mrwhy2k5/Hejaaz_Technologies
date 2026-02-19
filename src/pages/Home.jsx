@@ -176,8 +176,8 @@ export default function Home() {
                   animate={{ scale: [1, 1.05, 1], opacity: [0.3, 0.6, 0.3] }}
                   transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                 />
-                <div className="relative rounded-2xl sm:rounded-[3rem] p-2 sm:p-4 lg:p-6 transition-all duration-500 max-w-lg mx-auto">
-                  <div className="flex items-center justify-center overflow-hidden group rounded-xl sm:rounded-[2rem] shadow-2xl border border-hejaaz-border/50 bg-white max-h-[350px]">
+                <div className="relative rounded-2xl sm:rounded-[3rem] p-2 sm:p-4 lg:p-6 transition-all duration-500 max-w-xl mx-auto">
+                  <div className="flex items-center justify-center overflow-hidden group rounded-xl sm:rounded-[2rem] shadow-2xl border border-hejaaz-border/50 bg-white max-h-[450px]">
                     <img
                       src="/images/heavy-lifting.jpg"
                       alt="Crane Safety Illustration"
