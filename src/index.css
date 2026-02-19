@@ -182,6 +182,10 @@
   .section-padding-sm {
     @apply py-10 lg:py-16;
   }
+
+  section {
+    overflow: hidden !important;
+  }
 }
 
 /* ========== iOS SAFE AREA SUPPORT ========== */
@@ -204,7 +208,7 @@
 
   /* Fix section overflow on mobile */
   section {
-    overflow-x: hidden;
+    overflow: hidden !important;
   }
   
   /* Tighter mobile padding */
