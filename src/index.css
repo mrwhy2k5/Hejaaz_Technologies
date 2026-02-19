@@ -197,30 +197,10 @@
   }
 }
 
-/* ========== PREMIUM THEMED SCROLLBAR ========== */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bg-main);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--hejaaz-border);
-  border-radius: 10px;
-  transition: background 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--hejaaz-secondary);
-}
-
-/* Firefox Support */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--hejaaz-border) var(--bg-main);
+/* Clean Sections */
+section {
+  position: relative;
+  overflow-x: hidden;
 }
 
 /* ========== iOS SAFE AREA SUPPORT ========== */
