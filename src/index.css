@@ -75,7 +75,7 @@
     width: 100%;
     position: relative;
     -webkit-overflow-scrolling: touch;
-    touch-action: manipulation;
+    touch-action: pan-y; /* Fix stuck scroll on mobile */
   }
 
   /* Prevent iOS from auto-sizing form inputs (causes zoom) */
@@ -194,14 +194,26 @@
   /* Clean Sections: Forced No-Scroll */
   section {
     position: relative;
-    overflow: clip !important; /* Prevents internal scrollbars entirely */
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important;
+    overflow: clip !important;
   }
-  
-  section::-webkit-scrollbar {
-    display: none !important;
-  }
+}
+
+/* ========== GLOBAL NO-SCROLLBAR LOOK (ULTRA) ========== */
+/* This completely hides the visual bar while keeping scrolling active */
+* {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE/Edge */
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html, body {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none !important;
 }
 
 /* ========== iOS SAFE AREA SUPPORT ========== */
@@ -224,8 +236,11 @@
 
   /* Fix section overflow on mobile */
   /* Fix section overflow on mobile */
+  /* Fix section overflow on mobile */
   section {
     overflow: clip !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
   }
   
   /* Tighter mobile padding */

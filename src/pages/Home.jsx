@@ -118,7 +118,7 @@ export default function Home() {
       </section>
 
       {/* ============ LEVEL 3: TECHNICAL DETAILS (FOR ENGINEERS) ============ */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[var(--bg-secondary)] relative transition-colors duration-500">
+      <section className="py-6 sm:py-16 lg:py-24 bg-[var(--bg-secondary)] relative transition-colors duration-500 touch-pan-y">
         {/* Decorative spinning gear */}
         <div className="absolute -right-20 -bottom-20 w-64 h-64 opacity-[0.03] pointer-events-none">
           <Cog className="w-full h-full animate-spin-slow" />
@@ -134,7 +134,7 @@ export default function Home() {
               </motion.div>
               <motion.h2
                 {...sectionHeadingReveal}
-                className="text-2xl sm:text-3xl lg:text-5xl font-black mb-6 sm:mb-10 leading-[0.95] tracking-tighter heading-reveal"
+                className="text-xl sm:text-3xl lg:text-5xl font-black mb-4 sm:mb-10 leading-[0.95] tracking-tighter heading-reveal"
               >
                 Engineered for <br />
                 <span className="text-hejaaz-secondary">Heavy Duty.</span>
@@ -155,10 +155,10 @@ export default function Home() {
                       whileInView: { opacity: 1, x: 0 },
                     }}
                     transition={{ duration: 0.7, ease: easings.industrial }}
-                    className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 bg-[var(--bg-main)] rounded-xl border border-hejaaz-border shadow-sm group hover:border-hejaaz-secondary/30 transition-all duration-500"
+                    className="flex items-center gap-3 sm:gap-4 p-3 sm:p-5 bg-[var(--bg-main)] rounded-xl border border-hejaaz-border shadow-sm group hover:border-hejaaz-secondary/30 transition-all duration-500"
                   >
-                    <Zap className="text-hejaaz-secondary shrink-0 group-hover:scale-110 transition-transform duration-500" size={14} />
-                    <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-wider sm:tracking-widest" style={{ color: 'var(--text-main)' }}>{item}</span>
+                    <Zap className="text-hejaaz-secondary shrink-0 group-hover:scale-110 transition-transform duration-500" size={12} />
+                    <span className="text-[9px] sm:text-[11px] font-black uppercase tracking-wider sm:tracking-widest" style={{ color: 'var(--text-main)' }}>{item}</span>
                   </motion.div>
                 ))}
               </motion.div>
@@ -177,7 +177,7 @@ export default function Home() {
                   transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                 />
                 <div className="relative rounded-2xl sm:rounded-[3rem] p-2 sm:p-4 lg:p-6 transition-all duration-500 max-w-xl mx-auto">
-                  <div className="flex items-center justify-center overflow-hidden group rounded-xl sm:rounded-[2rem] shadow-2xl border border-hejaaz-border/50 bg-white max-h-[450px]">
+                  <div className="flex items-center justify-center overflow-hidden group rounded-xl sm:rounded-[2rem] shadow-2xl border border-hejaaz-border/50 bg-white max-h-[280px] sm:max-h-[450px]">
                     <img
                       src="/images/heavy-lifting.jpg"
                       alt="Crane Safety Illustration"
