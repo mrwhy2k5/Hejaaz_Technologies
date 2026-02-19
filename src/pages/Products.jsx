@@ -13,6 +13,8 @@ import {
   scaleIn,
   blurIn,
   staggerContainer,
+  staggerChild,
+  staggerChildScale,
   sectionTagReveal,
   sectionHeadingReveal,
   withDelay,
@@ -57,7 +59,7 @@ export default function Products() {
             {productsData.map((product, i) => (
               <motion.div
                 key={product.id}
-                variants={staggerChildScale}
+                variants={staggerChild}
               >
                 <ProductCard product={product} index={i} />
               </motion.div>
