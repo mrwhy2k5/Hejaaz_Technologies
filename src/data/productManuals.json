@@ -985,13 +985,10 @@
       "title": "Boom Lift SLI System Layout",
       "image": "/images/manuals/sli-boom-lift.png",
       "items": [
-        "Display Unit (20×4 LCD)",
-        "Boom Angle Sensor (Inclinometer)",
-        "Boom Extension Length Sensor",
-        "Load Cell (Weight Sensor)",
-        "MEMS Chassis Tilt Sensor",
-        "Anemometer (Wind Speed – Optional)",
-        "Hydraulic Cut-Off Relay System"
+        "Display Unit (Hejaaz Technologies Digital SLI Display)",
+        "Height Sensor (Boom Extension Monitoring)",
+        "Load Sensor (Platform Load Cell)",
+        "Anti-Tilt Sensor (MEMS ±5° Chassis Inclination Monitor)"
       ]
     },
     "keyFeatures": [
