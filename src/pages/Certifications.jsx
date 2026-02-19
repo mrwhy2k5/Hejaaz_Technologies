@@ -54,7 +54,7 @@ export default function Certifications() {
       />
 
       {/* ============ 1️⃣ QUALITY FRAMEWORK ============ */}
-      <section className="section-padding-sm bg-[var(--card-bg)] border-b border-[var(--card-border)] transition-colors duration-300">
+      <section className="section-padding-sm bg-[var(--card-bg)] border-b border-[var(--card-border)] overflow-hidden transition-colors duration-300">
         <div className="container-content">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
             <motion.div
@@ -105,7 +105,7 @@ export default function Certifications() {
       </section>
 
       {/* ============ 2️⃣ COMPLIANCE MATRIX ============ */}
-      <section className="section-padding-sm bg-[var(--bg-main)] transition-colors duration-300">
+      <section className="section-padding-sm bg-[var(--bg-main)] overflow-hidden transition-colors duration-300">
         <div className="container-content">
           <div className="grid lg:grid-cols-12 gap-8 items-start">
             <div className="lg:col-span-5">
@@ -139,7 +139,7 @@ export default function Certifications() {
       </section>
 
       {/* ============ 3️ CALL TO ACTION ============ */}
-      <section className="section-padding-sm bg-[var(--card-bg)] transition-colors duration-300">
+      <section className="section-padding-sm bg-[var(--card-bg)] overflow-hidden transition-colors duration-300">
         <div className="container-content">
           <div className="bg-hejaaz-secondary rounded-2xl p-8 lg:p-12 text-center text-white relative overflow-hidden">
             <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />

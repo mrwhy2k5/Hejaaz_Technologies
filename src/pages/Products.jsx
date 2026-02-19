@@ -37,7 +37,7 @@ export default function Products() {
       />
 
       {/* ============ PRODUCT MATRIX ============ */}
-      <section className="py-6 sm:py-10 lg:py-16 bg-[var(--bg-main)] transition-colors duration-500">
+      <section className="py-6 sm:py-10 lg:py-16 bg-[var(--bg-main)] overflow-hidden transition-colors duration-500">
         <div className="container-content">
           <motion.div
             {...sectionTagReveal}

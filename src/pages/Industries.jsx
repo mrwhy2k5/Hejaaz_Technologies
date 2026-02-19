@@ -86,7 +86,7 @@ export default function Industries() {
         </div>
       </section>
 
-      <section className="section-padding bg-[var(--bg-secondary)] transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-secondary)] overflow-hidden transition-colors duration-500">
         <div className="container-content">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-8 lg:mb-12 gap-8">
             <div className="max-w-2xl text-center lg:text-left">

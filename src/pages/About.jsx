@@ -110,7 +110,7 @@ export default function About() {
       </section>
 
       {/* ============ 2️⃣ CORE VALUES ============ */}
-      <section className="section-padding bg-[var(--bg-secondary)] transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-secondary)] overflow-hidden transition-colors duration-500">
         <div className="container-content">
           <div className="flex flex-col items-center mb-8 sm:mb-12">
             <motion.h2
@@ -153,7 +153,7 @@ export default function About() {
       </section>
 
       {/* ============ 3️ NATIONAL REACH ============ */}
-      <section className="section-padding bg-[var(--bg-main)] transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-main)] overflow-hidden transition-colors duration-500">
         <div className="container-content">
           <motion.div
             {...scaleIn}

@@ -98,7 +98,7 @@ export default function Contact() {
         backgroundImage="/images/industrial-bg.png"
       />
 
-      <section className="section-padding bg-[var(--bg-secondary)] border-b border-hejaaz-border transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-secondary)] border-b border-hejaaz-border overflow-hidden transition-colors duration-500">
         <div className="container-content">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <motion.div {...fadeInLeft}>
@@ -128,7 +128,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="section-padding-sm bg-[var(--bg-main)] transition-colors duration-300">
+      <section className="section-padding-sm bg-[var(--bg-main)] overflow-hidden transition-colors duration-300">
         <div className="container-content">
           <div className="grid lg:grid-cols-12 gap-6 lg:gap-10">
             {/* Left: Industrial Contact Matrix */}
@@ -317,7 +317,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="section-padding bg-[var(--bg-secondary)] transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-secondary)] overflow-hidden transition-colors duration-500">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

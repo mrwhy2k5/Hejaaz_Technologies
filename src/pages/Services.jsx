@@ -95,7 +95,7 @@ export default function Services() {
       </section>
 
       {/* ============ SERVICE MATRIX ============ */}
-      <section className="section-padding bg-[var(--bg-secondary)] transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-secondary)] overflow-hidden transition-colors duration-500">
         <div className="container-content">
           <div className="flex flex-col items-start justify-start mb-12 gap-8 text-left">
             <div className="max-w-4xl">

@@ -62,7 +62,7 @@ export default function Home() {
       <HeroSlider />
 
       {/* ============ LEVEL 2: SCAN & UNDERSTAND ============ */}
-      <section className="bg-[var(--bg-main)] section-padding border-b border-hejaaz-border relative overflow-x-hidden transition-colors duration-500">
+      <section className="bg-[var(--bg-main)] section-padding border-b border-hejaaz-border relative overflow-hidden transition-colors duration-500">
         {/* Decorative floating glow */}
         <motion.div
           className="absolute top-0 right-0 w-1/3 h-1/3 bg-hejaaz-secondary/5 blur-[120px] -z-10 rounded-full"
@@ -197,7 +197,7 @@ export default function Home() {
       </section>
 
       {/* ============ LEVEL 4: PRODUCT SPOTLIGHT ============ */}
-      <section className="section-padding bg-[var(--bg-main)] transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-main)] overflow-hidden transition-colors duration-500">
         <div className="container-content">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-8 mb-6 lg:mb-12">
             <div className="max-w-2xl">
@@ -243,7 +243,7 @@ export default function Home() {
       </section>
 
       {/* ============ LEVEL 5: INDUSTRY INTEGRATION ============ */}
-      <section className="section-padding bg-[var(--bg-secondary)] border-y border-hejaaz-border transition-colors duration-500">
+      <section className="section-padding bg-[var(--bg-secondary)] border-y border-hejaaz-border overflow-hidden transition-colors duration-500">
         <div className="container-content">
           <div className="text-center max-w-3xl mx-auto mb-6 lg:mb-12">
             <motion.h2
