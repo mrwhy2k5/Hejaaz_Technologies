@@ -829,7 +829,7 @@
       {
         "icon": "anti-tilt",
         "title": "Tilt Angle Monitoring",
-        "description": "MEMS-based tilt sensor detects platform inclination beyond ±3°. Auto-stops elevation on uneven terrain."
+        "description": "MEMS-based tilt sensor detects platform inclination beyond ±5°. Auto-stops elevation on uneven terrain."
       },
       {
         "icon": "radius",
@@ -851,11 +851,11 @@
       "Audible buzzer and LED warning indicators",
       "Hydraulic cut-off relay for overload lockout"
     ],
-    "workingPrinciple": "The system continuously monitors platform load via high-precision load cells and platform tilt via a MEMS-based inclinometer. A microprocessor calculates load percentage against the rated capacity and compares tilt angle against configurable safety thresholds (typically ±3°). When limits are approached, visual and audible alarms alert the operator. If exceeded, the system automatically prevents further upward travel and locks the hydraulic elevation system to prevent tip-over.",
+    "workingPrinciple": "The system continuously monitors platform load via high-precision load cells and platform tilt via a MEMS-based inclinometer. A microprocessor calculates load percentage against the rated capacity and compares tilt angle against configurable safety thresholds (typically ±5°). When limits are approached, visual and audible alarms alert the operator. If exceeded, the system automatically prevents further upward travel and locks the hydraulic elevation system to prevent tip-over.",
     "keyFeatures": [
       "Real-time platform load and tilt angle display",
       "Automatic height restriction during overload",
-      "±3° tilt protection for uneven terrain safety",
+      "±5° tilt protection for uneven terrain safety",
       "Load cell-based sensing with ±2.5% accuracy",
       "On-board LCD calibration - no laptop required",
       "Rugged IP65 enclosure for outdoor operation",
@@ -897,7 +897,7 @@
       },
       {
         "param": "Tilt Detection",
-        "value": "MEMS Inclinometer (±3° threshold)"
+        "value": "MEMS Inclinometer (±5° threshold)"
       },
       {
         "param": "Alarms",
