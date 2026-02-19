@@ -168,7 +168,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-8">
             {productsData.slice(0, 3).map((product, i) => (
               <ProductCard key={product.id} product={product} index={i} />
             ))}
