@@ -37,11 +37,11 @@ export default function Products() {
       />
 
       {/* ============ PRODUCT MATRIX ============ */}
-      <section className="py-10 sm:py-16 lg:py-24 bg-[var(--bg-main)] transition-colors duration-500">
+      <section className="py-6 sm:py-10 lg:py-16 bg-[var(--bg-main)] transition-colors duration-500">
         <div className="container-content">
           <motion.div
             {...sectionTagReveal}
-            className="flex items-center justify-between mb-8 sm:mb-12"
+            className="flex items-center justify-between mb-6 sm:mb-8"
           >
             <h2 className="text-[10px] font-black uppercase tracking-[0.3em] flex items-center gap-3" style={{ color: 'var(--text-muted)' }}>
               <div className="w-1.5 h-1.5 rounded-full bg-hejaaz-secondary" />

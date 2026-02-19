@@ -61,13 +61,13 @@ export default function About() {
               {...fadeInLeft}
               className="lg:col-span-7"
             >
-              <motion.div {...sectionTagReveal} className="flex items-center gap-4 mb-8">
+              <motion.div {...sectionTagReveal} className="flex items-center gap-4 mb-4">
                 <motion.div {...lineExpand} className="w-12 h-1 rounded-full bg-hejaaz-secondary" />
                 <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-hejaaz-secondary">Our DNA</h2>
               </motion.div>
               <motion.h1
                 {...sectionHeadingReveal}
-                className="text-3xl sm:text-4xl lg:text-7xl font-black leading-[0.95] tracking-tighter mb-6 sm:mb-10 heading-reveal uppercase"
+                className="text-3xl sm:text-4xl lg:text-7xl font-black leading-[0.95] tracking-tighter mb-4 sm:mb-6 heading-reveal uppercase"
               >
                 We make complex <br />crane safety <span className="text-hejaaz-secondary">simple.</span>
               </motion.h1>
@@ -112,10 +112,10 @@ export default function About() {
       {/* ============ 2️⃣ CORE VALUES ============ */}
       <section className="section-padding bg-[var(--bg-secondary)] transition-colors duration-500">
         <div className="container-content">
-          <div className="flex flex-col items-center mb-16">
+          <div className="flex flex-col items-center mb-8 sm:mb-12">
             <motion.h2
               {...sectionTagReveal}
-              className="text-[11px] font-black text-hejaaz-secondary uppercase tracking-[0.4em] mb-6"
+              className="text-[11px] font-black text-hejaaz-secondary uppercase tracking-[0.4em] mb-4"
             >
               Our Protocol
             </motion.h2>
@@ -139,7 +139,7 @@ export default function About() {
                   whileInView: { opacity: 1, y: 0, scale: 1 },
                 }}
                 transition={{ duration: 0.8, ease: easings.industrial }}
-                className="card-premium p-10 flex flex-col group"
+                className="card-premium p-6 sm:p-10 flex flex-col group"
               >
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-hejaaz-secondary mb-8 transition-all duration-500 bg-hejaaz-surface group-hover:bg-hejaaz-secondary group-hover:text-white group-hover:scale-110 shadow-sm border border-hejaaz-border">
                   <v.icon size={24} strokeWidth={1.5} />
@@ -157,7 +157,7 @@ export default function About() {
         <div className="container-content">
           <motion.div
             {...scaleIn}
-            className="bg-hejaaz-secondary rounded-[3rem] p-12 lg:p-24 text-white relative overflow-hidden shadow-2xl"
+            className="bg-hejaaz-secondary rounded-[3rem] p-8 lg:p-16 text-white relative overflow-hidden shadow-2xl"
           >
             <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 

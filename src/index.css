@@ -176,11 +176,11 @@
 
   /* ========== SPACING SYSTEM ========== */
   .section-padding {
-    @apply py-12 lg:py-24;
+    @apply py-8 lg:py-16;
   }
 
   .section-padding-sm {
-    @apply py-10 lg:py-16;
+    @apply py-6 lg:py-10;
   }
 }
 

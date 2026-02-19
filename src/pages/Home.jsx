@@ -71,7 +71,7 @@ export default function Home() {
         />
 
         <div className="container-content">
-          <div className="max-w-4xl mb-12 lg:mb-24">
+          <div className="max-w-4xl mb-8 lg:mb-16">
             <motion.h2
               {...sectionHeadingReveal}
               className="text-2xl sm:text-3xl lg:text-5xl font-black leading-[1.05] mb-6 sm:mb-10 tracking-tighter heading-reveal"
@@ -104,7 +104,7 @@ export default function Home() {
                   whileInView: { opacity: 1, y: 0, scale: 1 },
                 }}
                 transition={{ duration: 0.8, ease: easings.industrial }}
-                className="card-premium p-5 sm:p-10 flex flex-col items-center text-center group"
+                className="card-premium p-4 sm:p-8 flex flex-col items-center text-center group"
               >
                 <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center text-hejaaz-secondary mb-4 sm:mb-8 bg-hejaaz-surface shadow-sm transition-all group-hover:scale-110 group-hover:shadow-lg duration-500">
                   <card.icon strokeWidth={2} size={24} className="sm:w-8 sm:h-8" />
@@ -128,20 +128,20 @@ export default function Home() {
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Left column — text + specs (slides in from left) */}
             <motion.div {...fadeInLeft} className="lg:col-span-5">
-              <motion.div {...sectionTagReveal} className="flex items-center gap-4 mb-8">
+              <motion.div {...sectionTagReveal} className="flex items-center gap-4 mb-4">
                 <motion.div {...lineExpand} className="w-12 h-1 bg-hejaaz-secondary rounded-full" />
                 <span className="text-[10px] font-black uppercase tracking-[0.4em]" style={{ color: 'var(--text-muted)' }}>Reliability Metrics</span>
               </motion.div>
               <motion.h2
                 {...sectionHeadingReveal}
-                className="text-2xl sm:text-3xl lg:text-5xl font-black mb-6 sm:mb-10 leading-[0.95] tracking-tighter heading-reveal"
+                className="text-2xl sm:text-3xl lg:text-5xl font-black mb-4 sm:mb-6 leading-[0.95] tracking-tighter heading-reveal"
               >
                 Engineered for <br />
                 <span className="text-hejaaz-secondary">Heavy Duty.</span>
               </motion.h2>
 
               {/* Staggered spec items */}
-              <motion.div {...staggerContainer(0.1)} className="space-y-3 sm:space-y-4">
+              <motion.div {...staggerContainer(0.1)} className="space-y-2 sm:space-y-3">
                 {[
                   'Load Accuracy: ±1.5% of Full Scale',
                   'Response Time: < 100 milliseconds',
@@ -199,7 +199,7 @@ export default function Home() {
       {/* ============ LEVEL 4: PRODUCT SPOTLIGHT ============ */}
       <section className="section-padding bg-[var(--bg-main)] transition-colors duration-500">
         <div className="container-content">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-8 mb-10 lg:mb-20">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-8 mb-6 lg:mb-12">
             <div className="max-w-2xl">
               <motion.h2
                 {...sectionTagReveal}
@@ -245,7 +245,7 @@ export default function Home() {
       {/* ============ LEVEL 5: INDUSTRY INTEGRATION ============ */}
       <section className="section-padding bg-[var(--bg-secondary)] border-y border-hejaaz-border transition-colors duration-500">
         <div className="container-content">
-          <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-20">
+          <div className="text-center max-w-3xl mx-auto mb-6 lg:mb-12">
             <motion.h2
               {...sectionTagReveal}
               className="text-[11px] font-black text-hejaaz-secondary uppercase tracking-[0.4em] mb-4 sm:mb-6"
@@ -273,7 +273,7 @@ export default function Home() {
                   whileInView: { opacity: 1, y: 0, scale: 1 },
                 }}
                 transition={{ duration: 0.7, ease: easings.smooth }}
-                className="card-premium p-5 sm:p-10 group"
+                className="card-premium p-4 sm:p-8 group"
               >
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center mb-4 sm:mb-8 bg-hejaaz-surface border border-hejaaz-border transition-all duration-500 group-hover:scale-110 group-hover:bg-hejaaz-secondary group-hover:text-white group-hover:border-hejaaz-secondary">
                   <Factory className="w-4 h-4 sm:w-5 sm:h-5 text-hejaaz-secondary group-hover:text-white transition-colors duration-500" />
