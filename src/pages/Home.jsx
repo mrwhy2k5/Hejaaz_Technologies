@@ -49,7 +49,7 @@ export default function Home() {
       <HeroSlider />
 
       {/* ============ LEVEL 2: SCAN & UNDERSTAND ============ */}
-      <section className="bg-[var(--bg-main)] section-padding border-b border-hejaaz-border relative overflow-hidden transition-colors duration-500">
+      <section className="bg-[var(--bg-main)] section-padding border-b border-hejaaz-border relative overflow-x-hidden transition-colors duration-500">
         <div className="absolute top-0 right-0 w-1/4 h-1/4 bg-hejaaz-secondary/5 blur-[120px] -z-10" />
 
         <div className="container-content">

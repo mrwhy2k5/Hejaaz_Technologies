@@ -129,10 +129,6 @@
     background-color: var(--card-bg);
     border-color: var(--card-border);
     box-shadow: var(--shadow-premium);
-    content-visibility: auto;
-    contain-intrinsic-size: auto 400px;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
   }
 
   .card-premium:hover {
