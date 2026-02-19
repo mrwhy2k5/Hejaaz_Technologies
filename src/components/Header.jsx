@@ -88,52 +88,80 @@ export default function Header() {
             <div className={`w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center transition-all group-hover:scale-110 group-hover:rotate-3 overflow-hidden ${isGlass ? 'bg-black shadow-lg shadow-black/30' : 'bg-black/80 backdrop-blur-md border border-white/20'}`}>
               <img src="/images/logo.png" alt="Hejaaz Technologies Logo" className="w-7 h-7 sm:w-8 sm:h-8 object-contain" loading="eager" />
             </div>
-            <div className="flex flex-col">
+            <motion.div
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: easings.smooth }}
+              className="flex flex-col"
+            >
               <span
                 className={`text-xl sm:text-2xl leading-none uppercase transition-colors duration-500 ${isGlass ? 'text-[var(--text-main)]' : 'text-white'}`}
                 style={{ fontFamily: "'Allerta Stencil', sans-serif", letterSpacing: '0.25em', fontWeight: '400' }}
               >
-                HEJAAZ
+                {"HEJAAZ".split("").map((char, i) => (
+                  <motion.span
+                    key={i}
+                    initial={{ opacity: 0, y: 5 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 + i * 0.05, duration: 0.6 }}
+                  >
+                    {char}
+                  </motion.span>
+                ))}
               </span>
-              <span
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6, duration: 1 }}
                 className={`text-[8px] sm:text-[9px] uppercase leading-none mt-1.5 transition-colors duration-500 ${isGlass ? 'text-[var(--text-muted)]' : 'text-white/70'}`}
                 style={{ fontFamily: "'Cabin', sans-serif", letterSpacing: '0.45em', fontWeight: '500' }}
               >
                 TECHNOLOGIES
-              </span>
-            </div>
+              </motion.span>
+            </motion.div>
           </Link>
 
           {/* Desktop Navigation - CRYSTAL CLEAR */}
           <nav className="hidden lg:flex items-center flex-1 justify-end ml-16" aria-label="Main navigation">
-            <div className="flex items-center gap-10 mr-12">
-              {navItems.map(({ to, label }) => {
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 1 }}
+              className="flex items-center gap-10 mr-12"
+            >
+              {navItems.map(({ to, label }, i) => {
                 const active = isActiveLink(to)
                 return (
-                  <Link
+                  <motion.div
                     key={to}
-                    to={to}
-                    className={`
-                      relative px-1 py-1 text-[11px] font-black uppercase tracking-[0.25em] transition-all duration-300
-                      ${active
-                        ? 'text-hejaaz-secondary'
-                        : (isGlass
-                          ? 'text-[var(--text-main)] hover:text-hejaaz-secondary'
-                          : 'text-white/90 hover:text-white')
-                      }
-                    `}
+                    initial={{ opacity: 0, y: -5 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 + i * 0.05, duration: 0.6, ease: easings.smooth }}
                   >
-                    {label}
-                    {active && (
-                      <motion.div
-                        layoutId="nav-underline"
-                        className="absolute -bottom-2 left-0 right-0 h-0.5 bg-hejaaz-secondary rounded-full shadow-[0_0_15px_var(--hejaaz-secondary)]"
-                      />
-                    )}
-                  </Link>
+                    <Link
+                      to={to}
+                      className={`
+                        relative px-1 py-1 text-[11px] font-black uppercase tracking-[0.25em] transition-all duration-300
+                        ${active
+                          ? 'text-hejaaz-secondary'
+                          : (isGlass
+                            ? 'text-[var(--text-main)] hover:text-hejaaz-secondary'
+                            : 'text-white/90 hover:text-white')
+                        }
+                      `}
+                    >
+                      {label}
+                      {active && (
+                        <motion.div
+                          layoutId="nav-underline"
+                          className="absolute -bottom-2 left-0 right-0 h-0.5 bg-hejaaz-secondary rounded-full shadow-[0_0_15px_var(--hejaaz-secondary)]"
+                        />
+                      )}
+                    </Link>
+                  </motion.div>
                 )
               })}
-            </div>
+            </motion.div>
 
             <div className="flex items-center gap-6">
               <div className={`w-[1px] h-6 transition-colors duration-500 ${isGlass ? 'bg-hejaaz-border' : 'bg-white/20'}`} />

@@ -863,7 +863,7 @@
     "slug": "safe-load-indicator-scissor-lift",
     "name": "Safe Load Indicator – Scissor Lift",
     "tagline": "Platform Overload and Tilt Protection for Aerial Scissor Lifts",
-    "heroImage": "/images/manuals/sli-scissor-lift.png",
+    "heroImage": "/images/manuals/sli-scissor-lift-layout.png",
     "overview": "The Hejaaz Technologies Scissor Lift SLI (Model SLI-SCL/V1.0) is a dedicated safety system designed for hydraulic and electric scissor lifts. It provides continuous platform load monitoring, tilt angle detection, and automatic height restriction to prevent tip-overs and structural overloading during elevated work operations. The system ensures compliance with MEWP safety standards and protects both operators and equipment.",
     "systemLayout": {
       "title": "Scissor Lift SLI System Layout",
