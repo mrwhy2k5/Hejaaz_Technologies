@@ -52,6 +52,16 @@
   --hejaaz-surface: #2A2A2A;
   --hejaaz-border: rgba(250, 129, 18, 0.15);
   --shadow-premium: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+
+  /* Animation Specifics - Dark */
+  --card-glare-color: rgba(255, 255, 255, 0.1);
+  --card-hover-pulse: rgba(250, 129, 18, 0.2);
+}
+
+:root {
+  /* Animation Specifics - Light */
+  --card-glare-color: rgba(255, 255, 255, 0.4);
+  --card-hover-pulse: rgba(250, 129, 18, 0.3);
 }
 
 @layer base {
@@ -321,7 +331,7 @@
 
 @keyframes card-glow-pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(250, 129, 18, 0); }
-  50% { box-shadow: 0 0 30px 4px rgba(250, 129, 18, 0.15); }
+  50% { box-shadow: 0 0 35px 8px var(--card-hover-pulse); }
 }
 
 .product-card-glare {
@@ -338,7 +348,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.08),
+    var(--card-glare-color),
     transparent
   );
   transform: translateX(-100%) rotate(-45deg);
