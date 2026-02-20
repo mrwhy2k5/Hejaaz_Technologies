@@ -34,7 +34,9 @@
   --hejaaz-surface: #F5E7C6;
   --hejaaz-border: #E8D7B0;
   --shadow-premium: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
-  --transition-speed: 0.4s;
+  /* --- Animation Tokens --- */
+  --card-glare-color: rgba(255, 255, 255, 0.25);
+  --card-hover-pulse: rgba(250, 129, 18, 0.2);
 }
 
 .dark {
@@ -53,16 +55,11 @@
   --hejaaz-border: rgba(250, 129, 18, 0.15);
   --shadow-premium: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
 
-  /* Animation Specifics - Dark */
-  --card-glare-color: rgba(255, 255, 255, 0.1);
-  --card-hover-pulse: rgba(250, 129, 18, 0.2);
+  /* Animation Overrides - Dark */
+  --card-glare-color: rgba(255, 255, 255, 0.05);
+  --card-hover-pulse: rgba(250, 129, 18, 0.12);
 }
 
-:root {
-  /* Animation Specifics - Light */
-  --card-glare-color: rgba(255, 255, 255, 0.4);
-  --card-hover-pulse: rgba(250, 129, 18, 0.3);
-}
 
 @layer base {
   /* === iOS / MOBILE FIX: Prevent overflow & zoom glitches === */
