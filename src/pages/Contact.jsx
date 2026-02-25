@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { MapPin, Phone, Mail, Send, Clock, CheckCircle, Shield, Loader2 } from 'lucide-react'
-import emailjs from '@emailjs/browser'
+
 import Layout from '../components/Layout'
 import SeoHead from '../components/SeoHead'
 import PageHeader from '../components/PageHeader'
@@ -63,18 +63,20 @@ export default function Contact() {
     setIsSending(true)
 
     try {
-      // NOTE: YOU MUST CONFIGURE THESE VALUES IN YOUR EMAILJS DASHBOARD
-      // 1. SIGN UP AT https://www.emailjs.com/
-      // 2. CREATE A SERVICE (GET SERVICE_ID)
-      // 3. CREATE A TEMPLATE (GET TEMPLATE_ID)
-      // 4. GET YOUR PUBLIC_KEY FROM ACCOUNT SETTINGS
+      // REPLACE THIS URL with your AWS API Gateway Invoke URL once you create it
+      const API_URL = 'https://your-api-gateway-url.amazonaws.com/send-email'
 
-      await emailjs.sendForm(
-        'service_mr1w2',   // Replace with your Service ID
-        'template_apum8hu',  // Replace with your Template ID
-        formRef.current,
-        'Wl10e1RNfrAe1bpL2'    // Replace with your Public Key
-      )
+      const response = await fetch(API_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      })
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok')
+      }
 
       setSubmitted(true)
       setForm({ name: '', email: '', phone: '', company: '', message: '' })
