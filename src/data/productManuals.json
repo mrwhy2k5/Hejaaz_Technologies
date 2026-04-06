@@ -757,14 +757,14 @@
     "slug": "safe-load-indicator-tipper-truck",
     "name": "Safe Load Indicator – Tipper Truck",
     "tagline": "Real-time chassis stability and rollover prevention for industrial vehicles",
-    "heroImage": "/images/manuals/sli-atp-v3-schematic.png",
+    "heroImage": "/manuals/sli-atp-v3-schematic.png",
     "overview": "The Hejaaz Technologies Tipper Truck SLI (Model TT-SLI / V2.0) is a comprehensive multi-module safety suite designed for dump trucks and hauliers. It provides independent or integrated monitoring of vehicle tilt, payload distribution, and body position, ensuring maximum operator safety and equipment protection during discharge and transport operations.",
     "features": [
       {
         "title": "Module 1: Anti-Tilt Protection (ATP) Switch System",
         "description": "High-precision MEMS-based monitoring system designed to prevent vehicle turnover during tipping operations. Automatically triggers visual/audible alarms and restricts body elevation beyond the safety angle.",
-        "image": "/images/manuals/sli-atp-unit-front.png",
-        "layoutImage": "/images/manuals/sli-atp-v3-schematic.png",
+        "image": "/manuals/sli-atp-unit-front.png",
+        "layoutImage": "/manuals/sli-atp-v3-schematic.png",
         "subFeatures": [
           "±7° Critical Angle Protection",
           "DALA Raised Position Alert",
@@ -781,8 +781,8 @@
       {
         "title": "Module 2: Anti-Tilt with Voice Announcement",
         "description": "Enhanced safety module featuring real-time vocal alerts integrated with the ATP unit. Provides clear audible instructions to the operator during critical tilt events or unsafe loading conditions.",
-        "image": "/images/manuals/sli-atp-unit-front.png",
-        "layoutImage": "/images/manuals/sli-voice-v3-schematic.png",
+        "image": "/manuals/sli-atp-unit-front.png",
+        "layoutImage": "/manuals/sli-voice-v3-schematic.png",
         "subFeatures": [
           "Voice Guidance System",
           "Adjustable Volume Control",
@@ -799,8 +799,8 @@
       {
         "title": "Module 3: Payload Monitoring & Load Logic",
         "description": "Real-time load tracking system for axles and chassis. Prevents structural overloading and optimizes transport efficiency through high-precision pressure and strain measurement.",
-        "image": "/images/manuals/sli-tipper-layout.png",
-        "layoutImage": "/images/manuals/tipper-schematic.png",
+        "image": "/manuals/sli-overload-unit.png",
+        "layoutImage": "/manuals/sli-payload-v3-schematic.png",
         "subFeatures": [
           "Real-time Weight Display",
           "Overload Prevention Logic",
