@@ -25,8 +25,16 @@ export function ThemeProvider({ children }) {
         setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
     }
 
+    const [currentPath, setCurrentPath] = useState(window.location.pathname)
+    const [previousPath, setPreviousPath] = useState(null)
+
+    const updatePath = (newPath) => {
+        setPreviousPath(currentPath)
+        setCurrentPath(newPath)
+    }
+
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <ThemeContext.Provider value={{ theme, toggleTheme, currentPath, previousPath, updatePath }}>
             {children}
         </ThemeContext.Provider>
     )

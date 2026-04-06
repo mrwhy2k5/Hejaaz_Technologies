@@ -1,4 +1,5 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { MapPin, Phone, Mail, Send, Clock, CheckCircle, Shield, Loader2 } from 'lucide-react'
 
@@ -39,6 +40,17 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
   const [isSending, setIsSending] = useState(false)
   const formRef = useRef()
+  const [searchParams] = useSearchParams()
+  const prefillProduct = searchParams.get('product')
+
+  useEffect(() => {
+    if (prefillProduct) {
+      setForm(prev => ({
+        ...prev,
+        message: `I am interested in a quote for the ${prefillProduct}. Please provide technical details and pricing.`
+      }))
+    }
+  }, [prefillProduct])
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -63,8 +75,7 @@ export default function Contact() {
     setIsSending(true)
 
     try {
-      // REPLACE THIS URL with your AWS API Gateway Invoke URL once you create it
-      const API_URL = 'https://your-api-gateway-url.amazonaws.com/send-email'
+      const API_URL = 'https://3uysppksxl.execute-api.us-east-1.amazonaws.com/send-email'
 
       const response = await fetch(API_URL, {
         method: 'POST',

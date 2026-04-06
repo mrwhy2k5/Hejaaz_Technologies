@@ -17,7 +17,7 @@ import {
 
 const DEFAULT_BG = '/images/industrial-bg-cranes.png'
 
-export default function PageHeader({ title, subtitle, backgroundImage, backTo = "/" }) {
+export default function PageHeader({ title, subtitle, backgroundImage, backTo = "/", isVisited = false }) {
   const bgImage = backgroundImage || DEFAULT_BG
 
   return (
@@ -30,9 +30,9 @@ export default function PageHeader({ title, subtitle, backgroundImage, backTo = 
     >
       {/* Background Image Layer — slow reveal with subtle scale */}
       <motion.div
-        initial={{ opacity: 0, scale: 1.05 }}
+        initial={isVisited ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1.05 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.8, ease: easings.heavy }}
+        transition={{ duration: 1.2, ease: easings.heavy }}
         className="absolute inset-0 z-0"
       >
         <div className="absolute inset-0 bg-hejaaz-primary/30 dark:bg-black/25 z-10 transition-colors duration-300" />
@@ -53,9 +53,9 @@ export default function PageHeader({ title, subtitle, backgroundImage, backTo = 
 
       {/* Absolute Header Navigation - Top Left */}
       <motion.div
-        initial={{ opacity: 0, x: -20 }}
+        initial={isVisited ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.4, ease: easings.smooth }}
+        transition={{ duration: 0.5, delay: 0.2, ease: easings.smooth }}
         className="absolute top-6 left-4 sm:left-6 z-30"
       >
         <Link
@@ -75,7 +75,9 @@ export default function PageHeader({ title, subtitle, backgroundImage, backTo = 
         <div className="max-w-4xl">
           {/* Breadcrumb / Tag — badge reveal */}
           <motion.div
-            {...heroBadgeReveal}
+            initial={isVisited ? { opacity: 1, scale: 1, y: 0 } : heroBadgeReveal.initial}
+            animate={heroBadgeReveal.animate}
+            transition={heroBadgeReveal.transition}
             className="flex items-center gap-4 mb-4 sm:mb-6"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/5 border border-white/10">
@@ -88,7 +90,9 @@ export default function PageHeader({ title, subtitle, backgroundImage, backTo = 
 
           {/* Large Bold Heading — smooth text reveal */}
           <motion.h1
-            {...heroTextReveal}
+            initial={isVisited ? { opacity: 1, y: 0 } : heroTextReveal.initial}
+            animate={heroTextReveal.animate}
+            transition={heroTextReveal.transition}
             className="text-2xl sm:text-4xl lg:text-6xl font-black text-white tracking-tight leading-[1.1] mb-4 sm:mb-6"
           >
             {title}
@@ -97,7 +101,9 @@ export default function PageHeader({ title, subtitle, backgroundImage, backTo = 
           {/* Readable Sub-heading */}
           {subtitle && (
             <motion.p
-              {...heroSubtitleReveal}
+              initial={isVisited ? { opacity: 0.7, y: 0 } : heroSubtitleReveal.initial}
+              animate={heroSubtitleReveal.animate}
+              transition={heroSubtitleReveal.transition}
               className="text-sm sm:text-lg lg:text-xl text-white/70 font-bold uppercase tracking-tight max-w-2xl leading-relaxed"
             >
               {subtitle}
@@ -108,9 +114,9 @@ export default function PageHeader({ title, subtitle, backgroundImage, backTo = 
 
       {/* Industrial Accent — animated bar */}
       <motion.div
-        initial={{ scaleX: 0 }}
+        initial={isVisited ? { scaleX: 1 } : { scaleX: 0 }}
         animate={{ scaleX: 1 }}
-        transition={{ duration: 1.2, delay: 0.6, ease: easings.industrial }}
+        transition={{ duration: 0.8, delay: 0.3, ease: easings.industrial }}
         style={{ transformOrigin: 'left' }}
         className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-hejaaz-secondary via-hejaaz-secondary/30 to-transparent z-20"
       />

@@ -14,6 +14,8 @@ export default function SeoHead({ title, description = DEFAULT_DESC, path = '' }
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      <link rel="icon" type="image/png" href="/favicon.png" />
+      <link rel="apple-touch-icon" href="/favicon.png" />
       {canonical && <link rel="canonical" href={canonical} />}
     </Helmet>
   )

@@ -230,7 +230,7 @@ export default function Home() {
             {...staggerContainer(0.15)}
             className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-8"
           >
-            {productsData.slice(0, 3).map((product, i) => (
+            {productsData.filter(p => !p.hidden).slice(0, 3).map((product, i) => (
               <motion.div
                 key={product.id}
                 variants={staggerChild}

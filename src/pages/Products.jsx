@@ -7,21 +7,26 @@ import SectionHeading from '../components/SectionHeading'
 import ProductCard from '../components/ProductCard'
 import CTAButtons from '../components/CTAButtons'
 import productsData from '../data/products.json'
+import { useTheme } from '../context/ThemeContext'
+import { useEffect } from 'react'
 import {
   fadeInUp,
   fadeInLeft,
   scaleIn,
-  blurIn,
   staggerContainer,
   staggerChild,
-  staggerChildScale,
   sectionTagReveal,
-  sectionHeadingReveal,
   withDelay,
-  easings,
 } from '../utils/animations'
 
 export default function Products() {
+  const { previousPath } = useTheme()
+
+  // Only skip animations if we are specifically coming BACK from a product detail page
+  const isReturningFromDetail = previousPath &&
+    previousPath.startsWith('/products/') &&
+    previousPath !== '/products'
+
   return (
     <Layout>
       <SeoHead
@@ -34,6 +39,7 @@ export default function Products() {
         title="Industrial Safety & Load Monitoring"
         subtitle="Precision engineering solutions for real-time crane overload protection and asset automation."
         backgroundImage="/images/industrial-bg-cranes.png"
+        isVisited={isReturningFromDetail}
       />
 
       {/* ============ PRODUCT MATRIX ============ */}
@@ -48,20 +54,20 @@ export default function Products() {
               Product Matrix
             </h2>
             <div className="text-[10px] font-black uppercase tracking-widest opacity-60" style={{ color: 'var(--text-muted)' }}>
-              {productsData.length} Systems Active
+              {productsData.filter(p => !p.hidden).length} Systems Active
             </div>
           </motion.div>
 
           <motion.div
-            {...staggerContainer(0.1)}
+            {...(!isReturningFromDetail ? staggerContainer(0.1) : { initial: 'visible', animate: 'visible' })}
             className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-8"
           >
-            {productsData.map((product, i) => (
+            {productsData.filter(p => !p.hidden).map((product, i) => (
               <motion.div
                 key={product.id}
                 variants={staggerChild}
               >
-                <ProductCard product={product} index={i} />
+                <ProductCard product={product} index={i} isVisited={isReturningFromDetail} />
               </motion.div>
             ))}
           </motion.div>
@@ -82,7 +88,7 @@ export default function Products() {
               </motion.div>
               <motion.div {...withDelay(fadeInUp, 0.4)} className="flex">
                 <a
-                  href="https://wa.me/919361227290"
+                  href="https://wa.me/919361227290?text=I%20am%20interested%20in%20a%20Technical%20Quote%20for%20your%20Safety%20Systems."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white text-hejaaz-secondary !py-4 !px-8 sm:!py-6 sm:!px-12 !text-[11px] sm:!text-[12px] uppercase tracking-[0.2em] font-black rounded-xl sm:rounded-2xl hover:shadow-2xl transition-all active:scale-95 flex items-center gap-3 sm:gap-4 hover:scale-105 duration-500"

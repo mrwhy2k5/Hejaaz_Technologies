@@ -21,51 +21,51 @@ export const fadeInUp = {
     initial: { opacity: 0, y: 40 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true, margin: '-80px' },
-    transition: { duration: 0.9, ease: easings.industrial },
+    transition: { duration: 0.6, ease: easings.industrial },
 }
 
 export const fadeInDown = {
     initial: { opacity: 0, y: -30 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true, margin: '-60px' },
-    transition: { duration: 0.8, ease: easings.smooth },
+    transition: { duration: 0.5, ease: easings.smooth },
 }
 
 export const fadeInLeft = {
     initial: { opacity: 0, x: -50 },
     whileInView: { opacity: 1, x: 0 },
     viewport: { once: true, margin: '-60px' },
-    transition: { duration: 0.9, ease: easings.industrial },
+    transition: { duration: 0.6, ease: easings.industrial },
 }
 
 export const fadeInRight = {
     initial: { opacity: 0, x: 50 },
     whileInView: { opacity: 1, x: 0 },
     viewport: { once: true, margin: '-60px' },
-    transition: { duration: 0.9, ease: easings.industrial },
+    transition: { duration: 0.6, ease: easings.industrial },
 }
 
 export const scaleIn = {
     initial: { opacity: 0, scale: 0.85 },
     whileInView: { opacity: 1, scale: 1 },
     viewport: { once: true, margin: '-60px' },
-    transition: { duration: 1, ease: easings.smooth },
+    transition: { duration: 0.7, ease: easings.smooth },
 }
 
 export const blurIn = {
     initial: { opacity: 0, filter: 'blur(10px)' },
     whileInView: { opacity: 1, filter: 'blur(0px)' },
     viewport: { once: true, margin: '-60px' },
-    transition: { duration: 1.2, ease: easings.smooth },
+    transition: { duration: 0.8, ease: easings.smooth },
 }
 
 // ========== STAGGER CONTAINERS ==========
-export const staggerContainer = (staggerDelay = 0.12) => ({
+export const staggerContainer = (staggerDelay = 0.08) => ({
     initial: {},
     whileInView: {
         transition: {
             staggerChildren: staggerDelay,
-            delayChildren: 0.1,
+            delayChildren: 0.05,
         },
     },
     viewport: { once: true, margin: '-60px' },
@@ -74,38 +74,38 @@ export const staggerContainer = (staggerDelay = 0.12) => ({
 export const staggerChild = {
     initial: { opacity: 0, y: 30 },
     whileInView: { opacity: 1, y: 0 },
-    transition: { duration: 0.7, ease: easings.industrial },
+    transition: { duration: 0.5, ease: easings.industrial },
 }
 
 export const staggerChildScale = {
     initial: { opacity: 0, y: 20, scale: 0.95 },
     whileInView: { opacity: 1, y: 0, scale: 1 },
-    transition: { duration: 0.8, ease: easings.smooth },
+    transition: { duration: 0.6, ease: easings.smooth },
 }
 
 // ========== HERO & HEADING ANIMATIONS ==========
 export const heroTextReveal = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 1.2, ease: easings.industrial },
+    transition: { duration: 0.8, ease: easings.industrial },
 }
 
 export const heroSubtitleReveal = {
     initial: { opacity: 0, y: 30 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 1, delay: 0.3, ease: easings.smooth },
+    transition: { duration: 0.7, delay: 0.2, ease: easings.smooth },
 }
 
 export const heroBadgeReveal = {
     initial: { opacity: 0, scale: 0.8, y: 20 },
     animate: { opacity: 1, scale: 1, y: 0 },
-    transition: { duration: 0.8, delay: 0.1, ease: easings.smooth },
+    transition: { duration: 0.6, delay: 0.05, ease: easings.smooth },
 }
 
 export const heroButtonReveal = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.8, delay: 0.6, ease: easings.smooth },
+    transition: { duration: 0.6, delay: 0.4, ease: easings.smooth },
 }
 
 // ========== IMAGE ANIMATIONS ==========
@@ -113,14 +113,14 @@ export const imageReveal = {
     initial: { opacity: 0, scale: 1.05 },
     whileInView: { opacity: 1, scale: 1 },
     viewport: { once: true, margin: '-80px' },
-    transition: { duration: 1.4, ease: easings.heavy },
+    transition: { duration: 1, ease: easings.heavy },
 }
 
 export const imageSlideIn = {
     initial: { opacity: 0, x: 80, scale: 0.95 },
     whileInView: { opacity: 1, x: 0, scale: 1 },
     viewport: { once: true, margin: '-60px' },
-    transition: { duration: 1.2, ease: easings.industrial },
+    transition: { duration: 0.8, ease: easings.industrial },
 }
 
 // ========== LINE / DIVIDER ANIMATIONS ==========
@@ -186,14 +186,14 @@ export const sectionHeadingReveal = {
     initial: { opacity: 0, y: 30 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true, margin: '-60px' },
-    transition: { duration: 0.9, delay: 0.15, ease: easings.industrial },
+    transition: { duration: 0.6, delay: 0.1, ease: easings.industrial },
 }
 
 export const sectionDescReveal = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true, margin: '-60px' },
-    transition: { duration: 0.8, delay: 0.3, ease: easings.smooth },
+    transition: { duration: 0.5, delay: 0.2, ease: easings.smooth },
 }
 
 // ========== PAGE TRANSITION ==========

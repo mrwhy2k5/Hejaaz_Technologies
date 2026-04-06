@@ -73,7 +73,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±2.5% of Full Scale (better with calibration)"
+        "value": "±1.5% of F.S"
       },
       {
         "param": "No.of outputs",
@@ -199,7 +199,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±2.5% of Full Scale (better with calibration)"
+        "value": "±1.5% of F.S"
       },
       {
         "param": "No.of outputs",
@@ -303,7 +303,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±2.5% of Full Scale (better with calibration)"
+        "value": "±1% Moment Calculation"
       }
     ],
     "compliance": [
@@ -848,252 +848,6 @@
       {
         "param": "Calibration",
         "value": "20×4 LCD Display Panel"
-      }
-    ],
-    "compliance": [
-      "ISO 9001:2015 CERTIFIED COMPANY",
-      "EXPERT IN SAFE LOAD SYSTEMS",
-      "INNOVATIVE AND COST-EFFECTIVE SOLUTIONS",
-      "STRONG CUSTOMER SUPPORT",
-      "PROVEN INDUSTRIAL SAFETY AUTOMATION"
-    ]
-  },
-  "safe-load-indicator-scissor-lift": {
-    "id": "sli-scissor-lift",
-    "slug": "safe-load-indicator-scissor-lift",
-    "name": "Safe Load Indicator – Scissor Lift",
-    "tagline": "Platform Overload and Tilt Protection for Aerial Scissor Lifts",
-    "heroImage": "/images/manuals/sli-scissor-lift-layout.png",
-    "overview": "The Hejaaz Technologies Scissor Lift SLI (Model SLI-SCL/V1.0) is a dedicated safety system designed for hydraulic and electric scissor lifts. It provides continuous platform load monitoring, tilt angle detection, and automatic height restriction to prevent tip-overs and structural overloading during elevated work operations. The system ensures compliance with MEWP safety standards and protects both operators and equipment.",
-    "systemLayout": {
-      "title": "Scissor Lift SLI System Layout",
-      "image": "/images/manuals/sli-scissor-lift-layout.png",
-      "items": [
-        "Display Unit",
-        "Load Sensor",
-        "Height Sensor",
-        "Anti-Tilt Sensor (+5° / -5°)"
-      ]
-    },
-    "keyFeatures": [
-      "Platform Load Monitoring: Real-time load display with % capacity indication.",
-      "Tilt Protection: MEMS sensor detects ±5° inclination on uneven terrain.",
-      "Height Restriction: Automatic elevation lockout when overloaded.",
-      "On-Board Calibration: LCD-based setup without external tools."
-    ],
-    "calibrationSetup": {
-      "title": "Seamless Setup & Smart Control",
-      "description": "The Scissor Lift SLI is configured via the cab-mounted industrial LCD display. Technicians can zero the load sensor, set tilt thresholds, configure height restrictions, and calibrate load points directly through the keypad interface.",
-      "image": "/images/manuals/sli-display-labels.png",
-      "steps": [
-        "Load Calibration: Zero and span setup for load cell weight sensing.",
-        "Tilt Zeroing: Calibration of MEMS tilt sensor on level ground.",
-        "Height Limit Setup: Configure maximum elevation thresholds.",
-        "Safety Toggling: Enable/disable specific safety parameters per site requirements."
-      ]
-    },
-    "safetyParameters": [
-      {
-        "icon": "overload",
-        "title": "Platform Overload Protection",
-        "description": "Monitors total platform load against rated capacity. Prevents upward travel when overloaded."
-      },
-      {
-        "icon": "anti-tilt",
-        "title": "Tilt Angle Monitoring (±5°)",
-        "description": "MEMS-based tilt sensor detects platform inclination. Auto-stops elevation on uneven terrain."
-      },
-      {
-        "icon": "radius",
-        "title": "Height Restriction System",
-        "description": "Limits maximum platform height when load exceeds threshold or unsafe conditions detected."
-      },
-      {
-        "icon": "error",
-        "title": "Sensor Health Diagnostics",
-        "description": "Continuous self-check of all sensors. ERR codes displayed for rapid fault identification."
-      }
-    ],
-    "specs": [
-      {
-        "param": "Model Number",
-        "value": "SLI-SCL / V1.0"
-      },
-      {
-        "param": "Power Supply",
-        "value": "12V / 24V DC (Battery)"
-      },
-      {
-        "param": "Accuracy",
-        "value": "±2.5% of Full Scale"
-      },
-      {
-        "param": "Enclosure Rating",
-        "value": "Industrial Grade IP65"
-      },
-      {
-        "param": "Display Unit",
-        "value": "20×4 Character LCD with Backlight"
-      },
-      {
-        "param": "Operating Temperature",
-        "value": "-10°C to +55°C"
-      },
-      {
-        "param": "Load Capacity Range",
-        "value": "Up to 2,000 kg (Configurable)"
-      },
-      {
-        "param": "Load Measurement",
-        "value": "Load Cell (Strain Gauge)"
-      },
-      {
-        "param": "Tilt Detection",
-        "value": "MEMS Inclinometer (±5° threshold)"
-      },
-      {
-        "param": "Alarms & Indicators",
-        "value": "Overload, Tilt, Height Limit, Buzzer"
-      },
-      {
-        "param": "Safety Features",
-        "value": "Overload cut-off, Tilt protection, Height restriction"
-      },
-      {
-        "param": "Calibration Method",
-        "value": "Electronic calibration via operator panel (20×4 LCD)"
-      }
-    ],
-    "compliance": [
-      "ISO 9001:2015 CERTIFIED COMPANY",
-      "EXPERT IN SAFE LOAD SYSTEMS",
-      "INNOVATIVE AND COST-EFFECTIVE SOLUTIONS",
-      "STRONG CUSTOMER SUPPORT",
-      "PROVEN INDUSTRIAL SAFETY AUTOMATION"
-    ]
-  },
-  "safe-load-indicator-boom-lift": {
-    "id": "sli-boom-lift",
-    "slug": "safe-load-indicator-boom-lift",
-    "name": "Safe Load Indicator – Boom Lift / Man Lift",
-    "tagline": "Load Moment Limiting and Stability Protection for Boom Lifts & MEWPs",
-    "heroImage": "/images/manuals/sli-boom-lift.png",
-    "overview": "The Hejaaz Technologies Boom Lift SLI (Model SLI-BML/V1.0) is an advanced safety system engineered for articulated and telescopic boom lifts (Man Lifts / MEWPs). It provides continuous load moment monitoring, boom angle and extension tracking, chassis tilt detection, and automatic hydraulic cut-off to prevent tip-overs and structural failures during elevated personnel and material handling operations.",
-    "systemLayout": {
-      "title": "Boom Lift SLI System Layout",
-      "image": "/images/manuals/sli-boom-lift.png",
-      "items": [
-        "Display Unit (Hejaaz Technologies Digital SLI Display)",
-        "Height Sensor (Boom Extension Monitoring)",
-        "Load Sensor (Platform Load Cell)",
-        "Anti-Tilt Sensor (MEMS ±5° Chassis Inclination Monitor)"
-      ]
-    },
-    "keyFeatures": [
-      "Load Moment Limiter: Real-time load × radius calculation for stability.",
-      "Boom Tracking: Continuous angle and extension monitoring.",
-      "Tilt Protection: Chassis tilt monitoring for sloped terrain safety.",
-      "Wind Monitor: Optional anemometer for outdoor operation safety."
-    ],
-    "calibrationSetup": {
-      "title": "Seamless Setup & Smart Control",
-      "description": "The Boom Lift SLI is configured via the on-board industrial LCD display. Technicians can calibrate boom angle, extension length, load sensors, and tilt thresholds through the secure keypad interface for site-ready operation.",
-      "image": "/images/manuals/sli-display-labels.png",
-      "steps": [
-        "Load Calibration: No-load and full-load reference point setup for load cell weight sensing.",
-        "Boom Angle & Length: Calibration for precise radius and load moment calculation.",
-        "Tilt Zeroing: MEMS tilt sensor calibration on level ground.",
-        "Safety Configuration: Set SWL, moment limits, tilt thresholds, and wind speed limits."
-      ]
-    },
-    "features": [
-      {
-        "title": "Load Moment Limiter (LML)",
-        "description": "Calculates real-time load moment using basket load and operating radius. Automatically restricts boom extension and elevation when rated capacity is approached."
-      },
-      {
-        "title": "Boom Angle & Extension Monitoring",
-        "description": "Continuous measurement of boom angle via inclinometer and extension via length sensor. Provides real-time operating radius data for accurate load moment calculation."
-      },
-      {
-        "title": "Chassis Stability Protection",
-        "description": "MEMS-based tilt sensor continuously monitors chassis inclination. Auto-restricts all boom movements when tilt exceeds safe operating limits on sloped or uneven terrain."
-      },
-      {
-        "title": "Wind Speed Monitoring (Optional)",
-        "description": "Integrated anemometer monitors real-time wind conditions. Alerts operator and restricts boom operations when permissible wind speed limits are exceeded."
-      }
-    ],
-    "safetyParameters": [
-      {
-        "icon": "overload",
-        "title": "Platform Load Protection",
-        "description": "Monitors basket load against rated capacity at current boom position. Prevents unsafe operation."
-      },
-      {
-        "icon": "radius",
-        "title": "Load Moment Limiter (LML)",
-        "description": "Calculates load moment (load × radius). Prevents tip-over and boom overstress with hydraulic cut-off."
-      },
-      {
-        "icon": "anti-tilt",
-        "title": "Chassis Tilt Protection",
-        "description": "MEMS tilt sensor monitors chassis inclination. Auto-restricts boom on sloped/uneven ground."
-      },
-      {
-        "icon": "power",
-        "title": "Hydraulic Cut-Off System",
-        "description": "Automatic hydraulic lockout when load moment or tilt limits exceeded. Fail-safe operation."
-      }
-    ],
-    "specs": [
-      {
-        "param": "Model Number",
-        "value": "SLI-BML / V1.0"
-      },
-      {
-        "param": "Power Supply",
-        "value": "12V / 24V DC (Battery)"
-      },
-      {
-        "param": "Accuracy",
-        "value": "±2.5% of Full Scale"
-      },
-      {
-        "param": "Enclosure Rating",
-        "value": "Industrial Grade IP65"
-      },
-      {
-        "param": "Display Unit",
-        "value": "20×4 Character LCD with Backlight"
-      },
-      {
-        "param": "Operating Temperature",
-        "value": "-10°C to +60°C"
-      },
-      {
-        "param": "Load Capacity Range",
-        "value": "Up to 500 kg basket load (Configurable)"
-      },
-      {
-        "param": "Load Measurement",
-        "value": "Load Cell (Strain Gauge) + Load Moment Calculation"
-      },
-      {
-        "param": "Wind Speed Input",
-        "value": "Optional (Anemometer integration)"
-      },
-      {
-        "param": "Alarms & Indicators",
-        "value": "Overload, Tilt, Moment Limit, Wind, Buzzer"
-      },
-      {
-        "param": "Safety Features",
-        "value": "LML, Tilt protection, Hydraulic cut-off, Wind monitor"
-      },
-      {
-        "param": "Calibration Method",
-        "value": "Electronic calibration via operator panel (20×4 LCD)"
       }
     ],
     "compliance": [

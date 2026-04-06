@@ -25,8 +25,8 @@ const cardVariants = {
     scale: 1,
     rotateX: 0,
     transition: {
-      duration: 0.9,
-      delay: i * 0.15,
+      duration: 0.6,
+      delay: i * 0.1,
       ease: [0.16, 1, 0.3, 1],
     },
   }),
@@ -36,8 +36,8 @@ const contentStagger = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.2,
+      staggerChildren: 0.05,
+      delayChildren: 0.1,
     },
   },
 }
@@ -48,7 +48,7 @@ const contentChild = {
     opacity: 1,
     y: 0,
     filter: 'blur(0px)',
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] },
   },
 }
 
@@ -56,11 +56,11 @@ const lineGrow = {
   hidden: { scaleX: 0 },
   visible: {
     scaleX: 1,
-    transition: { duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] },
   },
 }
 
-export default function ProductCard({ product, index = 0 }) {
+export default function ProductCard({ product, index = 0, isVisited = false }) {
   const slug = product.slug || product.id
   const url = `/products/${slug}`
 
@@ -72,7 +72,7 @@ export default function ProductCard({ product, index = 0 }) {
     >
       <motion.article
         custom={index}
-        initial="hidden"
+        initial={isVisited ? "visible" : "hidden"}
         whileInView="visible"
         viewport={{ once: true, margin: '-60px' }}
         variants={cardVariants}
@@ -99,7 +99,7 @@ export default function ProductCard({ product, index = 0 }) {
                 WebkitBackfaceVisibility: 'hidden',
                 backfaceVisibility: 'hidden',
               }}
-              initial={{ scale: 1.15, opacity: 0 }}
+              initial={isVisited ? { scale: 1, opacity: 1 } : { scale: 1.15, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1.4, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
@@ -129,7 +129,7 @@ export default function ProductCard({ product, index = 0 }) {
           {/* Content - Staggered Animated Reveal */}
           <motion.div
             variants={contentStagger}
-            initial="hidden"
+            initial={isVisited ? "visible" : "hidden"}
             whileInView="visible"
             viewport={{ once: true, margin: '-40px' }}
             className="p-3.5 sm:p-4 flex-1 flex flex-col"
