@@ -243,7 +243,7 @@ export default function ManualProductDetail({ manual, slug }) {
                       className="btn-primary w-full shadow-hejaaz-secondary/20"
                       style={{ WebkitTapHighlightColor: 'transparent' }}
                     >
-                      <MessageCircle size={18} /> Request Data Sheet
+                      <MessageCircle size={18} /> Request Technical Data
                     </Link>
                   </div>
                 </div>
@@ -251,6 +251,89 @@ export default function ManualProductDetail({ manual, slug }) {
             </div>
           </div>
         </section>
+
+        {/* ============ 🟢 SECTION 1.5: SYSTEM MODULES (NEW V2.0 ARCHITECTURE) ============ */}
+        {manual.features && Array.isArray(manual.features[0]) === false && typeof manual.features[0] === 'object' && (
+          <div className="bg-[var(--bg-main)]">
+            {manual.features.map((feature, i) => (
+              <section key={i} className={`py-12 sm:py-20 ${i % 2 !== 0 ? 'bg-[var(--card-bg)]' : 'bg-[var(--bg-main)]'} overflow-hidden border-b border-hejaaz-border/40`}>
+                <div className="container-content">
+                  
+                  {/* Part 1: Header (Title & Layout Image) */}
+                  <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center mb-10 sm:mb-16">
+                    <motion.div 
+                      {...fadeInSlideUp}
+                      className="lg:col-span-6"
+                    >
+                      <div className="inline-flex items-center gap-4 px-4 py-2 rounded-xl bg-hejaaz-secondary/10 border border-hejaaz-secondary/10 mb-8">
+                        <div className="w-2 h-2 rounded-full bg-hejaaz-secondary animate-pulse" />
+                        <span className="text-[10px] font-black text-hejaaz-secondary uppercase tracking-[0.4em]">System Module 0{i + 1}</span>
+                      </div>
+                      
+                      <h2 className="text-3xl sm:text-5xl font-black uppercase tracking-tight mb-8 leading-[1.1]" style={{ color: 'var(--text-main)' }}>
+                        {feature.title}
+                      </h2>
+                      
+                      <p className="text-lg font-medium leading-relaxed opacity-90 mb-10" style={{ color: 'var(--text-muted)' }}>
+                        {feature.description}
+                      </p>
+
+                      {/* Feature Sub-Matrix */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        {feature.subFeatures?.map((sub, j) => (
+                          <div key={j} className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
+                            <div className="w-2 h-2 rounded-full bg-hejaaz-secondary" />
+                            <span className="text-[11px] font-black uppercase tracking-wider">{sub}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </motion.div>
+
+                    <motion.div
+                      {...fadeInSlideUp}
+                      className="lg:col-span-6 flex justify-center"
+                    >
+                      <div className="relative group w-full max-w-[600px]">
+                        <img 
+                          src={feature.layoutImage || "/images/products/placeholder.svg"} 
+                          alt={`${feature.title} Layout`} 
+                          className="w-full h-auto object-contain transition-transform duration-1000 group-hover:scale-105"
+                        />
+                      </div>
+                    </motion.div>
+                  </div>
+
+                  {/* Part 2: Hardware Unit View */}
+                  {feature.image && (
+                    <motion.div 
+                      {...fadeInSlideUp}
+                      className="flex flex-col items-center justify-center p-8 bg-[var(--bg-secondary)] rounded-[3rem] border border-hejaaz-border/40"
+                    >
+                       <img 
+                         src={feature.image} 
+                         alt={`${feature.title} Unit`} 
+                         className="max-h-[400px] w-auto object-contain mb-8 group-hover:scale-110 transition-transform duration-1000 mix-blend-multiply dark:mix-blend-normal"
+                       />
+                       <p className="text-[10px] font-black uppercase tracking-[0.4em] opacity-40">Industrial hardware interface visual</p>
+                    </motion.div>
+                  )}
+
+                  {/* Part 3: Module Specifications */}
+                  {feature.specs && (
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-12 sm:mt-20">
+                      {feature.specs.map((spec, k) => (
+                        <div key={k} className="p-6 bg-[var(--bg-main)] rounded-2xl border border-hejaaz-border/40 flex flex-col gap-2">
+                          <span className="text-[10px] font-black uppercase tracking-widest opacity-40 text-hejaaz-secondary">{spec.param}</span>
+                          <span className="text-sm sm:text-base font-black tracking-tight" style={{ color: 'var(--text-main)' }}>{spec.value}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </section>
+            ))}
+          </div>
+        )}
 
         {/* ============ 🟢 SECTION 3: CALIBRATION & TECH SPECS ============ */}
         <section className="py-8 sm:py-16 lg:py-24">

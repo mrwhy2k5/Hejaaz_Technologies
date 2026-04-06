@@ -1,4 +1,4 @@
-{
+﻿{
   "safe-load-indicator-eot-crane": {
     "id": "sli-eot-crane",
     "slug": "safe-load-indicator-eot-crane",
@@ -13,7 +13,7 @@
         "Main Hook Load Pin",
         "Auxiliary Hook Load Pin",
         "Rope Clamp / Tensiometer",
-        "Anti-Tilt Sensor (+5° / -5°)",
+        "Anti-Tilt Sensor (+5┬░ / -5┬░)",
         "Hook Cutoff System",
         "ATP / Modbus Module",
         "4-Inch Big Display"
@@ -31,7 +31,7 @@
       "image": "/images/manuals/calibration-interface.png",
       "steps": [
         "Multi-Load Calibration: Supports up to 8 independent load points for precision.",
-        "Tilt Angle Setup: 'Angle Reset' button instantly sets current angle as 0°.",
+        "Tilt Angle Setup: 'Angle Reset' button instantly sets current angle as 0┬░.",
         "Safety Configuration: Input boxes for Load, Tilt, Wind, and Rope slack limits.",
         "Toggling Options: Interface buttons to enable/disable safety parameters."
       ]
@@ -45,7 +45,7 @@
       {
         "icon": "activity",
         "title": "Anti-Tilt Protection (ATP)",
-        "description": "Triggers at ±5°. Displays 'ATP' and prevents instability."
+        "description": "Triggers at ┬▒5┬░. Displays 'ATP' and prevents instability."
       },
       {
         "icon": "rope-slack",
@@ -73,7 +73,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±2.5% of Full Scale (better with calibration)"
+        "value": "┬▒2.5% of Full Scale (better with calibration)"
       },
       {
         "param": "No.of outputs",
@@ -93,7 +93,7 @@
       },
       {
         "param": "Operating temp",
-        "value": "upto 55 °C"
+        "value": "upto 55 ┬░C"
       },
       {
         "param": "Indicators",
@@ -138,7 +138,7 @@
         "Main Hook Load Pin",
         "Auxiliary Hook Load Pin",
         "Rope Clamp / Tensiometer",
-        "Anti-Tilt Sensor (+5° / -5°)",
+        "Anti-Tilt Sensor (+5┬░ / -5┬░)",
         "Hook Cutoff System",
         "ATP / Modbus Module",
         "4-Inch Big Display",
@@ -156,7 +156,7 @@
       "description": "The SLI system features a built-in Wi-Fi Access Point, enabling wireless calibration. Includes specialized Wind Speed limit settings and Angle Reset for outdoor stability.",
       "image": "/images/manuals/calibration-interface.png",
       "steps": [
-        "Tilt Angle Setup: Instant 0° calibration for ground stability.",
+        "Tilt Angle Setup: Instant 0┬░ calibration for ground stability.",
         "Wind Speed Config: Input safe limits for automatic high-wind shutdown.",
         "Multi-Load Calibration: Up to 8 points for diverse lifting ranges.",
         "Wireless Sync: Full control via mobile-friendly web interface."
@@ -176,7 +176,7 @@
       {
         "icon": "activity",
         "title": "Anti-Tilt Protection (ATP)",
-        "description": "Monitors angular tilt (±5°) to prevent tipping or instability."
+        "description": "Monitors angular tilt (┬▒5┬░) to prevent tipping or instability."
       },
       {
         "icon": "alert",
@@ -199,7 +199,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±2.5% of Full Scale (better with calibration)"
+        "value": "┬▒2.5% of Full Scale (better with calibration)"
       },
       {
         "param": "No.of outputs",
@@ -219,7 +219,7 @@
       },
       {
         "param": "Operating temp",
-        "value": "upto 55 °C"
+        "value": "upto 55 ┬░C"
       },
       {
         "param": "Indicators",
@@ -253,7 +253,7 @@
   "safe-load-indicator-tower-crane": {
     "id": "sli-tower-crane",
     "slug": "safe-load-indicator-tower-crane",
-    "name": "Safe Load Indicator – Tower Crane",
+    "name": "Safe Load Indicator ΓÇô Tower Crane",
     "tagline": "Precision Radius and Capacity Management",
     "heroImage": "/images/manuals/sli-tower.png",
     "overview": "Our SLI for Tower Cranes provides radius-based capacity calculation and overload prevention. Essential for high-rise construction where reach and vertical stability are critical.",
@@ -303,7 +303,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±2.5% of Full Scale (better with calibration)"
+        "value": "┬▒2.5% of Full Scale (better with calibration)"
       }
     ],
     "compliance": [
@@ -317,7 +317,7 @@
   "safe-load-indicator-telescopic-crane": {
     "id": "sli-telescopic-crane",
     "slug": "safe-load-indicator-telescopic-crane",
-    "name": "Safe Load Indicator – Telescopic Crane",
+    "name": "Safe Load Indicator ΓÇô Telescopic Crane",
     "tagline": "Advanced Load Moment Limiter with Multi-Section Boom Monitoring",
     "heroImage": "/images/manuals/sli-telescopic-layout.png",
     "overview": "The Hejaaz Technologies Telescopic Crane SLI (Model SLI-TSC / V1.1) provides automated capacity monitoring for multi-stage telescopic cranes. It dynamically tracks boom length, angle, and real-time load to calculate safe lifting limits. Featuring integrated Anti-Two-Block (A2B) protection and a Load Moment Limiter (LML), it ensures structural integrity and stability across all extension stages.",
@@ -331,13 +331,13 @@
         "Load Sensor (Hydraulic Pressure or Load Cell)",
         "Standard Limit Switch (Safety Lockout)",
         "Contactless Limit Switch (A2B Protection)",
-        "20×4 LCD Display (Control Interface)"
+        "20├ù4 LCD Display (Control Interface)"
       ]
     },
     "features": [
       {
         "title": "Display-Based Calibration & Control",
-        "description": "Complete on-board setup through integrated 20×4 LCD. Features guided calibration for multi-stage booms, angle calibration, and load setting (No-Load/Full-Load). Secure, password-protected configuration without external tools."
+        "description": "Complete on-board setup through integrated 20├ù4 LCD. Features guided calibration for multi-stage booms, angle calibration, and load setting (No-Load/Full-Load). Secure, password-protected configuration without external tools."
       },
       {
         "title": "Load Moment Limiter (LML)",
@@ -396,7 +396,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±2.5% of Full Scale"
+        "value": "┬▒2.5% of Full Scale"
       },
       {
         "param": "Enclosure Rating",
@@ -404,11 +404,11 @@
       },
       {
         "param": "Display Unit",
-        "value": "20×4 Character LCD with Backlight"
+        "value": "20├ù4 Character LCD with Backlight"
       },
       {
         "param": "Operating Temperature",
-        "value": "-10°C to +60°C"
+        "value": "-10┬░C to +60┬░C"
       },
       {
         "param": "Wind Speed Input",
@@ -432,7 +432,7 @@
       },
       {
         "param": "Calibration Method",
-        "value": "Electronic calibration via operator panel (20×4 LCD)"
+        "value": "Electronic calibration via operator panel (20├ù4 LCD)"
       }
     ],
     "compliance": [
@@ -446,16 +446,16 @@
   "safe-load-indicator-pick-and-carry-crane": {
     "id": "sli-pick-carry-crane",
     "slug": "safe-load-indicator-pick-and-carry-crane",
-    "name": "Safe Load Indicator – Pick & Carry Crane",
+    "name": "Safe Load Indicator ΓÇô Pick & Carry Crane",
     "tagline": "Advanced Hydraulic Protection and Display-Based Calibration System",
     "heroImage": "/images/manuals/sli-pick-carry-layout.png",
-    "overview": "The Hejaaz Technologies Pick & Carry Crane SLI (Model SLI-PNC/V1.1) is a comprehensive safety system designed specifically for mobile Pick & Carry crane operations. Featuring real-time load monitoring, Anti-Two-Block protection, and automatic hydraulic cut-off, this system prevents overloading, boom collisions, and unsafe lifting conditions. The integrated 20×4 LCD display enables on-site calibration and configuration without external tools, making it ideal for remote and harsh industrial environments.",
+    "overview": "The Hejaaz Technologies Pick & Carry Crane SLI (Model SLI-PNC/V1.1) is a comprehensive safety system designed specifically for mobile Pick & Carry crane operations. Featuring real-time load monitoring, Anti-Two-Block protection, and automatic hydraulic cut-off, this system prevents overloading, boom collisions, and unsafe lifting conditions. The integrated 20├ù4 LCD display enables on-site calibration and configuration without external tools, making it ideal for remote and harsh industrial environments.",
     "systemLayout": {
       "title": "Pick & Carry SLI System Configuration",
       "image": "/images/manuals/sli-pick-carry-layout.png",
       "items": [
         "Cable Tension Drum (Angle & Length Sensors)",
-        "20×4 LCD Display Unit with Keys",
+        "20├ù4 LCD Display Unit with Keys",
         "Pressure Sensor (Hoist Monitoring)",
         "Pressure Sensor (Load Monitoring)",
         "Standard Limit Switch (Safety Monitoring)",
@@ -465,11 +465,11 @@
     "features": [
       {
         "title": "Display-Based Control & Calibration",
-        "description": "Complete on-board calibration through 20×4 LCD display with step-by-step guided menus. Configure load calibration (No-Load & Full-Load), Rated Capacity Limiter (RCL) parameters, boom angle/radius setup, with tamper-resistant password-protected access."
+        "description": "Complete on-board calibration through 20├ù4 LCD display with step-by-step guided menus. Configure load calibration (No-Load & Full-Load), Rated Capacity Limiter (RCL) parameters, boom angle/radius setup, with tamper-resistant password-protected access."
       },
       {
         "title": "Real-Time Load Monitoring",
-        "description": "Hydraulic pressure-based sensing combined with load cell measurements provides ±2.5% accuracy. Visual LED indicators show load status at 0%, 85% (warning), and 100% (maximum) of Safe Working Load."
+        "description": "Hydraulic pressure-based sensing combined with load cell measurements provides ┬▒2.5% accuracy. Visual LED indicators show load status at 0%, 85% (warning), and 100% (maximum) of Safe Working Load."
       },
       {
         "title": "Wire Connection System",
@@ -510,7 +510,7 @@
       {
         "icon": "monitor",
         "title": "Display-Based Calibration",
-        "description": "On-board 20×4 LCD for setup and real-time monitoring without external tools."
+        "description": "On-board 20├ù4 LCD for setup and real-time monitoring without external tools."
       }
     ],
     "specs": [
@@ -524,7 +524,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±2.5% of Full Scale (better with calibration)"
+        "value": "┬▒2.5% of Full Scale (better with calibration)"
       },
       {
         "param": "Enclosure Rating",
@@ -532,11 +532,11 @@
       },
       {
         "param": "Display Unit",
-        "value": "20×4 Character LCD with Backlight"
+        "value": "20├ù4 Character LCD with Backlight"
       },
       {
         "param": "Operating Temperature",
-        "value": "0°C to +60°C"
+        "value": "0┬░C to +60┬░C"
       },
       {
         "param": "Load Capacity Range",
@@ -556,7 +556,7 @@
       },
       {
         "param": "Calibration Method",
-        "value": "Electronic calibration via operator panel (20×4 LCD)"
+        "value": "Electronic calibration via operator panel (20├ù4 LCD)"
       }
     ],
     "compliance": [
@@ -570,7 +570,7 @@
   "safe-load-indicator-crawler-crane": {
     "id": "sli-crawler-crane",
     "slug": "safe-load-indicator-crawler-crane",
-    "name": "Safe Load Indicator – Crawler Crane",
+    "name": "Safe Load Indicator ΓÇô Crawler Crane",
     "tagline": "Advanced Load Moment Limiter with Wind Speed Monitoring System",
     "heroImage": "/images/manuals/sli-crawler-layout.png",
     "overview": "The Hejaaz Technologies Crawler Crane SLI (Model SLI-XGC400-I) is engineered for heavy-duty lattice and telescopic boom crawler cranes. Featuring comprehensive Load Moment Indicator (LMI) functionality, real-time wind speed monitoring, and display-based calibration, this system manages massive moment calculations and ensures ground stability during stationary and travelling lifts in demanding construction environments.",
@@ -582,7 +582,7 @@
         "Tower Lamp (Warning Indicator)",
         "Load Sensor (Precise Weight Sensing)",
         "Angle Tilting Sensor (Boom Monitoring)",
-        "20×4 LCD Display Unit with Backlight",
+        "20├ù4 LCD Display Unit with Backlight",
         "Standard Limit Switch (Safety Monitoring)",
         "Contactless Limit Switch (A2B Protection)"
       ]
@@ -590,7 +590,7 @@
     "features": [
       {
         "title": "Display-Based Calibration & Control",
-        "description": "Complete on-board setup through 20×4 LCD display. Guided step-by-step calibration menus for boom angle, boom length, load calibration (No-Load & Full-Load), and Rated Capacity Limiter (RCL) parameters. Secure, site-ready configuration without external devices."
+        "description": "Complete on-board setup through 20├ù4 LCD display. Guided step-by-step calibration menus for boom angle, boom length, load calibration (No-Load & Full-Load), and Rated Capacity Limiter (RCL) parameters. Secure, site-ready configuration without external devices."
       },
       {
         "title": "Load Moment Indicator (LMI)",
@@ -649,7 +649,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±2.5% of Full Scale (better with calibration)"
+        "value": "┬▒2.5% of Full Scale (better with calibration)"
       },
       {
         "param": "Enclosure Rating",
@@ -657,11 +657,11 @@
       },
       {
         "param": "Display Unit",
-        "value": "20×4 Character LCD with Backlight"
+        "value": "20├ù4 Character LCD with Backlight"
       },
       {
         "param": "Operating Temperature",
-        "value": "-10°C to +60°C"
+        "value": "-10┬░C to +60┬░C"
       },
       {
         "param": "Wind Speed Input",
@@ -685,7 +685,7 @@
       },
       {
         "param": "Calibration Method",
-        "value": "Electronic calibration via operator panel (20×4 LCD)"
+        "value": "Electronic calibration via operator panel (20├ù4 LCD)"
       }
     ],
     "compliance": [
@@ -699,7 +699,7 @@
   "safe-load-indicator-forklift": {
     "id": "sli-forklift",
     "slug": "safe-load-indicator-forklift",
-    "name": "Safe Load Indicator – Forklift",
+    "name": "Safe Load Indicator ΓÇô Forklift",
     "tagline": "Safety and Stability Monitoring for Forklifts",
     "heroImage": "/images/manuals/sli-forklift.png",
     "overview": "The Hejaaz Forklift Safe Load Indicator provides critical stability monitoring for warehouse and industrial forklifts. By tracking load weight and lift height, it prevents forward tip-overs and ensures operator safety during high-reach maneuvers.",
@@ -737,7 +737,7 @@
     "specs": [
       {
         "param": "Load Range",
-        "value": "1–10 T Typical"
+        "value": "1ΓÇô10 T Typical"
       },
       {
         "param": "Response Time",
@@ -753,79 +753,107 @@
     ]
   },
   "safe-load-indicator-tipper-truck": {
-    "id": "anti-tilt-atp-system",
+    "id": "sli-tipper-truck",
     "slug": "safe-load-indicator-tipper-truck",
-    "name": "Safe Load Indicator – Tipper Truck",
-    "tagline": "Real-time chassis stability and rollover prevention for industrial vehicles",
-    "heroImage": "/images/manuals/sli-atp-v3-schematic.png",
-    "overview": "The Hejaaz Technologies Tipper Truck SLI (Model TT-SLI / V2.0) is a comprehensive multi-module safety suite designed for dump trucks and hauliers. It provides independent or integrated monitoring of vehicle tilt, payload distribution, and body position, ensuring maximum operator safety and equipment protection during discharge and transport operations.",
+    "name": "Safe Load Indicator ΓÇô Tipper Truck",
+    "tagline": "Payload monitoring and tipping stability for heavy trucks",
+    "heroImage": "/images/manuals/sli-tipper-layout.png",
+    "overview": "The Hejaaz Technologies Tipper Truck SLI (Model TT-SLI / V1.0) is a dedicated safety system designed for dump trucks and tippers. It provides continuous payload monitoring, body position alerts (DALA Raise), and anti-tilt protection to prevent vehicle overturning during discharge and transport operations in mining and construction sites.",
+    "systemLayout": {
+      "title": "Tipper Truck SLI Configuration",
+      "image": "/images/manuals/sli-tipper-layout.png",
+      "items": [
+        "Main Display Unit (20├ù4 LCD)",
+        "External Buzzer / Alarm System",
+        "Dual-Color Indicator Tower Lights",
+        "MEMS Anti-Tilt Sensor (+5┬░/-5┬░ Monitoring)",
+        "Proximity Sensor (Tipper Body Detection)",
+        "Industrial Load Sensor 1",
+        "Industrial Load Sensor 2"
+      ]
+    },
     "features": [
+      "Real-time Gross, Tare, and Net weight display",
+      "Tipper Body (DALA) raised position audible alert",
+      "Anti-Tilt monitoring with ┬▒7┬░ safety threshold",
+      "Dual-color Tower Lamp (Green for Safe, Red for Overload)",
+      "Rugged IP65 enclosure for high-dust mining environments",
+      "On-board LCD calibration - no laptop required"
+    ],
+    "calibrationSetup": {
+      "title": "Seamless Setup & Smart Control",
+      "description": "The Tipper Truck SLI is configured via the cab-mounted industrial display. Authorized technicians can zero the payload and tilt sensors, set DALA raise alert logic, and configure overload thresholds directly through the keypad interface, ensuring reliable safety monitoring in mining and haulier operations.",
+      "image": "/images/manuals/sli-display-labels.png",
+      "steps": [
+        "Payload Calibration: Zero and Span setting for axle/chassis load calibration.",
+        "Tilt Zeroing: Calibration of the MEMS tilt sensor while vehicle is on level ground.",
+        "Alarm Thresholds: Custom setpoints for ┬▒7┬░ tilt warning and max payload capacity.",
+        "Toggling Options: Interface buttons to enable/disable specific safety parameters for site-specific maintenance."
+      ]
+    },
+    "safetyParameters": [
       {
-        "title": "Module 1: Anti-Tilt Protection (ATP) Switch System",
-        "description": "High-precision MEMS-based monitoring system designed to prevent vehicle turnover during tipping operations. Automatically triggers visual/audible alarms and restricts body elevation beyond the safety angle.",
-        "image": "/images/manuals/sli-atp-unit-front.png",
-        "layoutImage": "/images/manuals/sli-atp-v3-schematic.png",
-        "subFeatures": [
-          "±7° Critical Angle Protection",
-          "DALA Raised Position Alert",
-          "Fail-Safe Relay Interlock",
-          "IP67 Sealed Housing"
-        ],
-        "specs": [
-          { "param": "Response Time", "value": "<50ms" },
-          { "param": "Sensor Type", "value": "MEMS Dual-Axis" },
-          { "param": "Output", "value": "Relay contact NC/NO" },
-          { "param": "Accuracy", "value": "±0.1°" }
-        ]
+        "icon": "alert",
+        "title": "DALA Raise Alarm",
+        "description": "Monitors the status of the tipper body. If raised, status shows on display and buzzer sounds."
       },
       {
-        "title": "Module 2: Anti-Tilt with Voice Announcement",
-        "description": "Enhanced safety module featuring real-time vocal alerts integrated with the ATP unit. Provides clear audible instructions to the operator during critical tilt events or unsafe loading conditions.",
-        "image": "/images/manuals/sli-atp-unit-front.png",
-        "layoutImage": "/images/manuals/sli-voice-v3-schematic.png",
-        "subFeatures": [
-          "Voice Guidance System",
-          "Adjustable Volume Control",
-          "Integrated Siren System",
-          "Multi-lingual Support"
-        ],
-        "specs": [
-          { "param": "Siren Level", "value": "110 dB" },
-          { "param": "Power Input", "value": "12/24V DC" },
-          { "param": "Voice Engine", "value": "Hejaaz V-Core V1" },
-          { "param": "Operating Temp", "value": "Up to 60°C" }
-        ]
+        "icon": "overload",
+        "title": "Overload Monitoring",
+        "description": "Continuous load check. Triggers Red light and Display warning if limit exceeded."
       },
       {
-        "title": "Module 3: Payload Monitoring & Load Logic",
-        "description": "Real-time load tracking system for axles and chassis. Prevents structural overloading and optimizes transport efficiency through high-precision pressure and strain measurement.",
-        "image": "/images/manuals/sli-tipper-layout.png",
-        "layoutImage": "/images/manuals/tipper-schematic.png",
-        "subFeatures": [
-          "Real-time Weight Display",
-          "Overload Prevention Logic",
-          "Daily Load Logging",
-          "Tare/Gross Toggling"
-        ],
-        "specs": [
-          { "param": "Capacity", "value": "Up to 55 Tons" },
-          { "param": "Load Margin", "value": "±2.5% Error Range" },
-          { "param": "Display", "value": "LED High-Contrast" },
-          { "param": "Data Port", "value": "RS485 / Modbus" }
-        ]
+        "icon": "anti-tilt",
+        "title": "Anti-Tilt Protection",
+        "description": "Monitors truck tilt. Warning on display and buzzer activated at ┬▒7┬░ angle."
       }
     ],
     "specs": [
-      { "param": "System Voltage", "value": "12V / 24V DC Auto-Detect" },
-      { "param": "Environment", "value": "Mining / Haulier Grade" },
-      { "param": "Protection", "value": "IP66 / IP67 Weatherproof" },
-      { "param": "Calibration", "value": "Wireless Mobile Interface" },
-      { "param": "Safety Interlock", "value": "Hydraulic Main Valve Cut-Off" },
-      { "param": "Certification", "value": "CE / ISO 9001:2015 Approved" }
+      {
+        "param": "Model",
+        "value": "TT-SLI / V1.0"
+      },
+      {
+        "param": "Power Supply",
+        "value": "12V / 24V DC (Vehicle Battery)"
+      },
+      {
+        "param": "Accuracy",
+        "value": "┬▒10% of Full Scale"
+      },
+      {
+        "param": "No. of Inputs",
+        "value": "Load Cell, Tilt Sensor, DALA Sensor"
+      },
+      {
+        "param": "No. of Outputs",
+        "value": "2 Outputs (Lamp & Buzzer)"
+      },
+      {
+        "param": "Enclosure",
+        "value": "Industrial Grade (IP65)"
+      },
+      {
+        "param": "Load Capacity",
+        "value": "Up to 55 Tons (Configurable)"
+      },
+      {
+        "param": "Tilt Measurement",
+        "value": "MEMS Tilt Sensor"
+      },
+      {
+        "param": "Operating Temp",
+        "value": "Up to 55 ┬░C"
+      },
+      {
+        "param": "Calibration",
+        "value": "20├ù4 LCD Display Panel"
+      }
     ],
     "compliance": [
       "ISO 9001:2015 CERTIFIED COMPANY",
-      "EXPERTISE IN SAFE LOAD SYSTEMS",
+      "EXPERT IN SAFE LOAD SYSTEMS",
+      "INNOVATIVE AND COST-EFFECTIVE SOLUTIONS",
       "STRONG CUSTOMER SUPPORT",
       "PROVEN INDUSTRIAL SAFETY AUTOMATION"
     ]
@@ -833,7 +861,7 @@
   "safe-load-indicator-scissor-lift": {
     "id": "sli-scissor-lift",
     "slug": "safe-load-indicator-scissor-lift",
-    "name": "Safe Load Indicator – Scissor Lift",
+    "name": "Safe Load Indicator ΓÇô Scissor Lift",
     "tagline": "Platform Overload and Tilt Protection for Aerial Scissor Lifts",
     "heroImage": "/images/manuals/sli-scissor-lift-layout.png",
     "overview": "The Hejaaz Technologies Scissor Lift SLI (Model SLI-SCL/V1.0) is a dedicated safety system designed for hydraulic and electric scissor lifts. It provides continuous platform load monitoring, tilt angle detection, and automatic height restriction to prevent tip-overs and structural overloading during elevated work operations. The system ensures compliance with MEWP safety standards and protects both operators and equipment.",
@@ -844,12 +872,12 @@
         "Display Unit",
         "Load Sensor",
         "Height Sensor",
-        "Anti-Tilt Sensor (+5° / -5°)"
+        "Anti-Tilt Sensor (+5┬░ / -5┬░)"
       ]
     },
     "keyFeatures": [
       "Platform Load Monitoring: Real-time load display with % capacity indication.",
-      "Tilt Protection: MEMS sensor detects ±5° inclination on uneven terrain.",
+      "Tilt Protection: MEMS sensor detects ┬▒5┬░ inclination on uneven terrain.",
       "Height Restriction: Automatic elevation lockout when overloaded.",
       "On-Board Calibration: LCD-based setup without external tools."
     ],
@@ -872,7 +900,7 @@
       },
       {
         "icon": "anti-tilt",
-        "title": "Tilt Angle Monitoring (±5°)",
+        "title": "Tilt Angle Monitoring (┬▒5┬░)",
         "description": "MEMS-based tilt sensor detects platform inclination. Auto-stops elevation on uneven terrain."
       },
       {
@@ -897,7 +925,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±2.5% of Full Scale"
+        "value": "┬▒2.5% of Full Scale"
       },
       {
         "param": "Enclosure Rating",
@@ -905,11 +933,11 @@
       },
       {
         "param": "Display Unit",
-        "value": "20×4 Character LCD with Backlight"
+        "value": "20├ù4 Character LCD with Backlight"
       },
       {
         "param": "Operating Temperature",
-        "value": "-10°C to +55°C"
+        "value": "-10┬░C to +55┬░C"
       },
       {
         "param": "Load Capacity Range",
@@ -921,7 +949,7 @@
       },
       {
         "param": "Tilt Detection",
-        "value": "MEMS Inclinometer (±5° threshold)"
+        "value": "MEMS Inclinometer (┬▒5┬░ threshold)"
       },
       {
         "param": "Alarms & Indicators",
@@ -933,7 +961,7 @@
       },
       {
         "param": "Calibration Method",
-        "value": "Electronic calibration via operator panel (20×4 LCD)"
+        "value": "Electronic calibration via operator panel (20├ù4 LCD)"
       }
     ],
     "compliance": [
@@ -947,7 +975,7 @@
   "safe-load-indicator-boom-lift": {
     "id": "sli-boom-lift",
     "slug": "safe-load-indicator-boom-lift",
-    "name": "Safe Load Indicator – Boom Lift / Man Lift",
+    "name": "Safe Load Indicator ΓÇô Boom Lift / Man Lift",
     "tagline": "Load Moment Limiting and Stability Protection for Boom Lifts & MEWPs",
     "heroImage": "/images/manuals/sli-boom-lift.png",
     "overview": "The Hejaaz Technologies Boom Lift SLI (Model SLI-BML/V1.0) is an advanced safety system engineered for articulated and telescopic boom lifts (Man Lifts / MEWPs). It provides continuous load moment monitoring, boom angle and extension tracking, chassis tilt detection, and automatic hydraulic cut-off to prevent tip-overs and structural failures during elevated personnel and material handling operations.",
@@ -958,11 +986,11 @@
         "Display Unit (Hejaaz Technologies Digital SLI Display)",
         "Height Sensor (Boom Extension Monitoring)",
         "Load Sensor (Platform Load Cell)",
-        "Anti-Tilt Sensor (MEMS ±5° Chassis Inclination Monitor)"
+        "Anti-Tilt Sensor (MEMS ┬▒5┬░ Chassis Inclination Monitor)"
       ]
     },
     "keyFeatures": [
-      "Load Moment Limiter: Real-time load × radius calculation for stability.",
+      "Load Moment Limiter: Real-time load ├ù radius calculation for stability.",
       "Boom Tracking: Continuous angle and extension monitoring.",
       "Tilt Protection: Chassis tilt monitoring for sloped terrain safety.",
       "Wind Monitor: Optional anemometer for outdoor operation safety."
@@ -1005,7 +1033,7 @@
       {
         "icon": "radius",
         "title": "Load Moment Limiter (LML)",
-        "description": "Calculates load moment (load × radius). Prevents tip-over and boom overstress with hydraulic cut-off."
+        "description": "Calculates load moment (load ├ù radius). Prevents tip-over and boom overstress with hydraulic cut-off."
       },
       {
         "icon": "anti-tilt",
@@ -1029,7 +1057,7 @@
       },
       {
         "param": "Accuracy",
-        "value": "±2.5% of Full Scale"
+        "value": "┬▒2.5% of Full Scale"
       },
       {
         "param": "Enclosure Rating",
@@ -1037,11 +1065,11 @@
       },
       {
         "param": "Display Unit",
-        "value": "20×4 Character LCD with Backlight"
+        "value": "20├ù4 Character LCD with Backlight"
       },
       {
         "param": "Operating Temperature",
-        "value": "-10°C to +60°C"
+        "value": "-10┬░C to +60┬░C"
       },
       {
         "param": "Load Capacity Range",
@@ -1065,7 +1093,7 @@
       },
       {
         "param": "Calibration Method",
-        "value": "Electronic calibration via operator panel (20×4 LCD)"
+        "value": "Electronic calibration via operator panel (20├ù4 LCD)"
       }
     ],
     "compliance": [
